@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.8.1-Github"
-group= "com.themastergeneral.moglowstonemod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "MoGlowstone Mod"
+version = "1.0.0"
+group= "com.themastergeneral.moglowstone" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Mo' Glowstone"
 
 minecraft {
     version = "1.7.10-10.13.4.1566-1.7.10"
