@@ -1,12 +1,12 @@
 [
 {
-  "modid": "MoGlowstone",
-  "name": "Mo Glowstone Mod by TMG",
-  "description": "Mo Glowstone Mod",
-  "version": "1.8.1",
+  "modid": "moglow",
+  "name": "Mo' Glowstone",
+  "description": "Custom colored glowstone!",
+  "version": "1.0.0",
   "mcversion": "1.7.10",
-  "url": "",
-  "updateUrl": "",
+  "url": "https://minecraft.curseforge.com/projects/mo-glowstone",
+  "updateUrl": "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Currency.json",
   "authorList": ["TheMasterGeneral"],
   "credits": "",
   "logoFile": "",
