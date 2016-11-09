@@ -4,18 +4,19 @@ import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class GSBlock extends Block {
 
-	protected GSBlock(String name, Material material) {
+	protected GSBlock(String name, Material material) 
+	{
 		super(material);
-		setBlockName(name + "GSblock");
-		setBlockTextureName(MoGlowstone.MODID + ":" + name + "GSblock");
+		this.setRegistryName(name + "GSblock");
+		this.setUnlocalizedName(name + "GSblock");
 		//setCreativeTab(MoGlowstone.Tab);
-		setLightLevel(1.0F);
-		setStepSound(soundTypeGlass);
-		setHardness(0.3F);
+		this.setLightLevel(1.0F);
+		this.setHardness(0.3F);
+		this.setSoundType(blockSoundType.GLASS);
 	}
-
 }
