@@ -14,7 +14,7 @@ public class GSBlock extends Block {
 		super(material);
 		this.setRegistryName(name + "GSblock");
 		this.setUnlocalizedName(name + "GSblock");
-		//setCreativeTab(MoGlowstone.Tab);
+		this.setCreativeTab(MoGlowstone.creativeTab);
 		this.setLightLevel(1.0F);
 		this.setHardness(0.3F);
 		this.setSoundType(blockSoundType.GLASS);

@@ -17,6 +17,6 @@ tile.brickGSblock.name=Glowstone Brick
 tile.fuelGSblock.name=Fuel Glowstone Block
 tile.lampGSblock.name=Glowstone Lamp
 
-itemGroup.MoGlowstone=Mo' Glowstone Mod
+itemGroup.moglowstone=Mo' Glowstone Mod
 
 item.fuelGlowstone.name=Glowstone Fuel
