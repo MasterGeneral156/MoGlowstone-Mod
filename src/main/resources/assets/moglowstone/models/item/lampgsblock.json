@@ -1,0 +1,6 @@
+{
+    "parent": "moglowstone:blocks/lampgsblock",
+    "textures": {
+        "inventory": "moglowstone:blocks/lampgsblock"
+    }
+}

@@ -4,7 +4,9 @@ import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class CreativeTab extends CreativeTabs{
 
@@ -14,9 +16,9 @@ public class CreativeTab extends CreativeTabs{
 	}
 
 	@Override
-	public Item getTabIconItem() 
+	public ItemStack getTabIconItem() 
 	{
-		return ModItems.fuelGlowstone; //shown icon on creative tab
+		return new ItemStack(ModItems.fuelGlowstone); //shown icon on creative tab
 	}
 	
 	 @Override

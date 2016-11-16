@@ -1,10 +1,10 @@
 [
 {
-  "modid": "moglow",
+  "modid": "moglowstone",
   "name": "Mo' Glowstone",
   "description": "Custom colored glowstone!",
   "version": "1.0.2",
-  "mcversion": "1.10.2",
+  "mcversion": "1.11",
   "url": "https://minecraft.curseforge.com/projects/mo-glowstone",
   "updateUrl": "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/Mo-Glowstone.json",
   "authorList": ["TheMasterGeneral"],
