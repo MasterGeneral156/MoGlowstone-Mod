@@ -1,6 +1,0 @@
-{
-    "parent": "moglowstone:blocks/magentaGSblock",
-    "textures": {
-        "inventory": "moglowstone:blocks/magentaGSblock"
-    }
-}
