@@ -1,0 +1,6 @@
+{
+    "parent": "moglowstone:blocks/magentagsblock",
+    "textures": {
+        "inventory": "moglowstone:blocks/magentagsblock"
+    }
+}

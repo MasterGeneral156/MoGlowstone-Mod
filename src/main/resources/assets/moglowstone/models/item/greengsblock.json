@@ -1,0 +1,6 @@
+{
+    "parent": "moglowstone:blocks/greengsblock",
+    "textures": {
+        "inventory": "moglowstone:blocks/greengsblock"
+    }
+}

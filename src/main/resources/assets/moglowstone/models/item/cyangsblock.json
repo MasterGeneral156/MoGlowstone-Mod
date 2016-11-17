@@ -1,0 +1,6 @@
+{
+    "parent": "moglowstone:blocks/cyangsblock",
+    "textures": {
+        "inventory": "moglowstone:blocks/cyangsblock"
+    }
+}

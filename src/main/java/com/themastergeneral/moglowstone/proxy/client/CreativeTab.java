@@ -4,7 +4,9 @@ import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class CreativeTab extends CreativeTabs{
 

@@ -1,6 +1,7 @@
 package com.themastergeneral.moglowstone.blocks;
 
 import com.themastergeneral.moglowstone.proxy.client.ItemModelProvider;
+import com.themastergeneral.moglowstone.tileentity.BasicFurnace;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
