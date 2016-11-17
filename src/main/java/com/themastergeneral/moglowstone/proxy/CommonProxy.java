@@ -11,6 +11,7 @@ import com.themastergeneral.moglowstone.handler.CraftingHandler;
 import com.themastergeneral.moglowstone.handler.OreDict;
 import com.themastergeneral.moglowstone.items.ModItems;
 import com.themastergeneral.moglowstone.proxy.client.BlockRenderRegister;
+import com.themastergeneral.moglowstone.world.ModWorldGen;
 import com.themastergeneral.moglowstone.handler.FuelHandler;
 
 public class CommonProxy {
@@ -20,6 +21,7 @@ public class CommonProxy {
     	ModBlocks.init();
     	ModItems.init();
     	GameRegistry.registerFuelHandler(new FuelHandler());
+    	GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
     }
 
     public void init(FMLInitializationEvent e) 
