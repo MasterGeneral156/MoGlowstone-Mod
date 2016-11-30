@@ -7,11 +7,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-	public static BasicItem fuelGlowstone;
+	public static BasicItem fuelglowstone;
 	
 	 public static void init() 
 	 {
-		 fuelGlowstone = register(new BasicItem("fuelGlowstone"));
+		 fuelglowstone = register(new BasicItem("fuelglowstone"));
 		  
 	 }
 	

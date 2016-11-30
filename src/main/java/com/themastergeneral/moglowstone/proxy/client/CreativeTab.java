@@ -18,7 +18,7 @@ public class CreativeTab extends CreativeTabs{
 	@Override
 	public ItemStack getTabIconItem() 
 	{
-		return new ItemStack(ModItems.fuelGlowstone); //shown icon on creative tab
+		return new ItemStack(ModItems.fuelglowstone); //shown icon on creative tab
 	}
 	
 	 @Override
