@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.IFuelHandler;
 public class FuelHandler implements IFuelHandler {
 	@Override
 	public int getBurnTime(ItemStack fuel) {
-		if (fuel.getItem() == ModItems.fuelGlowstone)
+		if (fuel.getItem() == ModItems.fuelglowstone)
         {
             return 3200;
         }

@@ -1,6 +1,7 @@
 package com.themastergeneral.moglowstone.handler;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
+import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -28,106 +29,77 @@ public class CraftingHandler
     			new Object[]{"AA ","AA ","   ",
     	    	'A', Blocks.GLOWSTONE
     	});
-    	/*
     	//Shaped recipes for fire charge.
-    	GameRegistry.addRecipe(new ItemStack(Items.fire_charge, 6), new Object[]{
-    	    	"   ",
-    	    	"AB ",
-    	    	" C ",
-    	    	'A', Items.blaze_powder, 'B', fuelGlowstone, 'C', Items.gunpowder
+    	GameRegistry.addRecipe(new ItemStack(Items.FIRE_CHARGE, 6), new Object[]{
+    	    	"AB",
+    	    	"C ",
+    	    	'A', Items.BLAZE_POWDER, 'B', ModItems.fuelglowstone, 'C', Items.GUNPOWDER
     	});
     	//Shaped recipes for torches.
-    	GameRegistry.addRecipe(new ItemStack(Blocks.torch, 8), new Object[]{
-    	    	"A  ",
-    	    	"B  ",
-    	    	"   ",
-    	    	'A', fuelGlowstone, 'B', Items.stick
+    	GameRegistry.addRecipe(new ItemStack(Blocks.TORCH, 8), new Object[]{
+    	    	"A",
+    	    	"B",
+    	    	'A', ModItems.fuelglowstone, 'B', Items.STICK
     	});
-    	*/
-    	//Shaped recipes for red glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.red, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 1)
-    	});
-    	//Shaped recipes for blue glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.blue, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 4)
-    	});
-    	//Shaped recipes for green glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.green, 8),
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 2)
-    	});
-    	//Shaped recipes for orange glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.orange, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 14)
-    	});
-    	//Shaped recipes for brown glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.brown, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 3)
-    	});
-    	//Shaped recipes for black glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.black, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 0)
-    	});
-    	//Shaped recipes for cyan glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.cyan, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 6)
-    	});
-    	//Shaped recipes for gray glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.gray, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 8)
-    	});
-    	//Shaped recipes for light blue glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.lblue, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 12)
-    	});
-    	//Shaped recipes for light gray glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.lgray, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 7)
-    	});
-    	//Shaped recipes for lime glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.lime, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 10)
-    	});
-    	//Shaped recipes for magenta glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.magenta, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 13)
-    	});
-    	//Shaped recipes for pink glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.pink, 8), 
-    			new Object[]{
-    	    	"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 9)
-    	});
-    	//Shaped recipes for purple glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.purple, 8), 
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 5)
-    	});
-    	//Shaped recipes for white glowstone.
-    	GameRegistry.addRecipe(new ItemStack(ModBlocks.white, 8),
-    			new Object[]{"AAA","ABA","AAA",
-    	    	'A', Blocks.GLOWSTONE, 'B', new ItemStack(Items.DYE, 1, 15)
-    	});
-    	/*
+    	//Red Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.red), "GGG", "GDG", "GGG", 'D', "dyeRed", 'G', Blocks.GLOWSTONE));
+    	
+    	//Blue Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blue), "GGG", "GDG", "GGG", 'D', "dyeBlue", 'G', Blocks.GLOWSTONE));
+    	
+    	//Green Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.green), "GGG", "GDG", "GGG", 'D', "dyeGreen", 'G', Blocks.GLOWSTONE));
+    	
+    	//Orange Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.orange), "GGG", "GDG", "GGG", 'D', "dyeOrange", 'G', Blocks.GLOWSTONE));
+    	
+    	//Brown Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.brown), "GGG", "GDG", "GGG", 'D', "dyeBrown", 'G', Blocks.GLOWSTONE));
+    	
+    	//Black Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.black), "GGG", "GDG", "GGG", 'D', "dyeBlack", 'G', Blocks.GLOWSTONE));
+    	
+    	//Cyan Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.cyan), "GGG", "GDG", "GGG", 'D', "dyeCyan", 'G', Blocks.GLOWSTONE));
+    	
+    	//Gray Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.gray), "GGG", "GDG", "GGG", 'D', "dyeGray", 'G', Blocks.GLOWSTONE));
+    	
+    	//Light Blue Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.lblue), "GGG", "GDG", "GGG", 'D', "dyeLightBlue", 'G', Blocks.GLOWSTONE));
+    	
+    	//Light Gray Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.lgray), "GGG", "GDG", "GGG", 'D', "dyeLightGray", 'G', Blocks.GLOWSTONE));
+    	
+    	//Lime Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.lime), "GGG", "GDG", "GGG", 'D', "dyeLime", 'G', Blocks.GLOWSTONE));
+    	
+    	//Magenta Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.magenta), "GGG", "GDG", "GGG", 'D', "dyeMagenta", 'G', Blocks.GLOWSTONE));
+    	
+    	//Pink Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.pink), "GGG", "GDG", "GGG", 'D', "dyePink", 'G', Blocks.GLOWSTONE));
+    	
+    	//Purple Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.purple), "GGG", "GDG", "GGG", 'D', "dyePurple", 'G', Blocks.GLOWSTONE));
+    	
+    	//White Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.white), "GGG", "GDG", "GGG", 'D', "dyeWhite", 'G', Blocks.GLOWSTONE));
+    	
+    	//Glowstone
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.GLOWSTONE), "GGG", "GDG", "GGG", 'D', "dyeYellow", 'G', "glowstone"));
+    	
     	//Shaped recipes for glowstone fuel.
-    	GameRegistry.addRecipe(new ItemStack(fuelGlowstone, 1), new Object[]{
+    	GameRegistry.addRecipe(new ItemStack(ModItems.fuelglowstone, 1), new Object[]{
     	    	"AAA",
     	    	"ABA",
     	    	"AAA",
-    	    	'A', Items.glowstone_dust, 'B', Items.coal
+    	    	'A', Items.GLOWSTONE_DUST, 'B', Items.COAL
     	});
-    	*/
+    	//Glowstone Lamp
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.lamp), " D ", "DGD", " D ", 'G', "glowstone", 'D', Items.GLOWSTONE_DUST));
+    	
+    	//Redstone Lamp
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.REDSTONE_LAMP), " D ", "DGD", " D ", 'G', "glowstone", 'D', Items.REDSTONE));
 	}
 }
