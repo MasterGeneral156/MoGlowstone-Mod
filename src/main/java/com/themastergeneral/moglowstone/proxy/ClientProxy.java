@@ -1,6 +1,7 @@
 package com.themastergeneral.moglowstone.proxy;
 
 import com.themastergeneral.moglowstone.MoGlowstone;
+import com.themastergeneral.moglowstone.proxy.client.BlockRenderRegister;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -21,6 +22,7 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent e) 
     {
         super.init(e);
+        BlockRenderRegister.registerBlockRenderer();
     }
 
     @Override

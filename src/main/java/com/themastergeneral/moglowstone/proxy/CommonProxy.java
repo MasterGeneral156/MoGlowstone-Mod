@@ -28,7 +28,6 @@ public class CommonProxy {
     {
     	OreDict.init();
     	CraftingHandler.init();
-    	BlockRenderRegister.registerBlockRenderer();
     }
 
     public void postInit(FMLPostInitializationEvent e) 
