@@ -17,7 +17,7 @@ public class MoGlowstone
 
     public static final String MODID = "moglowstone";
     public static final String MODNAME = "Mo' Glowstone";
-    public static final String VERSION = "1.1.2";
+    public static final String VERSION = "1.1.3";
     
     public static final CreativeTab creativeTab = new CreativeTab();
     
