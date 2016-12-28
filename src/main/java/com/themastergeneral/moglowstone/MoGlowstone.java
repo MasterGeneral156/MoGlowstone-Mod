@@ -11,13 +11,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import com.themastergeneral.moglowstone.proxy.CommonProxy;
 import com.themastergeneral.moglowstone.proxy.client.CreativeTab;
 
-@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION)
+@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION, acceptedMinecraftVersions = MoGlowstone.acceptedMinecraftVersions)
 public class MoGlowstone 
 {
 
     public static final String MODID = "moglowstone";
     public static final String MODNAME = "Mo' Glowstone";
     public static final String VERSION = "1.1.2";
+    public static final String acceptedMinecraftVersions = "1.11.2";
     
     public static final CreativeTab creativeTab = new CreativeTab();
     
