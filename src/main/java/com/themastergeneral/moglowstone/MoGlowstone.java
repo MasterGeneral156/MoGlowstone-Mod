@@ -11,18 +11,25 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import com.themastergeneral.moglowstone.proxy.CommonProxy;
 import com.themastergeneral.moglowstone.proxy.client.CreativeTab;
 
-@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION)
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+
+@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION, dependencies = MoGlowstone.DEPENDENCIES, acceptedMinecraftVersions = MoGlowstone.acceptedMinecraftVersions, updateJSON = MoGlowstone.updateJSON)
 public class MoGlowstone 
 {
 
     public static final String MODID = "moglowstone";
     public static final String MODNAME = "Mo' Glowstone";
-    public static final String VERSION = "1.1.3";
+    public static final String VERSION = "1.2.0";
+    public static final String acceptedMinecraftVersions = "1.10.2";
+    public static final String DEPENDENCIES = "required-after:ctdcore@[1.0.2,];";
+    public static final String updateJSON = "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/Mo-Glowstone.json";
     
     public static final CreativeTab creativeTab = new CreativeTab();
     
     @Instance
     public static MoGlowstone instance = new MoGlowstone();
+    public static Logger logger;
     
     @SidedProxy(clientSide="com.themastergeneral.moglowstone.proxy.ClientProxy", serverSide="com.themastergeneral.moglowstone.proxy.ServerProxy")
     public static CommonProxy proxy;
@@ -30,7 +37,6 @@ public class MoGlowstone
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) 
     {
-    	System.out.println("Mo' Glowstone is loading...");
     	proxy.preInit(e);
     }
     @EventHandler
@@ -43,6 +49,5 @@ public class MoGlowstone
     public void postInit(FMLPostInitializationEvent e) 
     {
     	proxy.postInit(e);
-    	System.out.println("Mo' Glowstone is loaded.");
     }
 }

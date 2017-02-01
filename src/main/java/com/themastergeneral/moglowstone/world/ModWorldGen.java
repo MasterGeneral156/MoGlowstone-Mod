@@ -36,21 +36,21 @@ public class ModWorldGen implements IWorldGenerator
 	private WorldGenerator gen_white;
 	public ModWorldGen() 
 	{
-	    this.gen_red = new ModWorldGenGS1(ModBlocks.red, 4);
-	    this.gen_black = new ModWorldGenGS1(ModBlocks.black, 4);
-	    this.gen_blue = new ModWorldGenGS1(ModBlocks.blue, 4);
-	    this.gen_brown = new ModWorldGenGS1(ModBlocks.brown, 4);
-	    this.gen_cyan = new ModWorldGenGS1(ModBlocks.cyan, 4);
-	    this.gen_gray = new ModWorldGenGS1(ModBlocks.gray, 4);
-	    this.gen_green = new ModWorldGenGS1(ModBlocks.green, 4);
-	    this.gen_lblue = new ModWorldGenGS1(ModBlocks.lblue, 4);
-	    this.gen_lgray = new ModWorldGenGS1(ModBlocks.lgray, 4);
-	    this.gen_lime = new ModWorldGenGS1(ModBlocks.lime, 4);
-	    this.gen_magenta = new ModWorldGenGS1(ModBlocks.magenta, 4);
-	    this.gen_orange = new ModWorldGenGS1(ModBlocks.orange, 4);
-	    this.gen_pink = new ModWorldGenGS1(ModBlocks.pink, 4);
-	    this.gen_purple = new ModWorldGenGS1(ModBlocks.purple, 4);
-	    this.gen_white = new ModWorldGenGS1(ModBlocks.white, 4);
+	    this.gen_red = new ModWorldGenGS1(ModBlocks.red_gsblock, 4);
+	    this.gen_black = new ModWorldGenGS1(ModBlocks.black_gsblock, 4);
+	    this.gen_blue = new ModWorldGenGS1(ModBlocks.blue_gsblock, 4);
+	    this.gen_brown = new ModWorldGenGS1(ModBlocks.brown_gsblock, 4);
+	    this.gen_cyan = new ModWorldGenGS1(ModBlocks.cyan_gsblock, 4);
+	    this.gen_gray = new ModWorldGenGS1(ModBlocks.gray_gsblock, 4);
+	    this.gen_green = new ModWorldGenGS1(ModBlocks.green_gsblock, 4);
+	    this.gen_lblue = new ModWorldGenGS1(ModBlocks.lblue_gsblock, 4);
+	    this.gen_lgray = new ModWorldGenGS1(ModBlocks.lgray_gsblock, 4);
+	    this.gen_lime = new ModWorldGenGS1(ModBlocks.lime_gsblock, 4);
+	    this.gen_magenta = new ModWorldGenGS1(ModBlocks.magenta_gsblock, 4);
+	    this.gen_orange = new ModWorldGenGS1(ModBlocks.orange_gsblock, 4);
+	    this.gen_pink = new ModWorldGenGS1(ModBlocks.pink_gsblock, 4);
+	    this.gen_purple = new ModWorldGenGS1(ModBlocks.purple_gsblock, 4);
+	    this.gen_white = new ModWorldGenGS1(ModBlocks.white_gsblock, 4);
 	}
 	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) 
 	{
