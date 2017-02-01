@@ -1,23 +1,15 @@
 package com.themastergeneral.moglowstone.items;
 
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.moglowstone.MoGlowstone;
-import com.themastergeneral.moglowstone.proxy.client.ItemModelProvider;
 
 import net.minecraft.item.Item;
 
-public class BasicItem extends Item implements ItemModelProvider
+public class BasicItem extends CTDItem
 { 
-	protected String name;
-	public BasicItem(String name) 
+	public BasicItem(String name, String modid) 
 	{
-		this.name = name;
-		this.setUnlocalizedName(name);
-		this.setRegistryName(name);
+		super(name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);
-	}
-	@Override
-	public void registerItemModel(Item item) 
-	{
-		MoGlowstone.proxy.registerItemRenderer(this, 0, name);
 	}
 }

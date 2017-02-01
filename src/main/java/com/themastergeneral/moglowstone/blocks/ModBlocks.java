@@ -1,6 +1,8 @@
 package com.themastergeneral.moglowstone.blocks;
 
-import com.themastergeneral.moglowstone.proxy.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.block.RegisterBlock;
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.tileentity.BasicFurnace;
 
 import net.minecraft.block.Block;
@@ -8,62 +10,43 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ModBlocks {
-	public static GSBlock black;
-	public static GSBlock blue;
-	public static GSBlock brick;
-	public static GSBlock brown;
-	public static GSBlock cyan;
-	public static GSBlock gray;
-	public static GSBlock green;
-	public static GSBlock lamp;
-	public static GSBlock lblue;
-	public static GSBlock lgray;
-	public static GSBlock lime;
-	public static GSBlock magenta;
-	public static GSBlock orange;
-	public static GSBlock pink;
-	public static GSBlock purple;
-	public static GSBlock red;
-	public static GSBlock white;
+public class ModBlocks extends RegisterBlock {
+	public static GSBlock black_gsblock;
+	public static GSBlock blue_gsblock;
+	public static GSBlock brick_gsblock;
+	public static GSBlock brown_gsblock;
+	public static GSBlock cyan_gsblock;
+	public static GSBlock gray_gsblock;
+	public static GSBlock green_gsblock;
+	public static GSBlock lamp_gsblock;
+	public static GSBlock lblue_gsblock;
+	public static GSBlock lgray_gsblock;
+	public static GSBlock lime_gsblock;
+	public static GSBlock magenta_gsblock;
+	public static GSBlock orange_gsblock;
+	public static GSBlock pink_gsblock;
+	public static GSBlock purple_gsblock;
+	public static GSBlock red_gsblock;
+	public static GSBlock white_gsblock;
 
-    public static final void init() {
-    	black = register(new GSBlock("black", Material.GLASS));
-    	blue = register(new GSBlock("blue", Material.GLASS));
-    	brick = register(new GSBlock("brick", Material.GLASS));
-    	brown = register(new GSBlock("brown", Material.GLASS));
-    	cyan = register(new GSBlock("cyan", Material.GLASS));
-    	gray = register(new GSBlock("gray", Material.GLASS));
-    	green = register(new GSBlock("green", Material.GLASS));
-    	lamp = register(new GSBlock("lamp", Material.GLASS));
-    	lblue = register(new GSBlock("lblue", Material.GLASS));
-    	lgray = register(new GSBlock("lgray", Material.GLASS));
-    	lime = register(new GSBlock("lime", Material.GLASS));
-    	magenta = register(new GSBlock("magenta", Material.GLASS));
-    	orange = register(new GSBlock("orange", Material.GLASS));
-    	pink = register(new GSBlock("pink", Material.GLASS));
-    	purple = register(new GSBlock("purple", Material.GLASS));
-    	red = register(new GSBlock("red", Material.GLASS));
-    	white = register(new GSBlock("white", Material.GLASS));
+    public static final void init() 
+    {
+    	black_gsblock = register(new GSBlock("black_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	blue_gsblock = register(new GSBlock("blue_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	brick_gsblock = register(new GSBlock("brick_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	brown_gsblock = register(new GSBlock("brown_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	cyan_gsblock = register(new GSBlock("cyan_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	gray_gsblock = register(new GSBlock("gray_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	green_gsblock = register(new GSBlock("green_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	lamp_gsblock = register(new GSBlock("lamp_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	lblue_gsblock = register(new GSBlock("lblue_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	lgray_gsblock = register(new GSBlock("lgray_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	lime_gsblock = register(new GSBlock("lime_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	magenta_gsblock = register(new GSBlock("magenta_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	orange_gsblock = register(new GSBlock("orange_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	pink_gsblock = register(new GSBlock("pink_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	purple_gsblock = register(new GSBlock("purple_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	red_gsblock = register(new GSBlock("red_gsblock", Material.GLASS, MoGlowstone.MODID));
+    	white_gsblock = register(new GSBlock("white_gsblock", Material.GLASS, MoGlowstone.MODID));
     }
-    private static <T extends Block> T register (T block, ItemBlock itemBlock) {
-    	 
-    	 GameRegistry.register(block);
-    	 if(itemBlock != null) {
-    	 GameRegistry.register(itemBlock);
-    	 }
-    	 
-    	 if(block instanceof ItemModelProvider) {
-    	 ((ItemModelProvider)block).registerItemModel(itemBlock);
-    	 }
-    	 
-    	 return block;
-    	 }
-    	 
-    	 private static <T extends Block> T register(T block) {
-    	 ItemBlock itemBlock = new ItemBlock(block);
-    	 itemBlock.setRegistryName(block.getRegistryName());
-    	 return register(block, itemBlock);
-    	 }
-
 }

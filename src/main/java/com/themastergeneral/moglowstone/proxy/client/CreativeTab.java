@@ -8,8 +8,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class CreativeTab extends CreativeTabs{
-
+public class CreativeTab extends CreativeTabs
+{
 	public CreativeTab() 
 	{
 		super(MoGlowstone.MODID);
@@ -26,5 +26,4 @@ public class CreativeTab extends CreativeTabs{
 	 {
 		 return false;
 	 }
-
 }

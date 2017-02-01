@@ -1,0 +1,6 @@
+{
+    "parent": "moglowstone:blocks/lime_gsblock",
+    "textures": {
+        "inventory": "moglowstone:blocks/limegsblock"
+    }
+}
