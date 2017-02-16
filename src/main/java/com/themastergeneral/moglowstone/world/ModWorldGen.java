@@ -3,6 +3,7 @@ package com.themastergeneral.moglowstone.world;
 import java.util.Random;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
+import com.themastergeneral.moglowstone.config.Config;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -58,7 +59,8 @@ public class ModWorldGen implements IWorldGenerator
 	        throw new IllegalArgumentException("Illegal Height Arguments for WorldGenerator");
 
 	    int heightDiff = maxHeight - minHeight + 1;
-	    for (int i = 0; i < chancesToSpawn; i ++) {
+	    for (int i = 0; i < chancesToSpawn; i ++) 
+	    {
 	        int x = chunk_X * 16 + rand.nextInt(16);
 	        int y = minHeight + rand.nextInt(heightDiff);
 	        int z = chunk_Z * 16 + rand.nextInt(16);
@@ -74,21 +76,21 @@ public class ModWorldGen implements IWorldGenerator
         case 0: //Overworld
             break;
         case -1: //Nether
-        	this.runGenerator(this.gen_red, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_black, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_blue, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_brown, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_cyan, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_gray, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_green, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_lblue, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_lgray, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_lime, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_magenta, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_orange, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_pink, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_purple, world, random, chunkX, chunkZ, 1, 0, 127);
-        	this.runGenerator(this.gen_white, world, random, chunkX, chunkZ, 1, 0, 127);
+        	this.runGenerator(this.gen_red, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_black, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_blue, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_brown, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_cyan, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_gray, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_green, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_lblue, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_lgray, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_lime, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_magenta, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_orange, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_pink, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_purple, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+        	this.runGenerator(this.gen_white, world, random, chunkX, chunkZ, Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
             break;
         case 1: //End
 

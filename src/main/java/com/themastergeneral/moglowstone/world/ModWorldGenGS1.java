@@ -3,6 +3,7 @@ package com.themastergeneral.moglowstone.world;
 import java.util.Random;
 
 import com.themastergeneral.moglowstone.blocks.GSBlock;
+import com.themastergeneral.moglowstone.config.Config;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -36,7 +37,7 @@ public class ModWorldGenGS1 extends WorldGenerator {
         {
             worldIn.setBlockState(position, block.getDefaultState(), i);
 
-            for (int i = 0; i < 1500; ++i)
+            for (int i = 0; i < 1500*Config.glowstoneSpawnVeinSize; ++i)
             {
                 BlockPos blockpos = position.add(rand.nextInt(8) - rand.nextInt(8), -rand.nextInt(12), rand.nextInt(8) - rand.nextInt(8));
 
