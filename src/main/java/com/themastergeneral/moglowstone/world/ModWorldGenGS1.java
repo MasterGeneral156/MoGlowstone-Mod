@@ -49,7 +49,7 @@ public class ModWorldGenGS1 extends WorldGenMinable
 
                     for (EnumFacing enumfacing : EnumFacing.values())
                     {
-                        if (worldIn.getBlockState(blockpos.offset(enumfacing)).getBlock() == block)
+                        if (worldIn.getBlockState(blockpos.offset(enumfacing)) == block)
                         {
                             ++j;
                         }
