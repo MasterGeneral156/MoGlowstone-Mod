@@ -3,6 +3,7 @@ package com.themastergeneral.moglowstone.world;
 import java.util.Random;
 
 import com.themastergeneral.moglowstone.blocks.GSBlock;
+import com.themastergeneral.moglowstone.config.Config;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -10,16 +11,18 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-public class ModWorldGenGS1 extends WorldGenerator {
-
-	private Block block;
+public class ModWorldGenGS1 extends WorldGenMinable 
+{
+	private IBlockState block;
 	private int i;
-	public ModWorldGenGS1(GSBlock blockin, int iin) 
+	public ModWorldGenGS1(IBlockState state, int blockCount) 
 	{
-		block = blockin;
-		i = iin;
+		super(state, blockCount);
+		block = state;
+		i = blockCount;
 	}
 	@Override
 	public boolean generate(World worldIn, Random rand, BlockPos position)
@@ -34,9 +37,9 @@ public class ModWorldGenGS1 extends WorldGenerator {
         }
         else
         {
-            worldIn.setBlockState(position, block.getDefaultState(), i);
+            worldIn.setBlockState(position, block, i);
 
-            for (int i = 0; i < 1500; ++i)
+            for (int i = 0; i < 1500*Config.glowstoneSpawnVeinSize; ++i)
             {
                 BlockPos blockpos = position.add(rand.nextInt(8) - rand.nextInt(8), -rand.nextInt(12), rand.nextInt(8) - rand.nextInt(8));
 
@@ -46,7 +49,7 @@ public class ModWorldGenGS1 extends WorldGenerator {
 
                     for (EnumFacing enumfacing : EnumFacing.values())
                     {
-                        if (worldIn.getBlockState(blockpos.offset(enumfacing)).getBlock() == block)
+                        if (worldIn.getBlockState(blockpos.offset(enumfacing)) == block)
                         {
                             ++j;
                         }
@@ -59,7 +62,7 @@ public class ModWorldGenGS1 extends WorldGenerator {
 
                     if (j == 1)
                     {
-                        worldIn.setBlockState(blockpos, block.getDefaultState(), i);
+                        worldIn.setBlockState(blockpos, block, i);
                     }
                 }
             }

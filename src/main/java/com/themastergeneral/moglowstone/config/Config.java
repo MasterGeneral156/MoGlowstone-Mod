@@ -18,6 +18,10 @@ public class Config
     public static boolean disableGlowstoneFuel = false;
     public static boolean disableGlowstone = false;
     public static boolean disableDoubleOutput = false;
+    public static int glowstoneSpawnMinY = 1;
+    public static int glowstoneSpawnMaxY = 127;
+    public static int glowstoneSpawnChance = 1;
+    public static int glowstoneSpawnVeinSize = 1;
     public static String ModVersion = MoGlowstone.VERSION+MoGlowstone.acceptedMinecraftVersions;
 
     // Call this from CommonProxy.preInit(). It will create our config if it doesn't
@@ -51,5 +55,9 @@ public class Config
         disableGlowstoneFuel = cfg.getBoolean("Disable Glowstone Fuel", CATEGORY_GENERAL, disableGlowstoneFuel, "Set to true to disable crafting the glowstone fuel.");
         disableGlowstone = cfg.getBoolean("Disable Glowstone Dust Crafting Recipe", CATEGORY_GENERAL, disableGlowstone, "Set to true to disable crafting the glowstone dust.");
         disableDoubleOutput = cfg.getBoolean("Disable using glowstone fuel for double output", CATEGORY_GENERAL, disableDoubleOutput, "Set to true to disable double output on items that use glowstone fuel.");
+        glowstoneSpawnMinY = cfg.getInt("Minimum Y level for glowstone to spawn at.", CATEGORY_GENERAL, glowstoneSpawnMinY, 0, 127, "Minimum Y level for the mod's glowstone to spawn at.");
+        glowstoneSpawnMaxY = cfg.getInt("Maximum Y level for glowstone to spawn at.", CATEGORY_GENERAL, glowstoneSpawnMaxY, 0, 127, "Maximum Y level for the mod's glowstone to spawn at.");
+        glowstoneSpawnChance = cfg.getInt("Chance for glowstone to spawn", CATEGORY_GENERAL, glowstoneSpawnChance, 0, 8, "Chance for colored glowstone to spawn naturally.");
+        glowstoneSpawnVeinSize = cfg.getInt("Glowstone Vein Size", CATEGORY_GENERAL, glowstoneSpawnVeinSize, 0, 64, "Multiplier.");
     }
 }
