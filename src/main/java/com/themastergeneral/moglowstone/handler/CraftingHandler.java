@@ -15,7 +15,7 @@ public class CraftingHandler
 {
 	public static final void init() 
 	{
-		if (Config.disableGlowstone == false)
+		/*if (Config.disableGlowstone == false)
 		{
 			//Shaped recipes for glowstone dust.
 	    	GameRegistry.addRecipe(new ItemStack(Items.GLOWSTONE_DUST), 
@@ -113,6 +113,6 @@ public class CraftingHandler
     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.lamp_gsblock), " D ", "DGD", " D ", 'G', "glowstone", 'D', Items.GLOWSTONE_DUST));
     	
     	//Redstone Lamp
-    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.REDSTONE_LAMP), " D ", "DGD", " D ", 'G', "glowstone", 'D', Items.REDSTONE));
+    	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.REDSTONE_LAMP), " D ", "DGD", " D ", 'G', "glowstone", 'D', Items.REDSTONE));*/
 	}
 }
