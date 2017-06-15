@@ -30,22 +30,22 @@ public class ModBlocks extends RegisterBlock {
 
     public static final void init() 
     {
-    	black_gsblock = register(new GSBlock("black_gsblock", Material.GLASS, MoGlowstone.MODID, "black"));
-    	blue_gsblock = register(new GSBlock("blue_gsblock", Material.GLASS, MoGlowstone.MODID, "blue"));
-    	brick_gsblock = register(new GSBlock("brick_gsblock", Material.GLASS, MoGlowstone.MODID, null));
-    	brown_gsblock = register(new GSBlock("brown_gsblock", Material.GLASS, MoGlowstone.MODID, "brown"));
-    	cyan_gsblock = register(new GSBlock("cyan_gsblock", Material.GLASS, MoGlowstone.MODID, "cyan"));
-    	gray_gsblock = register(new GSBlock("gray_gsblock", Material.GLASS, MoGlowstone.MODID, "gray"));
-    	green_gsblock = register(new GSBlock("green_gsblock", Material.GLASS, MoGlowstone.MODID, "green"));
-    	lamp_gsblock = register(new GSBlock("lamp_gsblock", Material.GLASS, MoGlowstone.MODID, null));
-    	lblue_gsblock = register(new GSBlock("lblue_gsblock", Material.GLASS, MoGlowstone.MODID, "lblue"));
-    	lgray_gsblock = register(new GSBlock("lgray_gsblock", Material.GLASS, MoGlowstone.MODID, "lgray"));
-    	lime_gsblock = register(new GSBlock("lime_gsblock", Material.GLASS, MoGlowstone.MODID, "lime"));
-    	magenta_gsblock = register(new GSBlock("magenta_gsblock", Material.GLASS, MoGlowstone.MODID, "magenta"));
-    	orange_gsblock = register(new GSBlock("orange_gsblock", Material.GLASS, MoGlowstone.MODID, "orange"));
-    	pink_gsblock = register(new GSBlock("pink_gsblock", Material.GLASS, MoGlowstone.MODID, "pink"));
-    	purple_gsblock = register(new GSBlock("purple_gsblock", Material.GLASS, MoGlowstone.MODID, "purple"));
-    	red_gsblock = register(new GSBlock("red_gsblock", Material.GLASS, MoGlowstone.MODID, "red"));
-    	white_gsblock = register(new GSBlock("white_gsblock", Material.GLASS, MoGlowstone.MODID, "white"));
+    	black_gsblock = register(new GSBlock("black_gsblock", MoGlowstone.MODID, "black"));
+    	blue_gsblock = register(new GSBlock("blue_gsblock", MoGlowstone.MODID, "blue"));
+    	brick_gsblock = register(new GSBlock("brick_gsblock", MoGlowstone.MODID, null));
+    	brown_gsblock = register(new GSBlock("brown_gsblock", MoGlowstone.MODID, "brown"));
+    	cyan_gsblock = register(new GSBlock("cyan_gsblock", MoGlowstone.MODID, "cyan"));
+    	gray_gsblock = register(new GSBlock("gray_gsblock", MoGlowstone.MODID, "gray"));
+    	green_gsblock = register(new GSBlock("green_gsblock", MoGlowstone.MODID, "green"));
+    	lamp_gsblock = register(new GSBlock("lamp_gsblock", MoGlowstone.MODID, null));
+    	lblue_gsblock = register(new GSBlock("lblue_gsblock", MoGlowstone.MODID, "lblue"));
+    	lgray_gsblock = register(new GSBlock("lgray_gsblock", MoGlowstone.MODID, "lgray"));
+    	lime_gsblock = register(new GSBlock("lime_gsblock", MoGlowstone.MODID, "lime"));
+    	magenta_gsblock = register(new GSBlock("magenta_gsblock", MoGlowstone.MODID, "magenta"));
+    	orange_gsblock = register(new GSBlock("orange_gsblock", MoGlowstone.MODID, "orange"));
+    	pink_gsblock = register(new GSBlock("pink_gsblock", MoGlowstone.MODID, "pink"));
+    	purple_gsblock = register(new GSBlock("purple_gsblock", MoGlowstone.MODID, "purple"));
+    	red_gsblock = register(new GSBlock("red_gsblock", MoGlowstone.MODID, "red"));
+    	white_gsblock = register(new GSBlock("white_gsblock", MoGlowstone.MODID, "white"));
     }
 }

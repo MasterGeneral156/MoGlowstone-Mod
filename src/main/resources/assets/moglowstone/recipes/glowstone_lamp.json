@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "mod_loaded",
+            "mod": "minecraft"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "group": "moglowstone",
+    "pattern": [
+        " D ",
+        "DGD",
+		" D "
+    ],
+    "key": {
+		"D": [{"type": "forge:ore_dict", "ore": "dustGlowstone"}],
+		"G": [{"type": "forge:ore_dict", "ore": "glowstone"}]
+    },
+    "result": {
+        "item": "moglowstone:lamp_gsblock",
+		"count": 1
+    }
+}

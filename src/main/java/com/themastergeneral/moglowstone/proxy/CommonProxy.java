@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.config.Config;
-import com.themastergeneral.moglowstone.handler.CraftingHandler;
 import com.themastergeneral.moglowstone.handler.OreDict;
 import com.themastergeneral.moglowstone.items.ModItems;
 import com.themastergeneral.moglowstone.world.ModWorldGen;
@@ -37,7 +36,6 @@ public class CommonProxy {
     public void init(FMLInitializationEvent e) 
     {
     	OreDict.init();
-    	CraftingHandler.init();
     }
 
     public void postInit(FMLPostInitializationEvent e) 

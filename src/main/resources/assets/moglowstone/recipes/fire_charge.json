@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "mod_loaded",
+            "mod": "minecraft"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "group": "moglowstone",
+    "pattern": [
+        "BF",
+        "G "
+    ],
+    "key": {
+		"F": { "item": "moglowstone:fuelglowstone" },
+        "B": { "item": "minecraft:blaze_powder" },
+		"G": [{"type": "forge:ore_dict", "ore": "gunpowder"}]
+    },
+    "result": {
+        "item": "minecraft:fire_charge",
+		"count": 6
+    }
+}

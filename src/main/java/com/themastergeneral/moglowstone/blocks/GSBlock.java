@@ -16,9 +16,10 @@ import net.minecraft.util.math.MathHelper;
 public class GSBlock extends CTDBlock {
 
 	private String color;
-	protected GSBlock(String name, Material material, String modid, String color) 
+	protected GSBlock(String name, String modid, String color) 
 	{
-		super(material, name, modid);
+	
+		super(Material.GLASS, name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);
 		this.setLightLevel(1.0F);
 		this.setHardness(0.3F);

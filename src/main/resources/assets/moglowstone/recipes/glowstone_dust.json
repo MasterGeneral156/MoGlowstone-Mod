@@ -1,0 +1,22 @@
+{
+    "conditions": [
+        {
+            "type": "mod_loaded",
+            "mod": "minecraft"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "group": "moglowstone",
+    "pattern": [
+        "TTT",
+        "TRT",
+		"TTT"
+    ],
+    "key": {
+        "R": { "item": "minecraft:redstone" },
+        "T": [{"type": "forge:ore_dict", "ore": "torch"}]
+    },
+    "result": {
+        "item": "minecraft:glowstone_dust"
+    }
+}
