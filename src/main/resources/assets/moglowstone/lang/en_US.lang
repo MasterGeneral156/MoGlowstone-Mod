@@ -20,3 +20,8 @@ tile.lamp_gsblock.name=Glowstone Lamp
 itemGroup.moglowstone=Mo' Glowstone Mod
 
 item.fuelglowstone.name=Glowstone Fuel
+
+advancement.start.name=Mo' Glowstone
+advancement.start.desc=Obtain Colored Glowstone
+advancement.fuelglowstone.name=Shiny Fuel
+advancement.fuelglowstone.desc=Craft Glowstone Fuel
