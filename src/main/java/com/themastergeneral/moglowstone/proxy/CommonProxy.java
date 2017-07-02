@@ -22,7 +22,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) 
     {
     	File directory = e.getModConfigurationDirectory();
-		config = new Configuration(new File(directory.getPath(), "CTD/MoGlowstone.cfg"));
+		config = new Configuration(new File(directory.getPath(), "ctd/moglowstone.cfg"));
 		Config.readConfig();
     	ModBlocks.init();
     	ModItems.init();
