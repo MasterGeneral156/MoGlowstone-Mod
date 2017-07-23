@@ -10,14 +10,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION, updateJSON = MoGlowstone.updateJSON)
+@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION)
 public class MoGlowstone 
 {
 
     public static final String MODID = "moglowstone";
     public static final String MODNAME = "Mo' Glowstone";
     public static final String VERSION = "1.0.2";
-	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json";
         
     @Instance
     public static MoGlowstone instance = new MoGlowstone();
