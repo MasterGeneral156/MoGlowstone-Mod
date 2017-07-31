@@ -26,27 +26,4 @@ public class GSBlock extends CTDBlock {
 		this.setSoundType(blockSoundType.GLASS);
 		this.color=color;
 	}
-	public int quantityDroppedWithBonus(int fortune, Random random)
-    {
-		if (!(color == null))
-		{
-			return MathHelper.clamp(this.quantityDropped(random) + random.nextInt(fortune + 1), 1, 4);
-		}
-		else
-		{
-			return 1;
-		}
-    }
-
-    public int quantityDropped(Random random)
-    {
-    	if (!(color == null))
-		{
-    		return 2 + random.nextInt(3);
-		}
-    	else
-    	{
-    		return 1;
-    	}
-    }
 }
