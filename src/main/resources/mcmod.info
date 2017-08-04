@@ -4,7 +4,7 @@
   "name": "Mo' Glowstone",
   "description": "Custom colored glowstone!",
   "version": "1.2.10",
-  "mcversion": "1.12",
+  "mcversion": "1.12.1",
   "url": "https://minecraft.curseforge.com/projects/mo-glowstone",
   "updateUrl": "https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json",
   "authorList": ["TheMasterGeneral"],

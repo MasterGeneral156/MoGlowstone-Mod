@@ -21,8 +21,8 @@ public class MoGlowstone
     public static final String MODID = "moglowstone";
     public static final String MODNAME = "Mo' Glowstone";
     public static final String VERSION = "1.2.10";
-    public static final String acceptedMinecraftVersions = "1.12";
-    public static final String DEPENDENCIES = "required-after:ctdcore@[1.1.2,];";
+    public static final String acceptedMinecraftVersions = "1.12.1";
+    public static final String DEPENDENCIES = "required-after:ctdcore@[1.1.6,];";
     public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json";
     
     public static final CreativeTab creativeTab = new CreativeTab();
