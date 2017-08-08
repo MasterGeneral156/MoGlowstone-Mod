@@ -14,14 +14,13 @@ import com.themastergeneral.moglowstone.proxy.client.CreativeTab;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION, dependencies = MoGlowstone.DEPENDENCIES, acceptedMinecraftVersions = MoGlowstone.acceptedMinecraftVersions, updateJSON = MoGlowstone.updateJSON)
+@Mod(modid = MoGlowstone.MODID, name = MoGlowstone.MODNAME, version = MoGlowstone.VERSION, dependencies = MoGlowstone.DEPENDENCIES, updateJSON = MoGlowstone.updateJSON)
 public class MoGlowstone 
 {
 
     public static final String MODID = "moglowstone";
     public static final String MODNAME = "Mo' Glowstone";
-    public static final String VERSION = "1.3.0";
-    public static final String acceptedMinecraftVersions = "1.12.1";
+    public static final String VERSION = "1.3.1";
     public static final String DEPENDENCIES = "required-after:ctdcore@[1.1.6,];";
     public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json";
     
