@@ -10,7 +10,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.config.Config;
-import com.themastergeneral.moglowstone.handler.FuelHandler;
 import com.themastergeneral.moglowstone.handler.OreDict;
 import com.themastergeneral.moglowstone.items.ModItems;
 import com.themastergeneral.moglowstone.world.ModWorldGen;
@@ -26,7 +25,6 @@ public class CommonProxy {
 		Config.readConfig();
 		ModBlocks.init();
 		ModItems.init();
-		GameRegistry.registerFuelHandler(new FuelHandler());
 		if (Config.disableGlowstoneGen == false) {
 			GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
 		}
