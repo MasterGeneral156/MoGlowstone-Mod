@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.config.Config;
 import com.themastergeneral.moglowstone.handler.OreDict;
+import com.themastergeneral.moglowstone.imc.IMCHandler;
 import com.themastergeneral.moglowstone.items.ModItems;
 import com.themastergeneral.moglowstone.world.ModWorldGen;
 
@@ -28,6 +29,7 @@ public class CommonProxy {
 		if (Config.disableGlowstoneGen == false) {
 			GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
 		}
+		IMCHandler.IMCInit();
 	}
 
 	public void init(FMLInitializationEvent e) {
