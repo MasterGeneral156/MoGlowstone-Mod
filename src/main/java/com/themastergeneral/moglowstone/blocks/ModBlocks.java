@@ -22,6 +22,8 @@ public class ModBlocks extends RegisterBlock {
 	public static GSBlock red_gsblock;
 	public static GSBlock white_gsblock;
 
+	public static GSOre glowstone_ore;
+
 	public static final void init() {
 		black_gsblock = register(new GSBlock("black_gsblock",
 				MoGlowstone.MODID, "black"));
@@ -57,5 +59,7 @@ public class ModBlocks extends RegisterBlock {
 				"red"));
 		white_gsblock = register(new GSBlock("white_gsblock",
 				MoGlowstone.MODID, "white"));
+
+		glowstone_ore = register(new GSOre("glowstone_ore", MoGlowstone.MODID));
 	}
 }

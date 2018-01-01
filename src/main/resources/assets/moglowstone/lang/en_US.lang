@@ -16,6 +16,7 @@ tile.black_gsblock.name=Black Glowstone Block
 tile.brick_gsblock.name=Glowstone Brick
 tile.fuel_gsblock.name=Fuel Glowstone Block
 tile.lamp_gsblock.name=Glowstone Lamp
+tile.glowstone_ore.name=Glowstone Ore
 
 itemGroup.moglowstone=Mo' Glowstone Mod
 
