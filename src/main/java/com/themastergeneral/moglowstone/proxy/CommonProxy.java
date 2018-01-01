@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.config.Config;
+import com.themastergeneral.moglowstone.handler.FurnaceRecipes;
 import com.themastergeneral.moglowstone.handler.OreDict;
 import com.themastergeneral.moglowstone.imc.IMCHandler;
 import com.themastergeneral.moglowstone.items.ModItems;
@@ -30,6 +31,7 @@ public class CommonProxy {
 			GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
 		}
 		IMCHandler.IMCInit();
+		FurnaceRecipes.init();
 	}
 
 	public void init(FMLInitializationEvent e) {

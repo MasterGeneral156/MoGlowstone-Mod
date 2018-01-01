@@ -57,5 +57,8 @@ public class IMCHandler {
 		IMCTE.addPulverizerRecipe(4000, new ItemStack(ModBlocks.white_gsblock),
 				new ItemStack(Items.GLOWSTONE_DUST, 4), new ItemStack(
 						Items.DYE, 1, 15), 25);
+		IMCTE.addPulverizerRecipe(4000, new ItemStack(ModBlocks.glowstone_ore),
+				new ItemStack(Items.GLOWSTONE_DUST, 4), new ItemStack(
+						Items.GLOWSTONE_DUST, 2), 50);
 	}
 }
