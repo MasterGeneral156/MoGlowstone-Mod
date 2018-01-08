@@ -14,6 +14,7 @@ import com.themastergeneral.moglowstone.handler.FurnaceRecipes;
 import com.themastergeneral.moglowstone.handler.OreDict;
 import com.themastergeneral.moglowstone.imc.IMCHandler;
 import com.themastergeneral.moglowstone.items.ModItems;
+import com.themastergeneral.moglowstone.te.TEGlowstone;
 import com.themastergeneral.moglowstone.world.ModWorldGen;
 
 public class CommonProxy {
@@ -21,6 +22,7 @@ public class CommonProxy {
 	public static Configuration config;
 
 	public void preInit(FMLPreInitializationEvent e) {
+		GameRegistry.registerTileEntity(TEGlowstone.class, "TEGlowstone");
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(),
 				"ctd/moglowstone.cfg"));

@@ -7,6 +7,10 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
@@ -17,7 +21,10 @@ public class GSOre extends CTDBlock {
 
 		super(Material.ROCK, name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);
-		this.setLightLevel(0.3F);
+		if (!Loader.isModLoaded("albedo"))
+		{
+			this.setLightLevel(0.3F);
+		}
 		this.setHardness(3.0F);
 		this.setSoundType(blockSoundType.STONE);
 		this.setHarvestLevel("pickaxe", 2);
@@ -34,4 +41,11 @@ public class GSOre extends CTDBlock {
     {
        return 2 + random.nextInt(4 - 2 + fortune + 1);
     }
+	@Override
+	public int getLightValue(IBlockState state, IBlockAccess world, BlockPos pos) {
+		if (Loader.isModLoaded("albedo"))
+			if (FMLCommonHandler.instance().getEffectiveSide().isServer())
+				return 15;
+		return super.getLightValue(state, world, pos);
+	}
 }
