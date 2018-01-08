@@ -21,13 +21,10 @@ public class GSOre extends CTDBlock {
 
 		super(Material.ROCK, name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);
-		if (!Loader.isModLoaded("albedo"))
-		{
-			this.setLightLevel(0.3F);
-		}
 		this.setHardness(3.0F);
 		this.setSoundType(blockSoundType.STONE);
 		this.setHarvestLevel("pickaxe", 2);
+		this.setLightLevel(0.3F);
 	}
 	
 	@Override
@@ -41,11 +38,4 @@ public class GSOre extends CTDBlock {
     {
        return 2 + random.nextInt(4 - 2 + fortune + 1);
     }
-	@Override
-	public int getLightValue(IBlockState state, IBlockAccess world, BlockPos pos) {
-		if (Loader.isModLoaded("albedo"))
-			if (FMLCommonHandler.instance().getEffectiveSide().isServer())
-				return 15;
-		return super.getLightValue(state, world, pos);
-	}
 }
