@@ -20,8 +20,8 @@ public class MoGlowstone {
 
 	public static final String MODID = "moglowstone";
 	public static final String MODNAME = "Mo' Glowstone";
-	public static final String VERSION = "1.5.0";
-	public static final String DEPENDENCIES = "required-after:ctdcore@[1.2,];";
+	public static final String VERSION = "1.5.1";
+	public static final String DEPENDENCIES = "required-after:ctdcore@[1.2,];after:albedo";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json";
 	public static final String acceptedMinecraftVersions = "1.12.2";
 	public static final String Fingerprint = "1cd8befc36d6dedc5601d77a013f43afc71f899f";
