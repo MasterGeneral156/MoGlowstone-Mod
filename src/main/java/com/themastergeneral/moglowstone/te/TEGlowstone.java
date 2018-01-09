@@ -17,6 +17,8 @@ public class TEGlowstone extends TileEntity implements ILightProvider {
 	@Override
 	@Optional.Method(modid="albedo")
 	public Light provideLight() {
+		//Taken from Albedo Torches.
+		//Thank you, Tamaized!
 		Block b = world.getBlockState(getPos()).getBlock();
 		return Light.builder().pos(getPos()).color(b instanceof GSBlock ? ((GSBlock) b).dyecolor.getColorValue() : 0xFFFF00, false).radius(15).build();
 	}
