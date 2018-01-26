@@ -29,9 +29,7 @@ public class CommonProxy {
 		Config.readConfig();
 		ModBlocks.init();
 		ModItems.init();
-		if (Config.disableGlowstoneGen == false) {
-			GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
-		}
+		GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
 		IMCHandler.IMCInit();
 		FurnaceRecipes.init();
 	}

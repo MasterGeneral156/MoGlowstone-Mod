@@ -32,38 +32,41 @@ public class ModWorldGen implements IWorldGenerator {
 	private WorldGenerator gen_ore;
 
 	public ModWorldGen() {
-		this.gen_red = new ModWorldGenGS1(
-				ModBlocks.red_gsblock.getDefaultState(), 4);
-		this.gen_black = new ModWorldGenGS1(
-				ModBlocks.black_gsblock.getDefaultState(), 4);
-		this.gen_blue = new ModWorldGenGS1(
-				ModBlocks.blue_gsblock.getDefaultState(), 4);
-		this.gen_brown = new ModWorldGenGS1(
-				ModBlocks.brown_gsblock.getDefaultState(), 4);
-		this.gen_cyan = new ModWorldGenGS1(
-				ModBlocks.cyan_gsblock.getDefaultState(), 4);
-		this.gen_gray = new ModWorldGenGS1(
-				ModBlocks.gray_gsblock.getDefaultState(), 4);
-		this.gen_green = new ModWorldGenGS1(
-				ModBlocks.green_gsblock.getDefaultState(), 4);
-		this.gen_lblue = new ModWorldGenGS1(
-				ModBlocks.lblue_gsblock.getDefaultState(), 4);
-		this.gen_lgray = new ModWorldGenGS1(
-				ModBlocks.lgray_gsblock.getDefaultState(), 4);
-		this.gen_lime = new ModWorldGenGS1(
-				ModBlocks.lime_gsblock.getDefaultState(), 4);
-		this.gen_magenta = new ModWorldGenGS1(
-				ModBlocks.magenta_gsblock.getDefaultState(), 4);
-		this.gen_orange = new ModWorldGenGS1(
-				ModBlocks.orange_gsblock.getDefaultState(), 4);
-		this.gen_pink = new ModWorldGenGS1(
-				ModBlocks.pink_gsblock.getDefaultState(), 4);
-		this.gen_purple = new ModWorldGenGS1(
-				ModBlocks.purple_gsblock.getDefaultState(), 4);
-		this.gen_white = new ModWorldGenGS1(
-				ModBlocks.white_gsblock.getDefaultState(), 4);
-		
-		this.gen_ore = new WorldGenMinable(ModBlocks.glowstone_ore.getDefaultState(), 4);
+		if (!Config.disableGlowstoneGen) {
+			this.gen_red = new ModWorldGenGS1(
+					ModBlocks.red_gsblock.getDefaultState(), 4);
+			this.gen_black = new ModWorldGenGS1(
+					ModBlocks.black_gsblock.getDefaultState(), 4);
+			this.gen_blue = new ModWorldGenGS1(
+					ModBlocks.blue_gsblock.getDefaultState(), 4);
+			this.gen_brown = new ModWorldGenGS1(
+					ModBlocks.brown_gsblock.getDefaultState(), 4);
+			this.gen_cyan = new ModWorldGenGS1(
+					ModBlocks.cyan_gsblock.getDefaultState(), 4);
+			this.gen_gray = new ModWorldGenGS1(
+					ModBlocks.gray_gsblock.getDefaultState(), 4);
+			this.gen_green = new ModWorldGenGS1(
+					ModBlocks.green_gsblock.getDefaultState(), 4);
+			this.gen_lblue = new ModWorldGenGS1(
+					ModBlocks.lblue_gsblock.getDefaultState(), 4);
+			this.gen_lgray = new ModWorldGenGS1(
+					ModBlocks.lgray_gsblock.getDefaultState(), 4);
+			this.gen_lime = new ModWorldGenGS1(
+					ModBlocks.lime_gsblock.getDefaultState(), 4);
+			this.gen_magenta = new ModWorldGenGS1(
+					ModBlocks.magenta_gsblock.getDefaultState(), 4);
+			this.gen_orange = new ModWorldGenGS1(
+					ModBlocks.orange_gsblock.getDefaultState(), 4);
+			this.gen_pink = new ModWorldGenGS1(
+					ModBlocks.pink_gsblock.getDefaultState(), 4);
+			this.gen_purple = new ModWorldGenGS1(
+					ModBlocks.purple_gsblock.getDefaultState(), 4);
+			this.gen_white = new ModWorldGenGS1(
+					ModBlocks.white_gsblock.getDefaultState(), 4);
+		}
+		if (!Config.disableGlowstoneOreGen) {
+			this.gen_ore = new WorldGenMinable(ModBlocks.glowstone_ore.getDefaultState(), 4);
+		}
 	}
 
 	private void runGenerator(WorldGenerator generator, World world,

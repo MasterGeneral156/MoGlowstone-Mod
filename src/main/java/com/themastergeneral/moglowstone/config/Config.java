@@ -12,6 +12,7 @@ public class Config {
 
 	// This values below you can access elsewhere in your mod:
 	public static boolean disableGlowstoneGen = false;
+	public static boolean disableGlowstoneOreGen = false;
 	public static int glowstoneSpawnMinY = 1;
 	public static int glowstoneSpawnMaxY = 127;
 	public static int glowstoneSpawnChance = 1;
@@ -42,6 +43,10 @@ public class Config {
 				.getBoolean("Disable World Generation of Colored Glowstone",
 						CATEGORY_GENERAL, disableGlowstoneGen,
 						"Set to true to disable colored glowstone from spawning in the nether.");
+		disableGlowstoneOreGen = cfg
+				.getBoolean("Disable World Generation of Glowstone Ore",
+						CATEGORY_GENERAL, disableGlowstoneOreGen,
+						"Set to true to disable glowstone ore from generating.");
 		glowstoneSpawnMinY = cfg.getInt(
 				"Minimum Y level for glowstone to spawn at.", CATEGORY_GENERAL,
 				glowstoneSpawnMinY, 0, 127,
