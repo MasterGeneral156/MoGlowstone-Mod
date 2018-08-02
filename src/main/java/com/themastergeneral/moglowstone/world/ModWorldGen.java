@@ -62,7 +62,8 @@ public class ModWorldGen implements IWorldGenerator {
 				ModBlocks.purple_gsblock.getDefaultState(), 4);
 		this.gen_white = new ModWorldGenGS1(
 				ModBlocks.white_gsblock.getDefaultState(), 4);
-		this.gen_ore = new WorldGenMinable(ModBlocks.glowstone_ore.getDefaultState(), 4);
+		this.gen_ore = new WorldGenMinable(
+				ModBlocks.glowstone_ore.getDefaultState(), 4);
 	}
 
 	private void runGenerator(WorldGenerator generator, World world,
@@ -88,56 +89,85 @@ public class ModWorldGen implements IWorldGenerator {
 		switch (world.provider.getDimension()) {
 		case 0: // Overworld
 			if (!Config.disableGlowstoneOreGen) {
-				this.runGenerator(this.gen_ore, world, random, chunkX, chunkZ, 10, 0, 80);
+				this.runGenerator(this.gen_ore, world, random, chunkX, chunkZ,
+						10, 0, 80);
 			}
 			break;
 		case -1: // Nether
-			if (!Config.disableGlowstoneGen) {
+			if (!Config.disableGlowstoneRedGen) {
 				this.runGenerator(this.gen_red, world, random, chunkX, chunkZ,
 						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
 						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_black, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneBlackGen) {
+				this.runGenerator(this.gen_black, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneBlueGen) {
 				this.runGenerator(this.gen_blue, world, random, chunkX, chunkZ,
 						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
 						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_brown, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneBrownGen) {
+				this.runGenerator(this.gen_brown, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneCyanGen) {
 				this.runGenerator(this.gen_cyan, world, random, chunkX, chunkZ,
 						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
 						Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneGrayGen) {
 				this.runGenerator(this.gen_gray, world, random, chunkX, chunkZ,
 						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
 						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_green, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_lblue, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_lgray, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneGreenGen) {
+				this.runGenerator(this.gen_green, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneLightBlueGen) {
+				this.runGenerator(this.gen_lblue, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneLightGrayGen) {
+				this.runGenerator(this.gen_lgray, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneLimeGen) {
 				this.runGenerator(this.gen_lime, world, random, chunkX, chunkZ,
 						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
 						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_magenta, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_orange, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneMagentaGen) {
+				this.runGenerator(this.gen_magenta, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneOrangeGen) {
+				this.runGenerator(this.gen_orange, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstonePinkGen) {
 				this.runGenerator(this.gen_pink, world, random, chunkX, chunkZ,
 						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
 						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_purple, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
-				this.runGenerator(this.gen_white, world, random, chunkX, chunkZ,
-						Config.glowstoneSpawnChance, Config.glowstoneSpawnMinY,
-						Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstonePurpleGen) {
+				this.runGenerator(this.gen_purple, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
+			}
+			if (!Config.disableGlowstoneWhiteGen) {
+				this.runGenerator(this.gen_white, world, random, chunkX,
+						chunkZ, Config.glowstoneSpawnChance,
+						Config.glowstoneSpawnMinY, Config.glowstoneSpawnMaxY);
 			}
 			break;
 		case 1: // End
