@@ -61,4 +61,8 @@ public class IMCHandler {
 				new ItemStack(Items.GLOWSTONE_DUST, 4), new ItemStack(
 						Items.GLOWSTONE_DUST, 2), 50);
 	}
+	public static final void chiselIMC()
+	{
+		
+	}
 }
