@@ -1,9 +1,5 @@
 package com.themastergeneral.moglowstone.config;
 
-import org.apache.logging.log4j.Level;
-
-import com.themastergeneral.moglowstone.MoGlowstone;
-
 /*public class Config {
 	private static final String CATEGORY_GENERAL = "General";
 	private static final String CATEGORY_GENERATION = "World Generation";

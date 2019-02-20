@@ -1,8 +1,6 @@
 package com.themastergeneral.moglowstone.blocks;
 
-import com.themastergeneral.ctdcore.block.RegisterBlock;
-
-public class ModBlocks extends RegisterBlock {
+public class ModBlocks {
 	public static GSBlock black_gsblock;
 	public static GSBlock blue_gsblock;
 	public static GSBlock brick_gsblock;
