@@ -12,7 +12,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 public class GSOre extends CTDBlock {
-	protected GSOre(String name, String modid) {
+	public GSOre(String name, String modid) {
 
 		super(Block.Properties.create(Material.GROUND, MaterialColor.STONE).lightValue(15).sound(SoundType.STONE).hardnessAndResistance(0.3F), name, modid);
 		this.setRegistryName(modid, name);
