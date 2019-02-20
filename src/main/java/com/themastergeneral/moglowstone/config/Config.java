@@ -1,13 +1,10 @@
 package com.themastergeneral.moglowstone.config;
 
-import net.minecraftforge.common.config.Configuration;
-
 import org.apache.logging.log4j.Level;
 
 import com.themastergeneral.moglowstone.MoGlowstone;
-import com.themastergeneral.moglowstone.proxy.CommonProxy;
 
-public class Config {
+/*public class Config {
 	private static final String CATEGORY_GENERAL = "General";
 	private static final String CATEGORY_GENERATION = "World Generation";
 
@@ -137,4 +134,4 @@ public class Config {
 				CATEGORY_GENERATION, disableGlowstoneBlackGen,
 				"Set to true to disable Black Glowstone from generating.");
 	}
-}
+}*/
