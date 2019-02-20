@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
+import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -69,6 +70,8 @@ public class MoGlowstone {
         public static void registerItems(final RegistryEvent.Register<Item> event)
         {
 			IForgeRegistry<Item> itemRegistry = event.getRegistry();
+			
+			itemRegistry.register(ModItems.fuelglowstone);
         }
     }
 }
