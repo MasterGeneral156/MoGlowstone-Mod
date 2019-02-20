@@ -1,0 +1,30 @@
+{
+    "block.red_gsblock": "Red Glowstone Block",
+    "block.white_gsblock": "White Glowstone Block",
+    "block.purple_gsblock": "Purple Glowstone Block",
+    "block.pink_gsblock": "Pink Glowstone Block",
+    "block.orange_gsblock": "Orange Glowstone Block",
+    "block.magenta_gsblock": "Magenta Glowstone Block",
+    "block.lime_gsblock": "Lime Glowstone Block",
+    "block.lgray_gsblock": "Light Gray Glowstone Block",
+    "block.lblue_gsblock": "Light Blue Glowstone Block",
+    "block.green_gsblock": "Green Glowstone Block",
+    "block.gray_gsblock": "Gray Glowstone Block",
+    "block.cyan_gsblock": "Cyan Glowstone Block",
+    "block.brown_gsblock": "Brown Glowstone Block",
+    "block.blue_gsblock": "Blue Glowstone Block",
+    "block.black_gsblock": "Black Glowstone Block",
+    "block.brick_gsblock": "Glowstone Brick",
+    "block.fuel_gsblock": "Fuel Glowstone Block",
+    "block.lamp_gsblock": "Glowstone Lamp",
+    "block.glowstone_ore": "Glowstone Ore",
+
+    "itemGroup.moglowstone": "Mo' Glowstone Mod",
+
+    "item.fuelglowstone": "Glowstone Fuel",
+
+    "advancement.start": "Mo' Glowstone",
+    "advancement.start.desc": "Obtain Colored Glowstone",
+    "advancement.fuelglowstone": "Shiny Fuel",
+    "advancement.fuelglowstone.desc": "Craft Glowstone Fuel"
+}
