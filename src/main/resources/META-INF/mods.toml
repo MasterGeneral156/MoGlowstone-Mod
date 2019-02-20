@@ -18,7 +18,7 @@ authors="TheMasterGeneral" #optional
 # The modid of the mod
 modId="moglowstone" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="1.13.2-2.0.0" #mandatory
+version="2.0.0" #mandatory
  # A display name for the mod
 displayName="Mo' Glowstone" #mandatory
 # The description text for the mod (multi line!) (#mandatory)
@@ -28,6 +28,6 @@ Adding colored glowstone!'''
 [[dependencies.moglowstone]]
     modId="ctdcore"
     mandatory=true
-    versionRange="[1.13]"
+    versionRange="[2,]"
     ordering="NONE"
     side="BOTH"
