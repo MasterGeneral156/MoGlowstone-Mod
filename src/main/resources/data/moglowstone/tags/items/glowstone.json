@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "moglowstone:black_gsblock",
+	"moglowstone:blue_gsblock",
+	"moglowstone:brown_gsblock",
+	"moglowstone:cyan_gsblock",
+	"moglowstone:gray_gsblock",
+	"moglowstone:green_gsblock",
+	"moglowstone:lblue_gsblock",
+	"moglowstone:lgray_gsblock",
+	"moglowstone:lime_gsblock",
+	"moglowstone:magenta_gsblock",
+	"moglowstone:orange_gsblock",
+	"moglowstone:red_gsblock",
+	"moglowstone:pink_gsblock",
+	"moglowstone:purple_gsblock",
+	"moglowstone:white_gsblock",
+	"minecraft:glowstone",
+  ]
+}
