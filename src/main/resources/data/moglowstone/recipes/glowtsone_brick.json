@@ -6,7 +6,7 @@
         "GG"
     ],
     "key": {
-        "G": [{"type": "forge:ore_dict", "ore": "glowstone"}]
+        "G": {"tag": "moglowstone:glowstone"}
     },
     "result": {
         "item": "moglowstone:brick_gsblock",
