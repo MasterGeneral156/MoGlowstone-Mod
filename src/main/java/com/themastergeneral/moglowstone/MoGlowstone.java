@@ -4,10 +4,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
+import com.themastergeneral.moglowstone.items.ModItemBlocks;
 import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.Properties;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -71,6 +73,27 @@ public class MoGlowstone {
         {
 			IForgeRegistry<Item> itemRegistry = event.getRegistry();
 			
+			Properties itemBuilder = (new Item.Properties());
+
+			
+			itemRegistry.register(new ModItemBlocks(ModBlocks.black_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.blue_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.brick_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.brown_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.glowstone_ore, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.cyan_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.gray_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.green_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.lamp_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.lblue_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.lgray_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.lime_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.magenta_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.orange_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.red_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.pink_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.purple_gsblock, itemBuilder));
+			itemRegistry.register(new ModItemBlocks(ModBlocks.white_gsblock, itemBuilder));
 			itemRegistry.register(ModItems.fuelglowstone);
         }
     }
