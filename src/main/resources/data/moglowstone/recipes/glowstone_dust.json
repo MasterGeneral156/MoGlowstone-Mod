@@ -8,7 +8,7 @@
     ],
     "key": {
         "R": { "item": "minecraft:redstone" },
-        "T": [{"type": "forge:ore_dict", "ore": "torch"}]
+        "T": { "item": "minecraft:torch" }
     },
     "result": {
         "item": "minecraft:glowstone_dust"

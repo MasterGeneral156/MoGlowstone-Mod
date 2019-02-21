@@ -7,8 +7,8 @@
 		"GGG"
     ],
     "key": {
-		"G": [{"type": "forge:ore_dict", "ore": "glowstone"}],
-		"D": [{"type": "forge:ore_dict", "ore": "dyePurple"}]
+		"G": {"tag": "moglowstone:glowstone"},
+		"D": {"tag": "forge:dyes/purple"}
     },
     "result": {
         "item": "moglowstone:purple_gsblock",

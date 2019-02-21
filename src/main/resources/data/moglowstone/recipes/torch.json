@@ -7,7 +7,7 @@
     ],
     "key": {
 		"F": { "item": "moglowstone:fuelglowstone" },
-        "S": [{"type": "forge:ore_dict", "ore": "stickWood"}]
+        "S": { "item": "minecraft:stick" }
     },
     "result": {
         "item": "minecraft:torch",

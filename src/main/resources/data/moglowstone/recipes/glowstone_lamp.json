@@ -7,8 +7,8 @@
 		" D "
     ],
     "key": {
-		"D": [{"type": "forge:ore_dict", "ore": "dustGlowstone"}],
-		"G": [{"type": "forge:ore_dict", "ore": "glowstone"}]
+		"D": { "tag": "forge:dusts/glowstone" },
+		"G": { "tag": "moglowstone:glowstone" }
     },
     "result": {
         "item": "moglowstone:lamp_gsblock",
