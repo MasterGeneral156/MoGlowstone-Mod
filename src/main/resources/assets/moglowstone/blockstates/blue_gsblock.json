@@ -1,14 +1,5 @@
 {
-    "forge_marker": 1,
-    "defaults": {
-        "textures": {
-            "all": "moglowstone:blocks/bluegsblock"
-			
-        }
-    },
     "variants": {
-        "normal": {
-            "model": "cube_all"
-        }
+        "": { "model": "moglowstone:block/blue_gsblock" }
     }
 }

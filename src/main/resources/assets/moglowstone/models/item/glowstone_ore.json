@@ -1,6 +1,6 @@
 {
-    "parent": "moglowstone:blocks/glowstone_ore",
+    "parent": "moglowstone:block/glowstone_ore",
     "textures": {
-        "inventory": "moglowstone:blocks/glowstone_ore"
+        "inventory": "moglowstone:block/glowstone_ore"
     }
 }
