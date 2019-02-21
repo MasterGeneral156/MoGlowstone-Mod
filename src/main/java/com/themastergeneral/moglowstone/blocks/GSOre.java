@@ -17,7 +17,6 @@ public class GSOre extends CTDBlock {
 	public GSOre(String name) {
 
 		super(Block.Properties.create(Material.GROUND, MaterialColor.STONE).lightValue(15).sound(SoundType.STONE).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
-		this.setRegistryName(MoGlowstone.MODID, name);
 	}
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
