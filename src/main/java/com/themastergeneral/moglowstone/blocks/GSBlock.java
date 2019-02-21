@@ -12,7 +12,6 @@ public class GSBlock extends CTDBlock {
 
 	public GSBlock(String name) {
 		super(Block.Properties.create(Material.GLASS, MaterialColor.SAND).lightValue(15).sound(SoundType.GLASS).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
-		this.setRegistryName(MoGlowstone.MODID, name);
 	}
 
 }

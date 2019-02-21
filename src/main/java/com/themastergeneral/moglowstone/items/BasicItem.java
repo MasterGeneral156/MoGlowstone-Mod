@@ -4,11 +4,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
+import com.themastergeneral.moglowstone.MoGlowstone;
 
 public class BasicItem extends CTDItem {
 
-	public BasicItem(Properties properties, String name, String modid) {
-		super(properties, name, modid);
+	public BasicItem(String name) {
+		super(new Item.Properties(), name, MoGlowstone.MODID);
 	}
 
 	public int getItemBurnTime(ItemStack fuel) {
