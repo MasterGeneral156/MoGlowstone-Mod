@@ -1,7 +1,7 @@
 package com.themastergeneral.moglowstone.blocks;
 
 public class ModBlocks {
-	public static GSBlock black_gsblock = new GSBlock("blacl_gsblock");
+	public static GSBlock black_gsblock = new GSBlock("black_gsblock");
 	public static GSBlock blue_gsblock = new GSBlock("blue_gsblock");
 	public static GSBlock brick_gsblock = new GSBlock("brick_gsblock");
 	public static GSBlock brown_gsblock = new GSBlock("brown_gsblock");
