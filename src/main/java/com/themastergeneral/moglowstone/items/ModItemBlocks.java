@@ -2,9 +2,9 @@
 package com.themastergeneral.moglowstone.items;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemBlock;
+import net.minecraft.item.BlockItem;
 
-public class ModItemBlocks extends ItemBlock
+public class ModItemBlocks extends BlockItem
 {
     public ModItemBlocks(Block blockIn, Properties propertiesIn)
     {
