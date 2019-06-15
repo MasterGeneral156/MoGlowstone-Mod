@@ -215,3 +215,87 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+run/usernamecache.json
+run/usercache.json
+run/saves/New World/stats/fc1768ff-17ae-39e8-bef2-f3e0d98306ba.json
+run/saves/New World/stats/ee37bc44-eeb3-3a18-8bd0-93b5769d5697.json
+run/saves/New World/stats/c485d2ea-264d-306d-8d9d-bbf5de861a97.json
+run/saves/New World/stats/a4081500-9e8c-36ae-a97c-f165f9882cba.json
+run/saves/New World/stats/8ae78072-72e2-3cd6-8b52-ce78919d5a75.json
+run/saves/New World/session.lock
+run/saves/New World/region/r.-4.-3.mca
+run/saves/New World/region/r.-4.-2.mca
+run/saves/New World/region/r.-3.-3.mca
+run/saves/New World/region/r.-3.-2.mca
+run/saves/New World/region/r.-3.-1.mca
+run/saves/New World/region/r.-2.-2.mca
+run/saves/New World/region/r.-2.-1.mca
+run/saves/New World/region/r.-1.0.mca
+run/saves/New World/region/r.-1.-1.mca
+run/saves/New World/playerdata/fc1768ff-17ae-39e8-bef2-f3e0d98306ba.dat
+run/saves/New World/playerdata/ee37bc44-eeb3-3a18-8bd0-93b5769d5697.dat
+run/saves/New World/playerdata/c485d2ea-264d-306d-8d9d-bbf5de861a97.dat
+run/saves/New World/playerdata/a4081500-9e8c-36ae-a97c-f165f9882cba.dat
+run/saves/New World/playerdata/8ae78072-72e2-3cd6-8b52-ce78919d5a75.dat
+run/saves/New World/level.dat_old
+run/saves/New World/level.dat
+run/saves/New World/icon.png
+run/saves/New World/forcedchunks.dat
+run/saves/New World/DIM1/forcedchunks.dat
+run/saves/New World/DIM1/data/villages_end.dat
+run/saves/New World/DIM1/data/capabilities.dat
+run/saves/New World/DIM-1/forcedchunks.dat
+run/saves/New World/DIM-1/data/villages_nether.dat
+run/saves/New World/DIM-1/data/capabilities.dat
+run/saves/New World/data/villages.dat
+run/saves/New World/data/Village.dat
+run/saves/New World/data/capabilities.dat
+run/saves/New World/advancements/fc1768ff-17ae-39e8-bef2-f3e0d98306ba.json
+run/saves/New World/advancements/ee37bc44-eeb3-3a18-8bd0-93b5769d5697.json
+run/saves/New World/advancements/c485d2ea-264d-306d-8d9d-bbf5de861a97.json
+run/saves/New World/advancements/a4081500-9e8c-36ae-a97c-f165f9882cba.json
+run/saves/New World/advancements/8ae78072-72e2-3cd6-8b52-ce78919d5a75.json
+run/options.txt
+run/mods/jei_1.12.2-4.11.0.206.jar
+run/mods/CTM-MC1.12.2-0.3.2.18.jar
+run/mods/Chisel-MC1.12.2-0.2.0.31.jar
+run/logs/debug-5.log.gz
+run/logs/debug-4.log.gz
+run/logs/debug-3.log.gz
+run/logs/debug-2.log.gz
+run/logs/debug-1.log.gz
+run/logs/2018-08-29-1.log.gz
+run/logs/2018-08-05-2.log.gz
+run/logs/2018-08-05-1.log.gz
+run/logs/2018-08-02-4.log.gz
+run/logs/2018-08-02-3.log.gz
+run/logs/2018-08-02-2.log.gz
+run/logs/2018-08-02-1.log.gz
+run/config/splash.properties
+run/config/jei/worldSettings.cfg
+run/config/jei/searchColors.cfg
+run/config/jei/jei.cfg
+run/config/jei/itemBlacklist.cfg
+run/config/forgeChunkLoading.cfg
+run/config/forge.cfg
+run/config/ctm.cfg
+run/config/ctd/moglowstone.cfg
+run/config/ctd/ctdcore.cfg
+run/config/chisel.cfg
+run/config/albedo.cfg
+eclipse/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties
+eclipse/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/maven-metadata-models.xml
+eclipse/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/index-0.0.0-20140605.014212-1.zip
+eclipse/.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/_remote.repositories
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_1
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.tis
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.tii
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.prx
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.nrm
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.frq
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fnm
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fdx
+eclipse/.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fdt
+eclipse/.recommenders/caches/manual-mappings.json
+eclipse/.recommenders/caches/identified-project-coordinates.json
