@@ -74,7 +74,6 @@ public class MoGlowstone {
 			IForgeRegistry<Item> itemRegistry = event.getRegistry();
 			
 			Properties itemBuilder = (new Item.Properties());
-
 			
 			itemRegistry.register(new ModItemBlocks(ModBlocks.black_gsblock, itemBuilder));
 			itemRegistry.register(new ModItemBlocks(ModBlocks.blue_gsblock, itemBuilder));
