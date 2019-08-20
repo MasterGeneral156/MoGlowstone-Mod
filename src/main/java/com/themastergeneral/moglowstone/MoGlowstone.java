@@ -3,10 +3,10 @@ package com.themastergeneral.moglowstone;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.themastergeneral.ctdcore.helpers.CTDRegisters;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.items.ModItemBlocks;
 import com.themastergeneral.moglowstone.items.ModItems;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
