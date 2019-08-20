@@ -1,27 +1,15 @@
 modLoader="javafml" #mandatory
-# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
-loaderVersion="[26,)" #mandatory (24 is current forge version)
-# A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json" #optional
-# A URL to refer people to when problems occur with this mod
-issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues" #optional
-# A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://minecraft.curseforge.com/projects/mo-glowstone" #optional
-# A file name (in the root of the mod JAR) containing a logo for display
-logoFile="textures/logo-new.png" #optional
-# A text field displayed in the mod UI
-credits="" #optional
-# A text field displayed in the mod UI
-authors="TheMasterGeneral" #optional
-# A list of mods - how many allowed here is determined by the individual mod loader
-[[mods]] #mandatory
-# The modid of the mod
-modId="moglowstone" #mandatory
-# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="2.0.0" #mandatory
- # A display name for the mod
+loaderVersion="[28,)"
+updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
+issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
+displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
+logoFile="textures/logo-new.png"
+credits=""
+authors="TheMasterGeneral"
+[[mods]] 
+modId="moglowstone"
+version="2.0.0"
 displayName="Mo' Glowstone" #mandatory
-# The description text for the mod (multi line!) (#mandatory)
 description='''
 Adding colored glowstone!'''
 

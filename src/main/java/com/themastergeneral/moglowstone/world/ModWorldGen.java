@@ -10,7 +10,7 @@ import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class ModWorldGen implements IWorldGenerator {
+/*public class ModWorldGen implements IWorldGenerator {
 	private WorldGenerator gen_red;
 	private WorldGenerator gen_black;
 	private WorldGenerator gen_blue;
@@ -68,4 +68,4 @@ public class ModWorldGen implements IWorldGenerator {
 			AbstractChunkProvider chunkProvider) {
 		// TODO Auto-generated method stub
 		
-	}
+	}*/
