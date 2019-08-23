@@ -3,12 +3,12 @@ loaderVersion="[28,)"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
 issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
 displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
-logoFile="textures/logo-new.png"
+logoFile="logo-new.png"
 credits=""
 authors="TheMasterGeneral"
 [[mods]] 
 modId="moglowstone"
-version="2.0.1"
+version="2.0.2"
 displayName="Mo' Glowstone" #mandatory
 description='''
 Adding colored glowstone!'''
