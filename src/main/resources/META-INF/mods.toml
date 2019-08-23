@@ -8,7 +8,7 @@ credits=""
 authors="TheMasterGeneral"
 [[mods]] 
 modId="moglowstone"
-version="2.0.0"
+version="2.0.1"
 displayName="Mo' Glowstone" #mandatory
 description='''
 Adding colored glowstone!'''
