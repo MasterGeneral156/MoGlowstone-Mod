@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "moglowstone:block/graygsblock" }
+        "": { "model": "moglowstone:block/gray_gsblock" }
     }
 }
