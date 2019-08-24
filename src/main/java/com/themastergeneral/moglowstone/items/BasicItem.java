@@ -12,11 +12,9 @@ public class BasicItem extends CTDItem {
 		super(new Item.Properties(), name, MoGlowstone.MODID);
 	}
 
-	public int getItemBurnTime(ItemStack fuel) {
-		Item item = fuel.getItem();
-		if (item == ModItems.fuelglowstone)
-			return 3200;
-		else
-			return 0;
+	@Override
+	public int getBurnTime(ItemStack itemStack)
+	{
+		return 3200;
 	}
 }
