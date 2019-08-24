@@ -9,7 +9,7 @@ import com.themastergeneral.moglowstone.MoGlowstone;
 public class BasicItem extends CTDItem {
 
 	public BasicItem(String name) {
-		super(new Item.Properties(), name, MoGlowstone.MODID);
+		super(new Item.Properties().group(MoGlowstone.ITEMGROUP), name, MoGlowstone.MODID);
 	}
 
 	@Override
