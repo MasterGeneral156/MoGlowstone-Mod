@@ -9,6 +9,7 @@ import com.themastergeneral.moglowstone.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,6 +25,7 @@ public class MoGlowstone {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public static final String MODID = "moglowstone";
+	public static final ItemGroup ITEMGROUP = new MoGlowstoneItemGroup();
 
 	public MoGlowstone() {
 		instance = this;
@@ -72,7 +74,7 @@ public class MoGlowstone {
         {
 			IForgeRegistry<Item> itemRegistry = event.getRegistry();
 			
-			Properties itemBuilder = (new Item.Properties());
+			Properties itemBuilder = (new Item.Properties().group(ITEMGROUP));
 			
 			itemRegistry.register(new ModItemBlocks(ModBlocks.black_gsblock, itemBuilder));
 			itemRegistry.register(new ModItemBlocks(ModBlocks.blue_gsblock, itemBuilder));
