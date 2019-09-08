@@ -15,7 +15,7 @@ apply plugin: 'maven-publish'
 
 version = project.property('mc_version') + "-" + project.property('mod_version')
 group = 'com.themastergeneral.moglowstone' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Mo-Glowstone'
+archivesBaseName = project.property('mod_name')
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
