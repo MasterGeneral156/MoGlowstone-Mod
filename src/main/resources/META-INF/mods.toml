@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[28,)"
+loaderVersion="[30,)"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
 issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
 displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
