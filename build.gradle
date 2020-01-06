@@ -69,7 +69,7 @@ minecraft {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:' + project.property('forge_version')
-    compile files('libs/CTD-Core-1.14.2-2.0.2.jar')
+    compile files('libs/CTD-Core-1.15.1-2.0.5b.jar')
 
 }
 
