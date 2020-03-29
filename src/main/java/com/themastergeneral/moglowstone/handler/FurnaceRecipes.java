@@ -6,9 +6,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
-public class FurnaceRecipes {
+public class FurnaceRecipes 
+{
 	public static void init()
 	{
-		GameRegistry.addSmelting(ModBlocks.glowstone_ore, new ItemStack(Items.GLOWSTONE_DUST, 1), 0.1F);
+		GameRegistry.addSmelting(ModBlocks.glowstone_ore, new ItemStack(Items.GLOWSTONE_DUST, 4), 0.1F);
 	}
 }
