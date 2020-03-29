@@ -6,8 +6,10 @@ import net.minecraft.item.ItemStack;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.imc.texpansion.IMCTE;
 
-public class IMCHandler {
-	public static final void IMCInit() {
+public class IMCHandler 
+{
+	public static final void IMCInit() 
+	{
 		// Add Pulvierzer Recipes for our glowstone
 		IMCTE.addPulverizerRecipe(4000, new ItemStack(ModBlocks.black_gsblock),
 				new ItemStack(Items.GLOWSTONE_DUST, 4), new ItemStack(

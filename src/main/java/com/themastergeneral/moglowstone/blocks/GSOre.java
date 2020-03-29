@@ -16,8 +16,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
-public class GSOre extends CTDBlock {
-	protected GSOre(String name, String modid) {
+public class GSOre extends CTDBlock 
+{
+	protected GSOre(String name, String modid) 
+	{
 
 		super(Material.ROCK, name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);

@@ -5,7 +5,8 @@ import net.minecraft.item.EnumDyeColor;
 import com.themastergeneral.ctdcore.block.RegisterBlock;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
-public class ModBlocks extends RegisterBlock {
+public class ModBlocks extends RegisterBlock 
+{
 	public static GSBlock black_gsblock;
 	public static GSBlock blue_gsblock;
 	public static GSBlock brick_gsblock;
@@ -26,7 +27,8 @@ public class ModBlocks extends RegisterBlock {
 
 	public static GSOre glowstone_ore;
 
-	public static final void init() {
+	public static final void init() 
+	{
 		black_gsblock = register(new GSBlock("black_gsblock",
 				MoGlowstone.MODID, "black", EnumDyeColor.BLACK));
 		blue_gsblock = register(new GSBlock("blue_gsblock", MoGlowstone.MODID,

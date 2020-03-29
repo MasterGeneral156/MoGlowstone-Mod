@@ -5,8 +5,10 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
-public class OreDict {
-	public static final void init() {
+public class OreDict 
+{
+	public static final void init() 
+	{
 		OreDictionary.registerOre("glowstone", ModBlocks.black_gsblock);
 		OreDictionary.registerOre("glowstone", ModBlocks.blue_gsblock);
 		OreDictionary.registerOre("glowstone", ModBlocks.brown_gsblock);

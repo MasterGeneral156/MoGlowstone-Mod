@@ -6,18 +6,24 @@ import net.minecraft.item.ItemStack;
 import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
-public class BasicItem extends CTDItem {
-	public BasicItem(String name, String modid) {
+public class BasicItem extends CTDItem 
+{
+	public BasicItem(String name, String modid) 
+	{
 		super(name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);
 	}
 
 	@Override
-	public int getItemBurnTime(ItemStack fuel) {
+	public int getItemBurnTime(ItemStack fuel) 
+	{
 		Item item = fuel.getItem();
-		if (item == ModItems.fuelglowstone) {
+		if (item == ModItems.fuelglowstone) 
+		{
 			return 3200;
-		} else {
+		} 
+		else 
+		{
 			return 0;
 		}
 	}

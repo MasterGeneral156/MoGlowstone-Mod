@@ -17,11 +17,14 @@ import com.themastergeneral.moglowstone.items.ModItems;
 import com.themastergeneral.moglowstone.te.TEGlowstone;
 import com.themastergeneral.moglowstone.world.ModWorldGen;
 
-public class CommonProxy {
+public class CommonProxy 
+{
 
 	public static Configuration config;
 
-	public void preInit(FMLPreInitializationEvent e) {
+	public void preInit(FMLPreInitializationEvent e) 
+	{
+		//TODO: Use undeprecated method.
 		GameRegistry.registerTileEntity(TEGlowstone.class, "TEGlowstone");
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(),
@@ -34,11 +37,13 @@ public class CommonProxy {
 		FurnaceRecipes.init();
 	}
 
-	public void init(FMLInitializationEvent e) {
+	public void init(FMLInitializationEvent e) 
+	{
 		OreDict.init();
 	}
 
-	public void postInit(FMLPostInitializationEvent e) {
+	public void postInit(FMLPostInitializationEvent e) 
+	{
 
 	}
 }

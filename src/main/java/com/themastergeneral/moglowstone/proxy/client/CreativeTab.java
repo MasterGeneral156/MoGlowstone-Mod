@@ -7,12 +7,14 @@ import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.items.ModItems;
 
 public class CreativeTab extends CreativeTabs {
-	public CreativeTab() {
+	public CreativeTab() 
+	{
 		super(MoGlowstone.MODID);
 	}
 
 	@Override
-	public ItemStack getTabIconItem() {
+	public ItemStack getTabIconItem() 
+	{
 		return new ItemStack(ModItems.fuelglowstone); // shown icon on creative
 														// tab
 	}

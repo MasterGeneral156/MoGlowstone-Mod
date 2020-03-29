@@ -7,7 +7,8 @@ import org.apache.logging.log4j.Level;
 import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.proxy.CommonProxy;
 
-public class Config {
+public class Config 
+{
 	private static final String CATEGORY_GENERAL = "General";
 	private static final String CATEGORY_GENERATION = "World Generation";
 
@@ -38,22 +39,30 @@ public class Config {
 	// Call this from CommonProxy.preInit(). It will create our config if it
 	// doesn't
 	// exist yet and read the values if it does exist.
-	public static void readConfig() {
+	public static void readConfig() 
+	{
 		Configuration cfg = CommonProxy.config;
-		try {
+		try 
+		{
 			cfg.load();
 			initGeneralConfig(cfg);
-		} catch (Exception e1) {
+		} 
+		catch (Exception e1) 
+		{
 			MoGlowstone.logger.log(Level.ERROR, "Problem loading config file!",
 					e1);
-		} finally {
-			if (cfg.hasChanged()) {
+		} 
+		finally 
+		{
+			if (cfg.hasChanged()) 
+			{
 				cfg.save();
 			}
 		}
 	}
 
-	private static void initGeneralConfig(Configuration cfg) {
+	private static void initGeneralConfig(Configuration cfg) 
+	{
 		cfg.addCustomCategoryComment(CATEGORY_GENERAL,
 				"General configuration for the Mo Glowstone mod.");
 		cfg.addCustomCategoryComment(CATEGORY_GENERATION,
