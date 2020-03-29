@@ -20,7 +20,7 @@ public class MoGlowstone {
 
 	public static final String MODID = "moglowstone";
 	public static final String MODNAME = "Mo' Glowstone";
-	public static final String VERSION = "1.5.6";
+	public static final String VERSION = "1.5.7";
 	public static final String DEPENDENCIES = "required-after:ctdcore@[1.4,];after:albedo";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json";
 	public static final String acceptedMinecraftVersions = "1.12.2";
@@ -53,6 +53,7 @@ public class MoGlowstone {
 		logger.info("Your world wills shine bright now, thanks to Mo' Glowstone!");
 	}
 
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onFingerprintViolation(FMLFingerprintViolationEvent e) {
 		FMLLog.warning("Invalid fingerprint detected for Mo' Glowstone! TheMasterGeneral will not support this version!");
