@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.Loader;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.moglowstone.MoGlowstone;
+import com.themastergeneral.moglowstone.config.Config;
 import com.themastergeneral.moglowstone.te.TEGlowstone;
 
 public class GSBlock extends CTDBlock 
@@ -23,13 +24,12 @@ public class GSBlock extends CTDBlock
 	public String color;
 	public EnumDyeColor dyecolor;
 
-	protected GSBlock(String name, String modid, String color,
-			EnumDyeColor dyecolor) 
+	protected GSBlock(String name, String modid, String color, EnumDyeColor dyecolor) 
 	{
 
 		super(Material.GLASS, name, modid);
 		this.setCreativeTab(MoGlowstone.creativeTab);
-		if (!Loader.isModLoaded("albedo")) 
+		if ((!Loader.isModLoaded("albedo")) || (Config.disableAlbedo))
 		{
 			this.setLightLevel(1.0F);
 		}
@@ -41,7 +41,10 @@ public class GSBlock extends CTDBlock
 	@Override
 	public boolean hasTileEntity(IBlockState state) 
 	{
-		return true;
+		if (!Config.disableAlbedo)
+			return true;
+		else
+			return false;
 	}
 
 	@Nullable
@@ -55,7 +58,7 @@ public class GSBlock extends CTDBlock
 	@Override
 	public int getLightValue(IBlockState state, IBlockAccess world, BlockPos pos) 
 	{
-		if (Loader.isModLoaded("Albedo"))
+		if ((Loader.isModLoaded("Albedo")) || (Config.disableAlbedo))
 			if (FMLCommonHandler.instance().getEffectiveSide().isServer())
 				return 15;
 		return super.getLightValue(state, world, pos);

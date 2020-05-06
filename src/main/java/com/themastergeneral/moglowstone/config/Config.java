@@ -11,8 +11,8 @@ public class Config
 {
 	private static final String CATEGORY_GENERAL = "General";
 	private static final String CATEGORY_GENERATION = "World Generation";
+	private static final String CATEGORY_INTEGRATION = "Mod Integrations";
 
-	// This values below you can access elsewhere in your mod:
 	public static boolean disableGlowstoneOreGen = false;
 	public static int glowstoneSpawnMinY = 1;
 	public static int glowstoneSpawnMaxY = 127;
@@ -35,6 +35,8 @@ public class Config
 	public static boolean disableGlowstoneBrownGen = false;
 	public static boolean disableGlowstoneBlueGen = false;
 	public static boolean disableGlowstoneBlackGen = false;
+	
+	public static boolean disableAlbedo = false;
 
 	// Call this from CommonProxy.preInit(). It will create our config if it
 	// doesn't
@@ -63,10 +65,9 @@ public class Config
 
 	private static void initGeneralConfig(Configuration cfg) 
 	{
-		cfg.addCustomCategoryComment(CATEGORY_GENERAL,
-				"General configuration for the Mo Glowstone mod.");
-		cfg.addCustomCategoryComment(CATEGORY_GENERATION,
-				"World Generation stuffs");
+		cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration for the Mo Glowstone mod.");
+		cfg.addCustomCategoryComment(CATEGORY_GENERATION, "World Generation stuffs");
+		cfg.addCustomCategoryComment(CATEGORY_INTEGRATION, "Configuration options for Mo' Glowstone to integrate with other mods.");
 		disableGlowstoneOreGen = cfg.getBoolean(
 				"Disable World Generation of Glowstone Ore",
 				CATEGORY_GENERATION, disableGlowstoneOreGen,
@@ -145,5 +146,8 @@ public class Config
 				"Disable World Generation of Black Glowstone",
 				CATEGORY_GENERATION, disableGlowstoneBlackGen,
 				"Set to true to disable Black Glowstone from generating.");
+		//Mod integrations
+		disableAlbedo = cfg.getBoolean("Disable colored lighting when Albedo is available?",
+				CATEGORY_INTEGRATION, disableAlbedo, "Set to true to disable colored lighting.");
 	}
 }
