@@ -16,7 +16,7 @@ import net.minecraftforge.common.extensions.IForgeBlockState;
 public class GSOre extends CTDBlock {
 	public GSOre(String name) {
 
-		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE).lightValue(15).sound(SoundType.STONE).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
+		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
 	}
 	
 	public Item getItemDropped(IForgeBlockState state, Random rand, int fortune)

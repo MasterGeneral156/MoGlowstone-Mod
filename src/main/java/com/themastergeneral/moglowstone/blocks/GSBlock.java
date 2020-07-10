@@ -11,7 +11,10 @@ import net.minecraft.block.material.MaterialColor;
 public class GSBlock extends CTDBlock {
 
 	public GSBlock(String name) {
-		super(Block.Properties.create(Material.GLASS, MaterialColor.SAND).lightValue(15).sound(SoundType.GLASS).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
+		//.lightvalue(15)
+		super(Block.Properties.create(Material.GLASS, MaterialColor.SAND).sound(SoundType.GLASS).
+				hardnessAndResistance(0.3F),
+				name, MoGlowstone.MODID);
 	}
 
 }
