@@ -16,6 +16,7 @@ import net.minecraftforge.common.extensions.IForgeBlockState;
 public class GSOre extends CTDBlock {
 	public GSOre(String name) {
 
+		//.lightvalue(15)
 		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
 	}
 	
