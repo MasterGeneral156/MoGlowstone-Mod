@@ -9,7 +9,6 @@ import com.themastergeneral.moglowstone.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item.Properties;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -27,26 +26,24 @@ public class MoGlowstoneRegistries {
 	{
 		IForgeRegistry<Item> itemRegistry = event.getRegistry();
 		
-		Properties itemBuilder = (new Item.Properties().group(ITEMGROUP));
-		
-		itemRegistry.register(new ModItemBlocks(ModBlocks.black_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.blue_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.brick_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.brown_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.glowstone_ore, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.cyan_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.gray_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.green_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.lamp_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.lblue_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.lgray_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.lime_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.magenta_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.orange_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.red_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.pink_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.purple_gsblock, itemBuilder));
-		itemRegistry.register(new ModItemBlocks(ModBlocks.white_gsblock, itemBuilder));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.black_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.blue_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.brick_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.brown_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.glowstone_ore));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.cyan_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.gray_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.green_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.lamp_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.lblue_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.lgray_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.lime_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.magenta_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.orange_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.red_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.pink_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.purple_gsblock));
+		itemRegistry.register(new ModItemBlocks(ModBlocks.white_gsblock));
 		itemRegistry.register(ModItems.fuelglowstone);
 		
 		LOGGER.info("Items have been registered successfully.");
