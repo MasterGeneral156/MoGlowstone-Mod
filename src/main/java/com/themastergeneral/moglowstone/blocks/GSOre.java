@@ -19,19 +19,9 @@ public class GSOre extends CTDBlock {
 	{
 		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE)
 				.sound(SoundType.STONE)
-				.hardnessAndResistance(0.3F)
+				.hardnessAndResistance(3F)
 				.harvestTool(ToolType.PICKAXE)
-				.harvestLevel(3), 
+				.harvestLevel(3),
 				name, MoGlowstone.MODID);
 	}
-	
-	public Item getItemDropped(IForgeBlockState state, Random rand, int fortune)
-    {
-        return Items.GLOWSTONE_DUST;
-    }
-	
-	public int quantityDroppedWithBonus(int fortune, Random random)
-    {
-       return 2 + random.nextInt(4 - 2 + fortune + 1);
-    }
 }
