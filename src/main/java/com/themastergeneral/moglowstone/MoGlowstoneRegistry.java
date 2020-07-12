@@ -13,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class MoGlowstoneRegistry {
 
-	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MoGlowstone.MODID);
+	/*public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MoGlowstone.MODID);
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MoGlowstone.MODID);
 	
 	//Blocks
@@ -51,7 +51,7 @@ public class MoGlowstoneRegistry {
 	public static final RegistryObject<Item> red_gsblock_item = ITEMS.register("red_gsblock_item", () -> new ModItemBlocks(red_gsblock.get()));
 	
 	//Items
-	public static final RegistryObject<Item> fuelGlowstone = ITEMS.register("fuelGlowstone", () -> new BasicItem("fuelGlowstone"))));
+	public static final RegistryObject<Item> fuelGlowstone = ITEMS.register("fuelGlowstone", () -> new BasicItem("fuelGlowstone"));
 	
 	private static boolean isInitialised = false;
 	public static void init(final IEventBus eventBus) 
@@ -62,5 +62,5 @@ public class MoGlowstoneRegistry {
 		}
 		BLOCKS.register(eventBus);
 		ITEMS.register(eventBus);
-	}
+	}*/
 }
