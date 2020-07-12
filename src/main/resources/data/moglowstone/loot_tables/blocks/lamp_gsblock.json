@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+	  "name": "moglowstone:lamp_gsblock",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moglowstone:lamp_gsblock"
+        }
+      ]
+    }
+  ]
+}

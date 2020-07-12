@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "minecraft:glowstone"
+              "name": "moglowstone:glowstone_ore"
             },
             {
               "type": "minecraft:item",
