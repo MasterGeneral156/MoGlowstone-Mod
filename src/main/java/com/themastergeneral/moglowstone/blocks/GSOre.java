@@ -11,13 +11,18 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.extensions.IForgeBlockState;
 
 public class GSOre extends CTDBlock {
-	public GSOre(String name) {
-
-		//.lightvalue(15)
-		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(0.3F), name, MoGlowstone.MODID);
+	public GSOre(String name) 
+	{
+		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE)
+				.sound(SoundType.STONE)
+				.hardnessAndResistance(0.3F)
+				.harvestTool(ToolType.PICKAXE)
+				.harvestLevel(3), 
+				name, MoGlowstone.MODID);
 	}
 	
 	public Item getItemDropped(IForgeBlockState state, Random rand, int fortune)
