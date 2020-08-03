@@ -56,7 +56,6 @@ public class MoGlowstone
 		logger.info("Your world wills shine bright now, thanks to Mo' Glowstone!");
 	}
 
-	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onFingerprintViolation(FMLFingerprintViolationEvent e) 
 	{
