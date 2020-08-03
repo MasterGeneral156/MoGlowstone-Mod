@@ -57,5 +57,7 @@ public class OreDict
 		OreDictionary.registerOre("blockGlowstone", ModBlocks.red_gsblock);
 		OreDictionary.registerOre("blockGlowstone", ModBlocks.white_gsblock);
 		OreDictionary.registerOre("blockGlowstone", Blocks.GLOWSTONE);
+		
+		OreDictionary.registerOre("oreGlowstone", ModBlocks.glowstone_ore);
 	}
 }
