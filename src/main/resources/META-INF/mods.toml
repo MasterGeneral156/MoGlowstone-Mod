@@ -1,11 +1,12 @@
 modLoader="javafml" #mandatory
-loaderVersion="[32,)"
+loaderVersion="[34,)"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
 issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
 displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
 logoFile="logo-new.png"
 credits=""
 authors="TheMasterGeneral"
+license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.16/LICENSE"
 [[mods]] 
 modId="moglowstone"
 version="2.0.5"
