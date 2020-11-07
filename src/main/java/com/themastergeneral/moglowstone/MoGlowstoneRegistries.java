@@ -22,7 +22,7 @@ public class MoGlowstoneRegistries {
 	public static final String MODID = MoGlowstone.MODID;
 	
 	@SubscribeEvent
-	public static void registerItems(final RegistryEvent.Register<Item> event)
+	public static void registerItems(RegistryEvent.Register<Item> event)
 	{
 		IForgeRegistry<Item> itemRegistry = event.getRegistry();
 		
@@ -49,7 +49,7 @@ public class MoGlowstoneRegistries {
 		LOGGER.info("Items have been registered successfully.");
 	}
 	@SubscribeEvent
-    public static void registerBlocks(final RegistryEvent.Register<Block> event)
+    public static void registerBlocks(RegistryEvent.Register<Block> event)
     {
 		IForgeRegistry<Block> blockRegistry = event.getRegistry();
 		
