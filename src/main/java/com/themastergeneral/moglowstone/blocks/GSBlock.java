@@ -16,6 +16,7 @@ public class GSBlock extends CTDBlock {
 		super(Block.Properties.create(Material.GLASS, MaterialColor.SAND)
 				.sound(SoundType.GLASS)
 				.hardnessAndResistance(0.3F)
+				.setLightLevel(s -> 15)
 				.harvestTool(ToolType.PICKAXE),
 				name, 
 				MoGlowstone.MODID);
