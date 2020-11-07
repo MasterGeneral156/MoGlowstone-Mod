@@ -18,5 +18,5 @@ Adding colored glowstone!'''
     modId="ctdcore"
     mandatory=true
     versionRange="[2,]"
-    ordering="NONE"
+    ordering="BEFORE"
     side="BOTH"
