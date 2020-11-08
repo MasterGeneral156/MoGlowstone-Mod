@@ -14,9 +14,9 @@ import net.minecraftforge.common.ToolType;
 
 public class GSBlock extends CTDBlock {
 
-	public GSBlock(String name) 
+	public GSBlock(String name, MaterialColor color) 
 	{
-		super(Block.Properties.create(Material.GLASS, MaterialColor.SAND)
+		super(Block.Properties.create(Material.GLASS, color)
 				.sound(SoundType.GLASS)
 				.hardnessAndResistance(0.3F)
 				.harvestTool(ToolType.PICKAXE),
