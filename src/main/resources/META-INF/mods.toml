@@ -9,10 +9,9 @@ authors="TheMasterGeneral"
 license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.16/LICENSE"
 [[mods]] 
 modId="moglowstone"
-version="2.0.6"
+version="2.0.7"
 displayName="Mo' Glowstone" #mandatory
-description='''
-Adding colored glowstone!'''
+description="RGB Glowstone!"
 
 [[dependencies.moglowstone]]
     modId="ctdcore"
