@@ -35,7 +35,7 @@ import com.themastergeneral.moglowstone.MoGlowstone;
 
 public class BasicItem extends CTDItem {
 
-	public BasicItem(String name) {
+	public BasicItem() {
 		super(new Item.Properties().group(MoGlowstone.ITEMGROUP));
 	}
 

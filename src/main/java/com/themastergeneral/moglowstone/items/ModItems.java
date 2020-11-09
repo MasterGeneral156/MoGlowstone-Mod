@@ -30,8 +30,7 @@ package com.themastergeneral.moglowstone.items;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
 public class ModItems {
-	public static BasicItem fuelglowstone = new BasicItem("fuelglowstone");
-	public static BasicItem test = new BasicItem("test");
+	public static BasicItem fuelglowstone = new BasicItem();
 	
 	//Mod blocks
 	public static ModItemBlocks black_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);

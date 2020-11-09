@@ -39,7 +39,6 @@ public class ItemRegistry {
 	
 	//Base items
 	public static final RegistryObject<Item> fuelglowstone = ITEMS.register("fuelglowstone", () -> ModItems.fuelglowstone);
-	public static final RegistryObject<Item> test = ITEMS.register("test", () -> ModItems.test);
 	
 	//Block items
 	public static final RegistryObject<Item> black_gsblock = ITEMS.register("black_gsblock", () -> ModItems.black_gsblock);
