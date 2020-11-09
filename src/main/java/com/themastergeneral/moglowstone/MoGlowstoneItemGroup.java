@@ -27,7 +27,6 @@
 */
 package com.themastergeneral.moglowstone;
 
-import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.item.ItemGroup;
