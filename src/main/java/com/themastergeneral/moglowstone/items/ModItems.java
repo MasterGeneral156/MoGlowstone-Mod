@@ -27,6 +27,29 @@
 */
 package com.themastergeneral.moglowstone.items;
 
+import com.themastergeneral.moglowstone.blocks.ModBlocks;
+
 public class ModItems {
 	public static BasicItem fuelglowstone = new BasicItem("fuelglowstone");
+	public static BasicItem test = new BasicItem("test");
+	
+	//Mod blocks
+	public static ModItemBlocks black_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks blue_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks brick_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks brown_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks cyan_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks gray_gsblock = new ModItemBlocks(ModBlocks.gray_gsblock);
+	public static ModItemBlocks green_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks lamp_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks lblue_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks lgray_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks lime_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks magenta_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks orange_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks pink_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks purple_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks red_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks white_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
+	public static ModItemBlocks glowstone_ore = new ModItemBlocks(ModBlocks.black_gsblock);
 }

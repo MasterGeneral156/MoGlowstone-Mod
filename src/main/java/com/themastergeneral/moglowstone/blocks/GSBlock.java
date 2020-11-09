@@ -39,16 +39,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
 
-public class GSBlock extends CTDBlock {
+public class GSBlock extends Block {
 
 	public GSBlock(String name, MaterialColor color) 
 	{
 		super(Block.Properties.create(Material.GLASS, color)
 				.sound(SoundType.GLASS)
 				.hardnessAndResistance(0.3F)
-				.harvestTool(ToolType.PICKAXE),
-				name, 
-				MoGlowstone.MODID);
+				.harvestTool(ToolType.PICKAXE));
 	}
 	
 	@Override

@@ -28,6 +28,7 @@
 package com.themastergeneral.moglowstone;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
+import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -42,6 +43,6 @@ public class MoGlowstoneItemGroup extends ItemGroup
 	@Override
 	public ItemStack createIcon() 
 	{
-		return new ItemStack(ModBlocks.red_gsblock);
+		return new ItemStack(ModItems.red_gsblock);
 	}
 }

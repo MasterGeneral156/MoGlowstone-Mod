@@ -30,6 +30,9 @@ package com.themastergeneral.moglowstone;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.themastergeneral.moglowstone.blocks.BlockRegistry;
+import com.themastergeneral.moglowstone.items.ItemRegistry;
+
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -52,6 +55,9 @@ public class MoGlowstone {
 
         // Register ourselves for server, registry and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        
+        ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 	
 	private void setup(final FMLCommonSetupEvent event)

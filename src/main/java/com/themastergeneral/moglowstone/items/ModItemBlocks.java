@@ -39,6 +39,6 @@ public class ModItemBlocks extends BlockItem
     public ModItemBlocks(Block blockIn)
     {
         super(blockIn, new Item.Properties().group(MoGlowstone.ITEMGROUP));
-        this.setRegistryName(blockIn.getRegistryName());
+        //this.setRegistryName(blockIn.getRegistryName());
     }
 }

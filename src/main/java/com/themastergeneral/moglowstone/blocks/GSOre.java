@@ -39,15 +39,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
 
-public class GSOre extends CTDBlock {
+public class GSOre extends Block {
 	public GSOre(String name) 
 	{
 		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE)
 				.sound(SoundType.STONE)
 				.hardnessAndResistance(3F)
 				.harvestTool(ToolType.PICKAXE)
-				.harvestLevel(3),
-				name, MoGlowstone.MODID);
+				.harvestLevel(3));
 	}
 	
 	@Override
