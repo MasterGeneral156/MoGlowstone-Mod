@@ -7,6 +7,7 @@ logoFile="logo-new.png"
 credits=""
 authors="TheMasterGeneral"
 license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.16/LICENSE"
+
 [[mods]] 
 modId="moglowstone"
 version="2.1.0"
@@ -16,6 +17,6 @@ description="RGB Glowstone!"
 [[dependencies.moglowstone]]
     modId="ctdcore"
     mandatory=true
-    versionRange="[2,]"
+    versionRange="[2.1.1,]"
     ordering="NONE"
     side="BOTH"
