@@ -28,7 +28,6 @@
 package com.themastergeneral.moglowstone.blocks;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
-import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -39,9 +38,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
 
-public class GSBlock extends Block {
+public class GSBlock extends CTDBlock {
 
-	public GSBlock(String name, MaterialColor color) 
+	public GSBlock(MaterialColor color) 
 	{
 		super(Block.Properties.create(Material.GLASS, color)
 				.sound(SoundType.GLASS)

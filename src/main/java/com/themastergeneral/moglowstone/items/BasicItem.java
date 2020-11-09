@@ -33,7 +33,7 @@ import net.minecraft.item.ItemStack;
 import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
-public class BasicItem extends Item {
+public class BasicItem extends CTDItem {
 
 	public BasicItem(String name) {
 		super(new Item.Properties().group(MoGlowstone.ITEMGROUP));
