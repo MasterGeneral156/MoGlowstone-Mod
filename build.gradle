@@ -93,7 +93,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:' + project.property('forge_version')
-	implementation fg.deobf('curse.maven:ctd-core-' + project.property('ctd_core_ver') + ')
+	implementation fg.deobf('curse.maven:ctd-core-' + project.property('ctd_core_ver'))
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
