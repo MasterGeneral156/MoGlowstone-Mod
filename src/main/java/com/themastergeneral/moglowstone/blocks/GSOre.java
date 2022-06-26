@@ -41,9 +41,9 @@ import net.minecraftforge.common.ToolType;
 public class GSOre extends CTDBlock {
 	public GSOre() 
 	{
-		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE)
+		super(Block.Properties.of(Material.STONE, MaterialColor.STONE)
 				.sound(SoundType.STONE)
-				.hardnessAndResistance(3F)
+				.strength(3F)
 				.harvestTool(ToolType.PICKAXE)
 				.harvestLevel(3));
 	}

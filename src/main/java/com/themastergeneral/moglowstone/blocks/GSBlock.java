@@ -42,9 +42,9 @@ public class GSBlock extends CTDBlock {
 
 	public GSBlock(MaterialColor color) 
 	{
-		super(Block.Properties.create(Material.GLASS, color)
+		super(Block.Properties.of(Material.GLASS, color)
 				.sound(SoundType.GLASS)
-				.hardnessAndResistance(0.3F)
+				.strength(0.3F)
 				.harvestTool(ToolType.PICKAXE));
 	}
 	
