@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.17
+	Project:	Mo' Glowstone 1.18
 	File:		com.themastergeneral.moglowstone.blocks.BlockRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -30,9 +30,9 @@ package com.themastergeneral.moglowstone.blocks;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class BlockRegistry {
 	//Registry category.

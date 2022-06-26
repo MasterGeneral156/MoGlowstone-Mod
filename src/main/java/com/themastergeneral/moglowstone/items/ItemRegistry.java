@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.17
+	Project:	Mo' Glowstone 1.18
 	File:		com.themastergeneral.moglowstone.items.ItemRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -30,9 +30,9 @@ package com.themastergeneral.moglowstone.items;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.world.item.Item;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistry {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoGlowstone.MODID);
