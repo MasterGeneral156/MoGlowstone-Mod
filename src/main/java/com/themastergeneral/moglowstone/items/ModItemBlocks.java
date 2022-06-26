@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.16
+	Project:	Mo' Glowstone 1.17
 	File:		com.themastergeneral.moglowstone.items.ModItemBlocks
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2017 MasterGeneral156
+				Copyright (c) 2022 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -30,9 +30,9 @@ package com.themastergeneral.moglowstone.items;
 
 import com.themastergeneral.moglowstone.MoGlowstone;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 public class ModItemBlocks extends BlockItem
 {
