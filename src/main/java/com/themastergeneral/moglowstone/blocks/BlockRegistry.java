@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.18
+	Project:	Mo' Glowstone 1.19
 	File:		com.themastergeneral.moglowstone.blocks.BlockRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
