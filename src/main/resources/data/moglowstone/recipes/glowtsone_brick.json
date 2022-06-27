@@ -6,7 +6,7 @@
         "GG"
     ],
     "key": {
-        "G": {"tag": "moglowstone:glowstone"}
+        "G": {"tag": "forge:glowstone"}
     },
     "result": {
         "item": "moglowstone:brick_gsblock",

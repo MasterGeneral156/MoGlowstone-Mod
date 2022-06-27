@@ -8,7 +8,7 @@
     ],
     "key": {
 		"D": { "tag": "forge:dusts/glowstone" },
-		"G": { "tag": "moglowstone:glowstone" }
+		"G": { "tag": "forge:glowstone" }
     },
     "result": {
         "item": "moglowstone:lamp_gsblock",

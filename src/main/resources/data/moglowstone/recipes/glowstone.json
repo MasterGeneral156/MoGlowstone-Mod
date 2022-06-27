@@ -7,7 +7,7 @@
 		"GGG"
     ],
     "key": {
-		"G": {"tag": "moglowstone:glowstone"},
+		"G": {"tag": "forge:glowstone"},
 		"D": {"tag": "forge:dyes/yellow"}
     },
     "result": {
