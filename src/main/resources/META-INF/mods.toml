@@ -10,7 +10,7 @@ license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.19/LICENSE"
 
 [[mods]] 
 modId="moglowstone"
-version="2.1.1b"
+version="2.1.2"
 displayName="Mo' Glowstone" #mandatory
 description="RGB Glowstone!"
 
