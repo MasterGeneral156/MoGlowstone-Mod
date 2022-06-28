@@ -1,22 +1,22 @@
 modLoader="javafml" #mandatory
-loaderVersion="[40,)"
+loaderVersion="[34,)"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
 issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
 displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
 logoFile="logo-new.png"
 credits=""
 authors="TheMasterGeneral"
-license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.17/LICENSE"
+license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.16/LICENSE"
 
 [[mods]] 
 modId="moglowstone"
-version="2.1.1b"
+version="2.1.0"
 displayName="Mo' Glowstone" #mandatory
 description="RGB Glowstone!"
 
 [[dependencies.moglowstone]]
     modId="ctdcore"
     mandatory=true
-    versionRange="[2.1,]"
+    versionRange="[2.1.1,]"
     ordering="NONE"
     side="BOTH"

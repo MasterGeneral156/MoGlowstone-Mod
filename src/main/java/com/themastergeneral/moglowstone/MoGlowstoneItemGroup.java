@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.18
+	Project:	Mo' Glowstone 1.16
 	File:		com.themastergeneral.moglowstone.MoGlowstoneItemGroup
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2017 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -29,10 +29,10 @@ package com.themastergeneral.moglowstone;
 
 import com.themastergeneral.moglowstone.items.ModItems;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 
-public class MoGlowstoneItemGroup extends CreativeModeTab
+public class MoGlowstoneItemGroup extends ItemGroup
 {
 	public MoGlowstoneItemGroup() 
 	{
@@ -40,7 +40,7 @@ public class MoGlowstoneItemGroup extends CreativeModeTab
 	}
 
 	@Override
-	public ItemStack makeIcon() 
+	public ItemStack createIcon() 
 	{
 		return new ItemStack(ModItems.red_gsblock);
 	}

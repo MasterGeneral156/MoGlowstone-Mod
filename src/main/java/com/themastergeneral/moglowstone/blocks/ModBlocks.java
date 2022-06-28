@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.18
+	Project:	Mo' Glowstone 1.16
 	File:		com.themastergeneral.moglowstone.blocks.ModBlocks
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2017 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -27,26 +27,26 @@
 */
 package com.themastergeneral.moglowstone.blocks;
 
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.block.material.MaterialColor;
 
 public class ModBlocks {
-	public static GSBlock black_gsblock = new GSBlock(MaterialColor.COLOR_BLACK);
-	public static GSBlock blue_gsblock = new GSBlock(MaterialColor.COLOR_BLUE);
+	public static GSBlock black_gsblock = new GSBlock(MaterialColor.BLACK);
+	public static GSBlock blue_gsblock = new GSBlock(MaterialColor.BLUE);
 	public static GSBlock brick_gsblock = new GSBlock(MaterialColor.SAND);
-	public static GSBlock brown_gsblock = new GSBlock(MaterialColor.COLOR_BROWN);
-	public static GSBlock cyan_gsblock = new GSBlock( MaterialColor.COLOR_CYAN);
-	public static GSBlock gray_gsblock = new GSBlock(MaterialColor.COLOR_GRAY);
-	public static GSBlock green_gsblock = new GSBlock(MaterialColor.COLOR_GREEN);
-	public static GSBlock lamp_gsblock = new GSBlock(MaterialColor.COLOR_YELLOW);
-	public static GSBlock lblue_gsblock = new GSBlock(MaterialColor.COLOR_LIGHT_BLUE);
-	public static GSBlock lgray_gsblock = new GSBlock(MaterialColor.COLOR_LIGHT_GRAY);
-	public static GSBlock lime_gsblock = new GSBlock(MaterialColor.COLOR_LIGHT_GREEN);
-	public static GSBlock magenta_gsblock = new GSBlock(MaterialColor.COLOR_MAGENTA);
-	public static GSBlock orange_gsblock = new GSBlock(MaterialColor.TERRACOTTA_ORANGE);
-	public static GSBlock pink_gsblock = new GSBlock(MaterialColor.COLOR_PINK);
-	public static GSBlock purple_gsblock = new GSBlock(MaterialColor.COLOR_PURPLE);
-	public static GSBlock red_gsblock = new GSBlock(MaterialColor.COLOR_RED);
-	public static GSBlock white_gsblock = new GSBlock(MaterialColor.TERRACOTTA_WHITE);
+	public static GSBlock brown_gsblock = new GSBlock(MaterialColor.BROWN);
+	public static GSBlock cyan_gsblock = new GSBlock( MaterialColor.CYAN);
+	public static GSBlock gray_gsblock = new GSBlock(MaterialColor.GRAY);
+	public static GSBlock green_gsblock = new GSBlock(MaterialColor.GREEN);
+	public static GSBlock lamp_gsblock = new GSBlock(MaterialColor.YELLOW);
+	public static GSBlock lblue_gsblock = new GSBlock(MaterialColor.LIGHT_BLUE);
+	public static GSBlock lgray_gsblock = new GSBlock(MaterialColor.LIGHT_GRAY);
+	public static GSBlock lime_gsblock = new GSBlock(MaterialColor.LIME);
+	public static GSBlock magenta_gsblock = new GSBlock(MaterialColor.MAGENTA);
+	public static GSBlock orange_gsblock = new GSBlock(MaterialColor.ORANGE_TERRACOTTA);
+	public static GSBlock pink_gsblock = new GSBlock(MaterialColor.PINK);
+	public static GSBlock purple_gsblock = new GSBlock(MaterialColor.PURPLE);
+	public static GSBlock red_gsblock = new GSBlock(MaterialColor.RED);
+	public static GSBlock white_gsblock = new GSBlock(MaterialColor.WHITE_TERRACOTTA);
 
 	public static GSOre glowstone_ore = new GSOre();
 }

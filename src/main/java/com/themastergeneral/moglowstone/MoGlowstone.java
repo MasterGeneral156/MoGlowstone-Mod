@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.18
+	Project:	Mo' Glowstone 1.16
 	File:		com.themastergeneral.moglowstone.MoGlowstone
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2017 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +33,7 @@ import org.apache.logging.log4j.Logger;
 import com.themastergeneral.moglowstone.blocks.BlockRegistry;
 import com.themastergeneral.moglowstone.items.ItemRegistry;
 
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -46,7 +46,7 @@ public class MoGlowstone {
 	static final Logger LOGGER = LogManager.getLogger();
 
 	public static final String MODID = "moglowstone";
-	public static final CreativeModeTab ITEMGROUP = new MoGlowstoneItemGroup();
+	public static final ItemGroup ITEMGROUP = new MoGlowstoneItemGroup();
 
 	public MoGlowstone() {
 		instance = this;

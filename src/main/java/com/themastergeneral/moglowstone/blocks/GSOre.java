@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.18
+	Project:	Mo' Glowstone 1.16
 	File:		com.themastergeneral.moglowstone.blocks.GSOre
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2017 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -29,19 +29,28 @@ package com.themastergeneral.moglowstone.blocks;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
+import net.minecraftforge.common.ToolType;
 
 public class GSOre extends CTDBlock {
 	public GSOre() 
 	{
-		super(Block.Properties.of(Material.STONE, MaterialColor.STONE)
+		super(Block.Properties.create(Material.ROCK, MaterialColor.STONE)
 				.sound(SoundType.STONE)
-				.lightLevel((p_50755_) -> {
-				      return 2;
-				   })
-				.strength(3F));
+				.hardnessAndResistance(3F)
+				.harvestTool(ToolType.PICKAXE)
+				.harvestLevel(3));
+	}
+	
+	@Override
+	public int getLightValue(BlockState state, IBlockReader world, BlockPos pos)
+	{
+		return 2;
 	}
 }
