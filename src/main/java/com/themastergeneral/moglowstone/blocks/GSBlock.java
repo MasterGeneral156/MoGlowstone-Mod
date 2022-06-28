@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.16
+	Project:	Mo' Glowstone 1.18
 	File:		com.themastergeneral.moglowstone.blocks.GSBlock
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2017 MasterGeneral156
+				Copyright (c) 2022 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -29,29 +29,21 @@ package com.themastergeneral.moglowstone.blocks;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockReader;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 public class GSBlock extends CTDBlock {
 
 	public GSBlock(MaterialColor color) 
 	{
-		super(Block.Properties.create(Material.GLASS, color)
+		super(Block.Properties.of(Material.GLASS, color)
 				.sound(SoundType.GLASS)
-				.hardnessAndResistance(0.3F)
-				.harvestTool(ToolType.PICKAXE));
-	}
-	
-	@Override
-	public int getLightValue(BlockState state, IBlockReader world, BlockPos pos)
-	{
-		return 15;
+				.lightLevel((p_50755_) -> {
+				      return 15;
+				   })
+				.strength(0.3F));
 	}
 
 }
