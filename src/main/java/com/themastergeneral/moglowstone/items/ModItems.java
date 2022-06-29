@@ -27,10 +27,14 @@
 */
 package com.themastergeneral.moglowstone.items;
 
+import com.themastergeneral.ctdcore.item.CTDFuelItem;
+import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
+import net.minecraft.world.item.Item;
+
 public class ModItems {
-	public static BasicItem fuelglowstone = new BasicItem();
+	public static CTDFuelItem fuelglowstone = new CTDFuelItem(new Item.Properties().tab(MoGlowstone.ITEMGROUP), 1600);
 	
 	//Mod blocks
 	public static ModItemBlocks black_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
