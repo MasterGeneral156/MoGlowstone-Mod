@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.18
+	Project:	Mo' Glowstone 1.19
 	File:		com.themastergeneral.moglowstone.items.ModItems
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -27,10 +27,14 @@
 */
 package com.themastergeneral.moglowstone.items;
 
+import com.themastergeneral.ctdcore.item.CTDFuelItem;
+import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
+import net.minecraft.world.item.Item;
+
 public class ModItems {
-	public static BasicItem fuelglowstone = new BasicItem();
+	public static CTDFuelItem fuelglowstone = new CTDFuelItem(new Item.Properties().tab(MoGlowstone.ITEMGROUP), 3200);
 	
 	//Mod blocks
 	public static ModItemBlocks black_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
