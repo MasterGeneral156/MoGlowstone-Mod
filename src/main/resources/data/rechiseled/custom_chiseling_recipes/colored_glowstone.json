@@ -1,0 +1,53 @@
+{
+  "type": "rechiseled:chiseling",
+  "mod_id": "moglowstone",
+  "entries": [
+    {
+      "item": "minecraft:glowstone"
+    },
+	{
+      "item": "moglowstone:red_gsblock"
+    },
+	{
+      "item": "moglowstone:white_gsblock"
+    },
+	{
+      "item": "moglowstone:purple_gsblock"
+    },
+	{
+      "item": "moglowstone:pink_gsblock"
+    },
+	{
+      "item": "moglowstone:orange_gsblock"
+    },
+	{
+      "item": "moglowstone:magenta_gsblock"
+    },
+	{
+      "item": "moglowstone:lime_gsblock"
+    },
+	{
+      "item": "moglowstone:lgray_gsblock"
+    },
+	{
+      "item": "moglowstone:lblue_gsblock"
+    },
+	{
+      "item": "moglowstone:green_gsblock"
+    },
+	{
+      "item": "moglowstone:gray_gsblock"
+    },
+	{
+      "item": "moglowstone:cyan_gsblock"
+    },
+	{
+      "item": "moglowstone:brown_gsblock"
+    },
+	{
+      "item": "moglowstone:blue_gsblock"
+    },
+	{
+      "item": "moglowstone:black_gsblock"
+    }
+}
