@@ -2,9 +2,6 @@
   "type": "rechiseled:chiseling",
   "mod_id": "moglowstone",
   "entries": [
-    {
-      "item": "minecraft:glowstone"
-    },
 	{
       "item": "moglowstone:red_gsblock"
     },
@@ -50,4 +47,5 @@
 	{
       "item": "moglowstone:black_gsblock"
     }
+	]
 }
