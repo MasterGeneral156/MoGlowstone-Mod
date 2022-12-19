@@ -38,9 +38,11 @@ public class ItemRegistry {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoGlowstone.MODID);
 	
 	//Base items
+	//TODO Rename to glowstone_coal in 1.20 release
 	public static final RegistryObject<Item> fuelglowstone = ITEMS.register("fuelglowstone", () -> ModItems.fuelglowstone);
 	
 	//Block items
+	//TODO Full write out the registry names for 1.20 release. (ex. black_glowstone_block)
 	public static final RegistryObject<Item> black_gsblock = ITEMS.register("black_gsblock", () -> ModItems.black_gsblock);
 	public static final RegistryObject<Item> blue_gsblock = ITEMS.register("blue_gsblock", () -> ModItems.blue_gsblock);
 	public static final RegistryObject<Item> brick_gsblock = ITEMS.register("brick_gsblock", () -> ModItems.brick_gsblock);

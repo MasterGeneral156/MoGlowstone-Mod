@@ -37,6 +37,7 @@ public class ModItems {
 	public static CTDFuelItem fuelglowstone = new CTDFuelItem(new Item.Properties().tab(MoGlowstone.ITEMGROUP), 3200);
 	
 	//Mod blocks
+	//TODO Full write out the registry names for 1.20 release. (ex. black_glowstone_block)
 	public static ModItemBlocks black_gsblock = new ModItemBlocks(ModBlocks.black_gsblock);
 	public static ModItemBlocks blue_gsblock = new ModItemBlocks(ModBlocks.blue_gsblock);
 	public static ModItemBlocks brick_gsblock = new ModItemBlocks(ModBlocks.brick_gsblock);

@@ -39,6 +39,7 @@ public class BlockRegistry {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoGlowstone.MODID);
 	
 	//Blocks
+	//TODO Full write out the registry names for 1.20 release. (ex. black_glowstone_block)
 	public static final RegistryObject<Block> black_gsblock = BLOCKS.register("black_gsblock", () -> ModBlocks.black_gsblock);
 	public static final RegistryObject<Block> blue_gsblock = BLOCKS.register("blue_gsblock", () -> ModBlocks.blue_gsblock);
 	public static final RegistryObject<Block> brick_gsblock = BLOCKS.register("brick_gsblock", () -> ModBlocks.brick_gsblock);

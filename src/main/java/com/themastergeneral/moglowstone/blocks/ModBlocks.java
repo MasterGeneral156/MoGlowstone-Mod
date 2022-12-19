@@ -30,6 +30,8 @@ package com.themastergeneral.moglowstone.blocks;
 import net.minecraft.world.level.material.MaterialColor;
 
 public class ModBlocks {
+	
+	//TODO Full write out the registry names for 1.20 release. (ex. black_glowstone_block)
 	public static GSBlock black_gsblock = new GSBlock(MaterialColor.COLOR_BLACK);
 	public static GSBlock blue_gsblock = new GSBlock(MaterialColor.COLOR_BLUE);
 	public static GSBlock brick_gsblock = new GSBlock(MaterialColor.SAND);
