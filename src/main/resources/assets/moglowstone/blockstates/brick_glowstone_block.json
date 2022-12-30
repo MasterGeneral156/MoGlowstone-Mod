@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "moglowstone:block/brick_glowstone_block" }
+    }
+}

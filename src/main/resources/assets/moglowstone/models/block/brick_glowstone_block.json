@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "moglowstone:block/glowstone_ore"
+        "all": "moglowstone:block/brick_glowstone_block"
     }
 }

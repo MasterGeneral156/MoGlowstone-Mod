@@ -1,6 +1,0 @@
-{
-    "parent": "moglowstone:block/orange_gsblock",
-    "textures": {
-        "inventory": "moglowstone:block/orangegsblock"
-    }
-}

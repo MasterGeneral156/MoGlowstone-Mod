@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "moglowstone:block/lamp_glowstone_block" }
+    }
+}
