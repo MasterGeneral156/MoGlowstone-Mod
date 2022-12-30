@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "moglowstone:red_gsblock"
+      "item": "moglowstone:red_glowstone_block"
     },
     "title": {
       "translate": "advancement.start.name"
@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:white_gsblock"
+            "item": "moglowstone:white_glowstone_block"
           }
         ]
       }
@@ -27,7 +27,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:orange_gsblock"
+            "item": "moglowstone:orange_glowstone_block"
           }
         ]
       }
@@ -37,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:magenta_gsblock"
+            "item": "moglowstone:magenta_glowstone_block"
           }
         ]
       }
@@ -47,7 +47,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:lblue_gsblock"
+            "item": "moglowstone:lblue_glowstone_block"
           }
         ]
       }
@@ -57,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:lime_gsblock"
+            "item": "moglowstone:lime_glowstone_block"
           }
         ]
       }
@@ -67,7 +67,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:pink_gsblock"
+            "item": "moglowstone:pink_glowstone_block"
           }
         ]
       }
@@ -77,7 +77,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:gray_gsblock"
+            "item": "moglowstone:gray_glowstone_block"
           }
         ]
       }
@@ -87,7 +87,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:lgray_gsblock"
+            "item": "moglowstone:lgray_glowstone_block"
           }
         ]
       }
@@ -97,7 +97,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:cyan_gsblock"
+            "item": "moglowstone:cyan_glowstone_block"
           }
         ]
       }
@@ -107,7 +107,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:purple_gsblock"
+            "item": "moglowstone:purple_glowstone_block"
           }
         ]
       }
@@ -117,7 +117,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:blue_gsblock"
+            "item": "moglowstone:blue_glowstone_block"
           }
         ]
       }
@@ -127,7 +127,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:brown_gsblock"
+            "item": "moglowstone:brown_glowstone_block"
           }
         ]
       }
@@ -137,7 +137,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:green_gsblock"
+            "item": "moglowstone:green_glowstone_block"
           }
         ]
       }
@@ -147,7 +147,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:red_gsblock"
+            "item": "moglowstone:red_glowstone_block"
           }
         ]
       }
@@ -157,7 +157,7 @@
       "conditions": {
         "items": [
           {
-            "item": "moglowstone:black_gsblock"
+            "item": "moglowstone:black_glowstone_block"
           }
         ]
       }

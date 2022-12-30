@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/cyan"}
     },
     "result": {
-        "item": "moglowstone:cyan_gsblock",
+        "item": "moglowstone:cyan_glowstone_block",
 		"count": 8
     }
 }

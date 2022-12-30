@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/gray"}
     },
     "result": {
-        "item": "moglowstone:gray_gsblock",
+        "item": "moglowstone:gray_glowstone_block",
 		"count": 8
     }
 }

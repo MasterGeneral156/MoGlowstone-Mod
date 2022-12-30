@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/brown"}
     },
     "result": {
-        "item": "moglowstone:brown_gsblock",
+        "item": "moglowstone:brown_glowstone_block",
 		"count": 8
     }
 }

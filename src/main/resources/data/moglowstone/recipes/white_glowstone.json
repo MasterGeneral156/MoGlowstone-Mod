@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/white"}
     },
     "result": {
-        "item": "moglowstone:white_gsblock",
+        "item": "moglowstone:white_glowstone_block",
 		"count": 8
     }
 }

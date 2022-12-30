@@ -3,15 +3,15 @@
 	{
         "icon": 
 		{
-            "item": "moglowstone:fuelglowstone"
+            "item": "moglowstone:glowstone_coal"
         },
         "title": 
 		{
-            "translate": "advancement.fuelglowstone.name"
+            "translate": "advancement.glowstone_coal.name"
         },
         "description": 
 		{
-            "translate": "advancement.fuelglowstone.desc"
+            "translate": "advancement.glowstone_coal.desc"
         }
     },
 	"parent": "moglowstone:main/root",
@@ -25,7 +25,7 @@
                 "items": 
 				[
                     {
-                        "item": "moglowstone:fuelglowstone"
+                        "item": "moglowstone:glowstone_coal"
                     }
                 ]
             }

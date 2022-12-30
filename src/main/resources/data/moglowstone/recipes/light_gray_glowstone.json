@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/light_gray"}
     },
     "result": {
-        "item": "moglowstone:lgray_gsblock",
+        "item": "moglowstone:lgray_glowstone_block",
 		"count": 8
     }
 }

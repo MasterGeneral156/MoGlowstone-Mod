@@ -2,12 +2,12 @@
   "type": "minecraft:block",
   "pools": [
     {
-	  "name": "moglowstone:brick_gsblock",
+	  "name": "moglowstone:cyan_glowstone_block",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "moglowstone:brick_gsblock"
+          "name": "moglowstone:cyan_glowstone_block"
         }
       ]
     }

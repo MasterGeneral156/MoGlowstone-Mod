@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/lime"}
     },
     "result": {
-        "item": "moglowstone:lime_gsblock",
+        "item": "moglowstone:lime_glowstone_block",
 		"count": 8
     }
 }

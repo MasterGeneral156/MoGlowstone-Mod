@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/red"}
     },
     "result": {
-        "item": "moglowstone:red_gsblock",
+        "item": "moglowstone:red_glowstone_block",
 		"count": 8
     }
 }

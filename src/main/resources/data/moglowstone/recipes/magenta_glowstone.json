@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/magenta"}
     },
     "result": {
-        "item": "moglowstone:magenta_gsblock",
+        "item": "moglowstone:magenta_glowstone_block",
 		"count": 8
     }
 }

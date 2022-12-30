@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/orange"}
     },
     "result": {
-        "item": "moglowstone:orange_gsblock",
+        "item": "moglowstone:orange_glowstone_block",
 		"count": 8
     }
 }

@@ -2,12 +2,12 @@
   "type": "minecraft:block",
   "pools": [
     {
-	  "name": "moglowstone:lgray_gsblock",
+	  "name": "moglowstone:purple_glowstone_block",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "moglowstone:lgray_gsblock"
+          "name": "moglowstone:purple_glowstone_block"
         }
       ]
     }

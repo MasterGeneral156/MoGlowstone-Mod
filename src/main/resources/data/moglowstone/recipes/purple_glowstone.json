@@ -11,7 +11,7 @@
 		"D": {"tag": "forge:dyes/purple"}
     },
     "result": {
-        "item": "moglowstone:purple_gsblock",
+        "item": "moglowstone:purple_glowstone_block",
 		"count": 8
     }
 }
