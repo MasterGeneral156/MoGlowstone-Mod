@@ -51,8 +51,8 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> gray_glowstone_block = ITEMS.register("gray_glowstone_block", () -> ModItems.gray_glowstone_block);
 	public static final RegistryObject<Item> green_glowstone_block = ITEMS.register("green_glowstone_block", () -> ModItems.green_glowstone_block);
 	public static final RegistryObject<Item> lamp_glowstone_block = ITEMS.register("lamp_glowstone_block", () -> ModItems.lamp_glowstone_block);
-	public static final RegistryObject<Item> lblue_glowstone_block = ITEMS.register("lblue_glowstone_block", () -> ModItems.light_blue_glowstone_block);
-	public static final RegistryObject<Item> lgray_glowstone_block = ITEMS.register("lgray_glowstone_block", () -> ModItems.light_gray_glowstone_block);
+	public static final RegistryObject<Item> light_blue_glowstone_block = ITEMS.register("light_blue_glowstone_block", () -> ModItems.light_blue_glowstone_block);
+	public static final RegistryObject<Item> light_gray_glowstone_block = ITEMS.register("light_gray_glowstone_block", () -> ModItems.light_gray_glowstone_block);
 	public static final RegistryObject<Item> lime_glowstone_block = ITEMS.register("lime_glowstone_block", () -> ModItems.lime_glowstone_block);
 	public static final RegistryObject<Item> magenta_glowstone_block = ITEMS.register("magenta_glowstone_block", () -> ModItems.magenta_glowstone_block);
 	public static final RegistryObject<Item> orange_glowstone_block = ITEMS.register("orange_glowstone_block", () -> ModItems.orange_glowstone_block);
