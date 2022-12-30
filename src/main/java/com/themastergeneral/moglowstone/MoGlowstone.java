@@ -85,7 +85,6 @@ public class MoGlowstone {
                 .displayItems((featureFlags, output, hasOp) -> { }));
     }
 	
-	@SubscribeEvent
 	private void fillTab(CreativeModeTabEvent.BuildContents ev)
 	{
 		if (ev.getTab() == MoGlowstoneTab)
