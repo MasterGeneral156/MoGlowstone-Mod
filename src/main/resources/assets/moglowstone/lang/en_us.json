@@ -25,6 +25,6 @@
 
     "advancement.start.name": "Mo' Glowstone",
     "advancement.start.desc": "Obtain Colored Glowstone",
-    "advancement.fuelglowstone.name": "Shiny Fuel",
-    "advancement.fuelglowstone.desc": "Craft Glowstone Coal"
+    "advancement.glowstone_coal.name": "Shiny Fuel",
+    "advancement.glowstone_coal.desc": "Craft Glowstone Coal"
 }
