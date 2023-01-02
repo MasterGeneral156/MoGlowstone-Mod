@@ -6,7 +6,7 @@
         "S"
     ],
     "key": {
-		"F": { "item": "moglowstone:fuelglowstone" },
+		"F": { "item": "moglowstone:glowstone_coal" },
         "S": { "item": "minecraft:stick" }
     },
     "result": {

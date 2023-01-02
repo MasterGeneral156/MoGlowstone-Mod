@@ -6,7 +6,7 @@
         "G "
     ],
     "key": {
-		"F": { "item": "moglowstone:fuelglowstone" },
+		"F": { "item": "moglowstone:glowstone_coal" },
         "B": { "item": "minecraft:blaze_powder" },
 		"G": { "item": "minecraft:gunpowder" }
     },

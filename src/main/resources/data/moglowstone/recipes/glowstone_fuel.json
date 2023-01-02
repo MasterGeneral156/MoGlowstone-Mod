@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "moglowstone:fuelglowstone",
+    "group": "moglowstone:glowstone_coal",
     "pattern": [
         "GGG",
         "GDG",
@@ -11,7 +11,7 @@
 		"D": { "item": "minecraft:coal" }
     },
     "result": {
-        "item": "moglowstone:fuelglowstone",
+        "item": "moglowstone:glowstone_coal",
 		"count": 1
     }
 }
