@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[44,)"
+loaderVersion="[44.1,)"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
 issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
 displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
@@ -10,7 +10,7 @@ license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.19/LICENSE"
 
 [[mods]] 
 modId="moglowstone"
-version="2.3.2"
+version="2.3.3"
 displayName="Mo' Glowstone" #mandatory
 description="RGB Glowstone!"
 
