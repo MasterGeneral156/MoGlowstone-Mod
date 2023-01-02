@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "minecraft:torch",
+    "pattern": [
+        "F",
+        "S"
+    ],
+    "key": {
+		"F": { "item": "moglowstone:glowstone_coal" },
+        "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+        "item": "minecraft:torch",
+		"count": 8
+    }
+}

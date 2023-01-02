@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "minecraft:fire_charge",
+    "pattern": [
+        " F ",
+        "GSG",
+        "LLL"
+    ],
+    "key": {
+		"F": { "item": "moglowstone:glowstone_coal" },
+        "L": { "tag": "minecraft:logs" },
+		"G": { "item": "minecraft:stick" }
+    },
+    "result": {
+        "item": "minecraft:campfire",
+		"count": 2
+    }
+}
