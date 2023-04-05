@@ -81,7 +81,8 @@ public class MoGlowstone {
     {
 		MoGlowstoneTab = event.registerCreativeModeTab(new ResourceLocation(MODID, "moglowstone_tab"), builder -> builder
                 .icon(() -> new ItemStack(ModItems.red_glowstone_block))
-                .title(Component.translatable("itemGroup.moglowstone")));
+                .title(Component.translatable("itemGroup.moglowstone"))
+                .build());
     }
 	
 	private void fillTab(CreativeModeTabEvent.BuildContents ev)
