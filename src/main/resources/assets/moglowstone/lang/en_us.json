@@ -17,7 +17,7 @@
     "block.moglowstone.brick_glowstone_block": "Glowstone Brick",
     "block.moglowstone.fuel_glowstone_block": "Fuel Glowstone Block",
     "block.moglowstone.lamp_glowstone_block": "Glowstone Lamp",
-    "block.moglowstone.glowstone_ore": "Glowstone Ore",
+    "block.moglowstone.glowstone_ore": "Glowstone Ore (Not Generating)",
 
     "itemGroup.moglowstone": "Mo' Glowstone Mod",
 
