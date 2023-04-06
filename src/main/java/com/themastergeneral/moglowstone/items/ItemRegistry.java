@@ -42,7 +42,6 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> glowstone_coal = ITEMS.register("glowstone_coal", () -> ModItems.glowstone_coal);
 	
 	//Block items
-	//TODO Full write out the registry names for 1.20 release. (ex. black_glowstone_block)
 	public static final RegistryObject<Item> black_glowstone_block = ITEMS.register("black_glowstone_block", () -> ModItems.black_glowstone_block);
 	public static final RegistryObject<Item> blue_glowstone_block = ITEMS.register("blue_glowstone_block", () -> ModItems.blue_glowstone_block);
 	public static final RegistryObject<Item> brick_glowstone_block = ITEMS.register("brick_glowstone_block", () -> ModItems.brick_glowstone_block);
