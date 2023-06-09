@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.19
+	Project:	Mo' Glowstone 1.20
 	File:		com.themastergeneral.moglowstone.items.ItemRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -38,7 +38,6 @@ public class ItemRegistry {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoGlowstone.MODID);
 	
 	//Base items
-	//TODO Rename to glowstone_coal in 1.20 release
 	public static final RegistryObject<Item> glowstone_coal = ITEMS.register("glowstone_coal", () -> ModItems.glowstone_coal);
 	
 	//Block items

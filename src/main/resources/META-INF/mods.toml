@@ -1,22 +1,21 @@
 modLoader="javafml" #mandatory
-loaderVersion="[45,)"
-updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json"
-issueTrackerURL="https://github.com/MasterGeneral156/MoGlowstone-Mod/issues"
-displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
-logoFile="logo-new.png"
-credits=""
-authors="TheMasterGeneral"
-license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.19/LICENSE"
+loaderVersion="${loader_version_range}" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="${mod_license}"
+issueTrackerURL="https://github.com/MasterGeneral156/Mo-Glowstone-Lamps/issues" #optional
+[[mods]] #mandatory
+modId="${mod_id}" #mandatory
+version="${mod_version}" #mandatory
+displayName="${mod_name}" #mandatory
+updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-glowstone" #optional
+logoFile="logo-new.png" #optional
+authors="${mod_authors}" #optional
+#displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
+description='''${mod_description}'''
 
-[[mods]] 
-modId="moglowstone"
-version="2.3.5"
-displayName="Mo' Glowstone" #mandatory
-description="RGB Glowstone!"
-
-[[dependencies.moglowstone]]
-    modId="ctdcore"
+[[dependencies.${mod_id}]] #optional
+    modId="ctdcore" #mandatory
     mandatory=true
-    versionRange="[2.2,]"
-    ordering="NONE"
+    versionRange="[2.4,)" #mandatory
+    ordering="AFTER"
     side="BOTH"

@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.19
+	Project:	Mo' Glowstone 1.20
 	File:		com.themastergeneral.moglowstone.blocks.GSBlock
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -31,15 +31,15 @@ import com.themastergeneral.ctdcore.block.CTDBlock;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 public class GSBlock extends CTDBlock {
 
-	public GSBlock(MaterialColor color) 
+	public GSBlock(MapColor color) 
 	{
-		super(Block.Properties.of(Material.GLASS, color)
+		super(Block.Properties.of()
 				.sound(SoundType.GLASS)
+				.mapColor(color)
 				.lightLevel((p_50755_) -> {
 				      return 15;
 				   })

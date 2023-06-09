@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.19
+	Project:	Mo' Glowstone 1.20
 	File:		com.themastergeneral.moglowstone.items.ModItemBlocks
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod

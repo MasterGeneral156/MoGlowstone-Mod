@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.19
+	Project:	Mo' Glowstone 1.20
 	File:		com.themastergeneral.moglowstone.items.ModItems
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -28,7 +28,6 @@
 package com.themastergeneral.moglowstone.items;
 
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
-import com.themastergeneral.moglowstone.MoGlowstone;
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
 import net.minecraft.world.item.Item;

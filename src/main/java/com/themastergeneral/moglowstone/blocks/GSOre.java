@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.19
+	Project:	Mo' Glowstone 1.20
 	File:		com.themastergeneral.moglowstone.blocks.GSOre
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -31,14 +31,14 @@ import com.themastergeneral.ctdcore.block.CTDBlock;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 public class GSOre extends CTDBlock {
 	public GSOre() 
 	{
-		super(Block.Properties.of(Material.STONE, MaterialColor.STONE)
+		super(Block.Properties.of()
 				.sound(SoundType.STONE)
+				.mapColor(MapColor.STONE)
 				.lightLevel((p_50755_) -> {
 				      return 2;
 				   })
