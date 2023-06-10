@@ -41,7 +41,7 @@ public class TabRegistry {
 
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoGlowstone.MODID);
 	
-	public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("moglowstone_tab", () -> CreativeModeTab.builder()
+	public static final RegistryObject<CreativeModeTab> MOGLOWSTONE_TAB = CREATIVE_MODE_TABS.register("moglowstone_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ModItems.red_glowstone_block.getDefaultInstance())
             .title(Component.translatable("itemGroup.moglowstone"))
