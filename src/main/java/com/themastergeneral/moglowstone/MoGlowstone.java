@@ -33,7 +33,6 @@ import org.apache.logging.log4j.Logger;
 import com.themastergeneral.moglowstone.blocks.BlockRegistry;
 import com.themastergeneral.moglowstone.items.ItemRegistry;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -47,8 +46,6 @@ public class MoGlowstone {
 	static final Logger LOGGER = LogManager.getLogger();
 
 	public static final String MODID = "moglowstone";
-	
-	public static CreativeModeTab MoGlowstoneTab;
 
 	public MoGlowstone() {
 		instance = this;
