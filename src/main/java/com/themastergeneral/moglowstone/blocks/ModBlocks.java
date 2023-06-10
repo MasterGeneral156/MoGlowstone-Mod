@@ -43,11 +43,11 @@ public class ModBlocks
 	public static GSBlock light_gray_glowstone_block = new GSBlock(MapColor.COLOR_LIGHT_GRAY);
 	public static GSBlock lime_glowstone_block = new GSBlock(MapColor.COLOR_LIGHT_GREEN);
 	public static GSBlock magenta_glowstone_block = new GSBlock(MapColor.COLOR_MAGENTA);
-	public static GSBlock orange_glowstone_block = new GSBlock(MapColor.TERRACOTTA_ORANGE);
+	public static GSBlock orange_glowstone_block = new GSBlock(MapColor.COLOR_ORANGE);
 	public static GSBlock pink_glowstone_block = new GSBlock(MapColor.COLOR_PINK);
 	public static GSBlock purple_glowstone_block = new GSBlock(MapColor.COLOR_PURPLE);
 	public static GSBlock red_glowstone_block = new GSBlock(MapColor.COLOR_RED);
-	public static GSBlock white_glowstone_block = new GSBlock(MapColor.TERRACOTTA_WHITE);
+	public static GSBlock white_glowstone_block = new GSBlock(MapColor.SNOW);
 
 	public static GSOre glowstone_ore = new GSOre();
 }
