@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "moglowstone:block/orange_glowstone_sblock" }
+        "": { "model": "moglowstone:block/orange_glowstone_block" }
     }
 }
