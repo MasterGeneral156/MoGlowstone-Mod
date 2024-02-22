@@ -6,7 +6,7 @@ displayURL="https://minecraft.curseforge.com/projects/mo-glowstone"
 logoFile="logo-new.png"
 credits=""
 authors="TheMasterGeneral"
-license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.17/LICENSE"
+license="https://github.com/MasterGeneral156/MoGlowstone-Mod/blob/1.18/LICENSE"
 
 [[mods]] 
 modId="moglowstone"
