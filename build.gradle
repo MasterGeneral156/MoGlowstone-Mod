@@ -5,7 +5,7 @@ plugins {
 }
 
 version = project.property('mc_version') + "-" + project.property('mod_version')
-group = 'com.themastergeneral.ctdcore'
+group = 'com.themastergeneral.moglowstone'
 archivesBaseName = project.property('mod_name')
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
