@@ -34,21 +34,22 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class TabRegistry {
 
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoGlowstone.MODID);
 	
-	public static final RegistryObject<CreativeModeTab> MOGLOWSTONE_TAB = CREATIVE_MODE_TABS.register("moglowstone_tab", () -> CreativeModeTab.builder()
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOGLOWSTONE_TAB = CREATIVE_MODE_TABS.register("moglowstone_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ModItems.red_glowstone_block.getDefaultInstance())
             .title(Component.translatable("itemGroup.moglowstone"))
             .displayItems((parameters, ev) -> {
                 ev.accept(ModItems.red_glowstone_block); // Add the example item to the tab. For your own tabs, this method is preferred over the event
                 ev.accept(ModItems.glowstone_coal);
-    			ev.accept(ModBlocks.black_glowstone_block);
+    			ev.accept(ModItems.black_glowstone_block);
     			ev.accept(ModBlocks.brown_glowstone_block);
     			ev.accept(ModBlocks.blue_glowstone_block);
     			ev.accept(ModBlocks.brick_glowstone_block);

@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2023 MasterGeneral156
+				Copyright (c) 2024 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -27,42 +27,38 @@
 */
 package com.themastergeneral.moglowstone;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.mojang.logging.LogUtils;
+
+import net.minecraft.client.Minecraft;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+
+import org.slf4j.Logger;
 
 import com.themastergeneral.moglowstone.blocks.BlockRegistry;
 import com.themastergeneral.moglowstone.items.ItemRegistry;
-
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("moglowstone")
 public class MoGlowstone {
 	
 	public static MoGlowstone instance;
-	static final Logger LOGGER = LogManager.getLogger();
+	public static final Logger LOGGER = LogUtils.getLogger();
 
 	public static final String MODID = "moglowstone";
 
-	public MoGlowstone() {
+	public MoGlowstone(IEventBus modEventBus) {
 		instance = this;
         // Register the setup method for modloading
-        IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
-        modbus.addListener(this::setup);
-
-        // Register ourselves for server, registry and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::setup);
         
-        ItemRegistry.ITEMS.register(modbus);
-        BlockRegistry.BLOCKS.register(modbus);
-        TabRegistry.CREATIVE_MODE_TABS.register(modbus);
+        BlockRegistry.BLOCKS.register(modEventBus);
+        ItemRegistry.ITEMS.register(modEventBus);
+        TabRegistry.CREATIVE_MODE_TABS.register(modEventBus);
     }
 	
 	private void setup(final FMLCommonSetupEvent event)
     {
-		LOGGER.info("Mo' Glowstone is launching.");
+		LOGGER.info("Mo' Glowstone for Minecraft NeoForge " + Minecraft.getInstance().getLaunchedVersion() + " is launching.");
     }
 }

@@ -27,35 +27,35 @@
 */
 package com.themastergeneral.moglowstone.blocks;
 
+import java.util.function.Supplier;
+
 import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class BlockRegistry {
 	//Registry category.
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoGlowstone.MODID);
+	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MoGlowstone.MODID);
 	
 	//Blocks
-	public static final RegistryObject<Block> black_glowstone_block = BLOCKS.register("black_glowstone_block", () -> ModBlocks.black_glowstone_block);
-	public static final RegistryObject<Block> blue_glowstone_block = BLOCKS.register("blue_glowstone_block", () -> ModBlocks.blue_glowstone_block);
-	public static final RegistryObject<Block> brick_glowstone_block = BLOCKS.register("brick_glowstone_block", () -> ModBlocks.brick_glowstone_block);
-	public static final RegistryObject<Block> brown_glowstone_block = BLOCKS.register("brown_glowstone_block", () -> ModBlocks.brown_glowstone_block);
-	public static final RegistryObject<Block> cyan_glowstone_block = BLOCKS.register("cyan_glowstone_block", () -> ModBlocks.cyan_glowstone_block);
-	public static final RegistryObject<Block> gray_glowstone_block = BLOCKS.register("gray_glowstone_block", () -> ModBlocks.gray_glowstone_block);
-	public static final RegistryObject<Block> green_glowstone_block = BLOCKS.register("green_glowstone_block", () -> ModBlocks.green_glowstone_block);
-	public static final RegistryObject<Block> lamp_glowstone_block = BLOCKS.register("lamp_glowstone_block", () -> ModBlocks.lamp_glowstone_block);
-	public static final RegistryObject<Block> light_blue_glowstone_block = BLOCKS.register("light_blue_glowstone_block", () -> ModBlocks.light_blue_glowstone_block);
-	public static final RegistryObject<Block> light_gray_glowstone_block = BLOCKS.register("light_gray_glowstone_block", () -> ModBlocks.light_gray_glowstone_block);
-	public static final RegistryObject<Block> lime_glowstone_block = BLOCKS.register("lime_glowstone_block", () -> ModBlocks.lime_glowstone_block);
-	public static final RegistryObject<Block> magenta_glowstone_block = BLOCKS.register("magenta_glowstone_block", () -> ModBlocks.magenta_glowstone_block);
-	public static final RegistryObject<Block> orange_glowstone_block = BLOCKS.register("orange_glowstone_block", () -> ModBlocks.orange_glowstone_block);
-	public static final RegistryObject<Block> pink_glowstone_block = BLOCKS.register("pink_glowstone_block", () -> ModBlocks.pink_glowstone_block);
-	public static final RegistryObject<Block> purple_glowstone_block = BLOCKS.register("purple_glowstone_block", () -> ModBlocks.purple_glowstone_block);
-	public static final RegistryObject<Block> red_glowstone_block = BLOCKS.register("red_glowstone_block", () -> ModBlocks.red_glowstone_block);
-	public static final RegistryObject<Block> white_glowstone_block = BLOCKS.register("white_glowstone_block", () -> ModBlocks.white_glowstone_block);
+	public static final Supplier<GSBlock> black_glowstone_block = BLOCKS.register("black_glowstone_block", () -> ModBlocks.black_glowstone_block);
+	public static final Supplier<GSBlock> blue_glowstone_block = BLOCKS.register("blue_glowstone_block", () -> ModBlocks.blue_glowstone_block);
+	public static final Supplier<GSBlock> brick_glowstone_block = BLOCKS.register("brick_glowstone_block", () -> ModBlocks.brick_glowstone_block);
+	public static final Supplier<GSBlock> brown_glowstone_block = BLOCKS.register("brown_glowstone_block", () -> ModBlocks.brown_glowstone_block);
+	public static final Supplier<GSBlock> cyan_glowstone_block = BLOCKS.register("cyan_glowstone_block", () -> ModBlocks.cyan_glowstone_block);
+	public static final Supplier<GSBlock> gray_glowstone_block = BLOCKS.register("gray_glowstone_block", () -> ModBlocks.gray_glowstone_block);
+	public static final Supplier<GSBlock> green_glowstone_block = BLOCKS.register("green_glowstone_block", () -> ModBlocks.green_glowstone_block);
+	public static final Supplier<GSBlock> lamp_glowstone_block = BLOCKS.register("lamp_glowstone_block", () -> ModBlocks.lamp_glowstone_block);
+	public static final Supplier<GSBlock> light_blue_glowstone_block = BLOCKS.register("light_blue_glowstone_block", () -> ModBlocks.light_blue_glowstone_block);
+	public static final Supplier<GSBlock> light_gray_glowstone_block = BLOCKS.register("light_gray_glowstone_block", () -> ModBlocks.light_gray_glowstone_block);
+	public static final Supplier<GSBlock> lime_glowstone_block = BLOCKS.register("lime_glowstone_block", () -> ModBlocks.lime_glowstone_block);
+	public static final Supplier<GSBlock> magenta_glowstone_block = BLOCKS.register("magenta_glowstone_block", () -> ModBlocks.magenta_glowstone_block);
+	public static final Supplier<GSBlock> orange_glowstone_block = BLOCKS.register("orange_glowstone_block", () -> ModBlocks.orange_glowstone_block);
+	public static final Supplier<GSBlock> pink_glowstone_block = BLOCKS.register("pink_glowstone_block", () -> ModBlocks.pink_glowstone_block);
+	public static final Supplier<GSBlock> purple_glowstone_block = BLOCKS.register("purple_glowstone_block", () -> ModBlocks.purple_glowstone_block);
+	public static final Supplier<GSBlock> red_glowstone_block = BLOCKS.register("red_glowstone_block", () -> ModBlocks.red_glowstone_block);
+	public static final Supplier<GSBlock> white_glowstone_block = BLOCKS.register("white_glowstone_block", () -> ModBlocks.white_glowstone_block);
 	
-	public static final RegistryObject<Block> glowstone_ore = BLOCKS.register("glowstone_ore", () -> ModBlocks.glowstone_ore);
+	public static final Supplier<GSOre> glowstone_ore = BLOCKS.register("glowstone_ore", () -> ModBlocks.glowstone_ore);
 }
