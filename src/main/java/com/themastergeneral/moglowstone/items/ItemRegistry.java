@@ -60,5 +60,7 @@ public class ItemRegistry {
 	public static final Supplier<BlockItem> purple_glowstone_block = ITEMS.register("purple_glowstone_block", () -> ModItems.purple_glowstone_block);
 	public static final Supplier<BlockItem> red_glowstone_block = ITEMS.register("red_glowstone_block", () -> ModItems.red_glowstone_block);
 	public static final Supplier<BlockItem> white_glowstone_block = ITEMS.register("white_glowstone_block", () -> ModItems.white_glowstone_block);
+	
+	//Ore
 	public static final Supplier<BlockItem> glowstone_ore = ITEMS.register("glowstone_ore", () -> ModItems.glowstone_ore);
 }
