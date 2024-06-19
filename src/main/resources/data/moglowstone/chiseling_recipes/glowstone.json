@@ -1,0 +1,51 @@
+{
+  "type": "rechiseled:chiseling",
+  "mod_id": "moglowstone",
+  "entries": [
+	{
+      "item": "moglowstone:red_glowstone_block"
+    },
+	{
+      "item": "moglowstone:white_glowstone_block"
+    },
+	{
+      "item": "moglowstone:purple_glowstone_block"
+    },
+	{
+      "item": "moglowstone:pink_glowstone_block"
+    },
+	{
+      "item": "moglowstone:orange_glowstone_block"
+    },
+	{
+      "item": "moglowstone:magenta_glowstone_block"
+    },
+	{
+      "item": "moglowstone:lime_glowstone_block"
+    },
+	{
+      "item": "moglowstone:lgray_glowstone_block"
+    },
+	{
+      "item": "moglowstone:lblue_glowstone_block"
+    },
+	{
+      "item": "moglowstone:green_glowstone_block"
+    },
+	{
+      "item": "moglowstone:gray_glowstone_block"
+    },
+	{
+      "item": "moglowstone:cyan_glowstone_block"
+    },
+	{
+      "item": "moglowstone:brown_glowstone_block"
+    },
+	{
+      "item": "moglowstone:blue_glowstone_block"
+    },
+	{
+      "item": "moglowstone:black_glowstone_block"
+    }
+	]
+}

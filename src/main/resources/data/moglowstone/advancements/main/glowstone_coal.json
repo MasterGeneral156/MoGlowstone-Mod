@@ -1,0 +1,34 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "moglowstone:glowstone_coal"
+        },
+        "title": 
+		{
+            "translate": "advancement.glowstone_coal.name"
+        },
+        "description": 
+		{
+            "translate": "advancement.glowstone_coal.desc"
+        }
+    },
+	"parent": "moglowstone:main/root",
+    "criteria": 
+	{
+        "carrot": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "moglowstone:glowstone_coal"
+                    }
+                ]
+            }
+        }
+    }
+}
