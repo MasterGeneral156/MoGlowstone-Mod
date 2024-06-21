@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "moglowstone:block/lime_glowstone_block"
+    }
+}

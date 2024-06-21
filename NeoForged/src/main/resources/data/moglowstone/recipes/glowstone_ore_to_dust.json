@@ -1,0 +1,10 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "moglowstone:glowstone_ore"
+  },
+  "result": "minecraft:glowstone_dust",
+  "experience": 0.35,
+  "count": 2,
+  "cookingtime": 200
+}

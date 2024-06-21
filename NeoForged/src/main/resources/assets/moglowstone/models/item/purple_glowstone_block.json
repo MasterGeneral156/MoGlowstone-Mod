@@ -1,0 +1,6 @@
+{
+    "parent": "moglowstone:block/purple_glowstone_block",
+    "textures": {
+        "inventory": "moglowstone:block/purple_glowstone_block"
+    }
+}

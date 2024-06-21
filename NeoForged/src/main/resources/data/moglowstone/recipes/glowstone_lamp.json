@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "moglowstone:lamp_glowstone_block",
+    "pattern": [
+        " D ",
+        "DGD",
+		" D "
+    ],
+    "key": {
+		"D": { "tag": "forge:dusts/glowstone" },
+		"G": { "tag": "forge:glowstone" }
+    },
+    "result": {
+        "item": "moglowstone:lamp_glowstone_block",
+		"count": 1
+    }
+}

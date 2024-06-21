@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "moglowstone:black_glowstone_block",
+	"moglowstone:blue_glowstone_block",
+	"moglowstone:brown_glowstone_block",
+	"moglowstone:cyan_glowstone_block",
+	"moglowstone:gray_glowstone_block",
+	"moglowstone:green_glowstone_block",
+	"moglowstone:light_blue_glowstone_block",
+	"moglowstone:light_gray_glowstone_block",
+	"moglowstone:lime_glowstone_block",
+	"moglowstone:magenta_glowstone_block",
+	"moglowstone:orange_glowstone_block",
+	"moglowstone:red_glowstone_block",
+	"moglowstone:pink_glowstone_block",
+	"moglowstone:purple_glowstone_block",
+	"moglowstone:white_glowstone_block",
+	"minecraft:glowstone"
+  ]
+}

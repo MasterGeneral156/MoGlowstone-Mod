@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "moglowstone:glowstone_coal",
+    "pattern": [
+        "GGG",
+        "GDG",
+		"GGG"
+    ],
+    "key": {
+		"G": { "tag": "forge:dusts/glowstone" },
+		"D": { "item": "minecraft:coal" }
+    },
+    "result": {
+        "item": "moglowstone:glowstone_coal",
+		"count": 1
+    }
+}
