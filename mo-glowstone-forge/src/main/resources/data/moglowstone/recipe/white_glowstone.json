@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG",
+        "GDG",
+		"GGG"
+    ],
+    "key": {
+		"G": {"tag": "forge:glowstone"},
+		"D": {"tag": "forge:dyes/white"}
+    },
+    "result": {
+        "id": "moglowstone:white_glowstone_block",
+		"count": 8
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GG",
+        "GG"
+    ],
+    "key": {
+        "G": {"tag": "forge:glowstone"}
+    },
+    "result": {
+        "id": "moglowstone:brick_glowstone_block",
+		"count": 4
+    }
+}

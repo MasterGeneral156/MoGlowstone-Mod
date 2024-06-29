@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " F ",
+        "GSG",
+        "LLL"
+    ],
+    "key": {
+		"F": { "item": "moglowstone:glowstone_coal" },
+        "L": { "tag": "minecraft:logs" },
+		"G": { "tag": "c:rods/wooden" }
+    },
+    "result": {
+        "id": "minecraft:campfire",
+		"count": 2
+    }
+}

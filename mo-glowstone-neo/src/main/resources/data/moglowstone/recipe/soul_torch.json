@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "F",
+        "G",
+        "S"
+    ],
+    "key": {
+		"F": { "item": "moglowstone:glowstone_coal" },
+        "S": { "tag": "minecraft:soul_fire_base_blocks" },
+		"G": { "tag": "c:rods/wooden" }
+    },
+    "result": {
+        "id": "minecraft:soul_torch",
+		"count": 8
+    }
+}

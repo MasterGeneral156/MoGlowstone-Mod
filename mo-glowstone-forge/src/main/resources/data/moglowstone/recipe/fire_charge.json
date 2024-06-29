@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BF",
+        "G "
+    ],
+    "key": {
+		"F": { "item": "moglowstone:glowstone_coal" },
+        "B": { "item": "minecraft:blaze_powder" },
+		"G": { "tag": "forge:gunpowder" }
+    },
+    "result": {
+        "id": "minecraft:fire_charge",
+		"count": 6
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG",
+        "GDG",
+		"GGG"
+    ],
+    "key": {
+		"G": {"tag": "c:glowstone"},
+		"D": {"tag": "c:dyes/pink"}
+    },
+    "result": {
+        "id": "moglowstone:pink_glowstone_block",
+		"count": 8
+    }
+}
