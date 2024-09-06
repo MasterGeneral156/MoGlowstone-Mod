@@ -109,16 +109,15 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-	exclusiveContent {
-        forRepository {
-            maven {
-                url "https://beta.cursemaven.com"
-            }
-        }
-        filter {
-            includeGroup "curse.maven"
-        }
-    }
+	maven {
+		name = "MasterGeneral156 LAN"
+		url = "http://192.168.1.30/maven/"
+		allowInsecureProtocol = true
+	}
+	maven {
+		name = "MasterGeneral156"
+		url = "https://chivalryengine.com/maven/"
+	}
 }
 
 dependencies {
@@ -126,7 +125,7 @@ dependencies {
     
     // Hack fix for now, force jopt-simple to be exactly 5.0.4 because Mojang ships that version, but some transitive dependencies request 6.0+ 
     implementation('net.sf.jopt-simple:jopt-simple:5.0.4') { version { strictly '5.0.4' } }
-	implementation 'curse.maven:ctd-core-' + project.property('ctd_core_ver')
+	implementation("com.themastergeneral:ctd-core:${project.property('ctd_core_ver')}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

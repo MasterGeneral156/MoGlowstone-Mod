@@ -90,21 +90,20 @@ configurations {
 }
 
 repositories {
-	exclusiveContent {
-        forRepository {
-            maven {
-                url "https://beta.cursemaven.com"
-            }
-        }
-        filter {
-            includeGroup "curse.maven"
-        }
-    }
+	maven {
+		name = "MasterGeneral156 LAN"
+		url = "http://192.168.1.30/maven/"
+		allowInsecureProtocol = true
+	}
+	maven {
+		name = "MasterGeneral156"
+		url = "https://chivalryengine.com/maven/"
+	}
 }
 
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
-	implementation 'curse.maven:ctd-core-' + project.property('ctd_core_ver')
+	implementation ("com.themastergeneral:ctd-core:${project.property('ctd_core_ver')}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
