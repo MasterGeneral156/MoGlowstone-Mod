@@ -6,8 +6,8 @@
 		"GGG"
     ],
     "key": {
-		"G": { "tag": "forge:dusts/glowstone" },
-		"D": { "item": "minecraft:coal" }
+		"G": "#forge:dusts/glowstone",
+		"D": "minecraft:coal"
     },
     "result": {
         "id": "moglowstone:glowstone_coal",

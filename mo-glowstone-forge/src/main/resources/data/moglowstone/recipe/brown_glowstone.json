@@ -1,14 +1,14 @@
 {
     "type": "minecraft:crafting_shaped",
+	"key": {
+		"G": "#forge:glowstone",
+		"D": "#forge:dyes/brown"
+    },
     "pattern": [
         "GGG",
         "GDG",
 		"GGG"
     ],
-    "key": {
-		"G": {"tag": "forge:glowstone"},
-		"D": {"tag": "forge:dyes/brown"}
-    },
     "result": {
         "id": "moglowstone:brown_glowstone_block",
 		"count": 8

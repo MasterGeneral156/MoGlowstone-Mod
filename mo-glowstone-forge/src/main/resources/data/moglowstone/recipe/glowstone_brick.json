@@ -5,7 +5,7 @@
         "GG"
     ],
     "key": {
-        "G": {"tag": "forge:glowstone"}
+        "G": "#forge:glowstone"
     },
     "result": {
         "id": "moglowstone:brick_glowstone_block",

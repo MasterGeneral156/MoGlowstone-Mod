@@ -6,9 +6,9 @@
         "S"
     ],
     "key": {
-		"F": { "item": "moglowstone:glowstone_coal" },
-        "S": { "tag": "minecraft:soul_fire_base_blocks" },
-		"G": { "tag": "forge:rods/wooden" }
+		"F": "moglowstone:glowstone_coal",
+        "S": "#minecraft:soul_fire_base_blocks",
+		"G": "#forge:rods/wooden"
     },
     "result": {
         "id": "minecraft:soul_torch",

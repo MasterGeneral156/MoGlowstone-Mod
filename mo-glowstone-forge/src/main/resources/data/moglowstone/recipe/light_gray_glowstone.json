@@ -6,8 +6,8 @@
 		"GGG"
     ],
     "key": {
-		"G": {"tag": "forge:glowstone"},
-		"D": {"tag": "forge:dyes/light_gray"}
+		"G": "#forge:glowstone",
+		"D": "#forge:dyes/light_gray"
     },
     "result": {
         "id": "moglowstone:light_gray_glowstone_block",
