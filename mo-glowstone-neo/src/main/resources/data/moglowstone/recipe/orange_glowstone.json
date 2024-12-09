@@ -6,8 +6,8 @@
 		"GGG"
     ],
     "key": {
-		"G": {"tag": "c:glowstone"},
-		"D": {"tag": "c:dyes/orange"}
+		"G": "#c:glowstone",
+		"D": "#c:dyes/orange"
     },
     "result": {
         "id": "moglowstone:orange_glowstone_block",

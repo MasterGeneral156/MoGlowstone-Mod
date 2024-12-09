@@ -3,9 +3,7 @@
   "cookingtime": 200,
   "count": 2,
   "experience": 0.35,
-  "ingredient": {
-    "item": "moglowstone:glowstone_ore"
-  },
+  "ingredient": "moglowstone:glowstone_ore",
   "result": {
     "id": "minecraft:glowstone_dust"
   }

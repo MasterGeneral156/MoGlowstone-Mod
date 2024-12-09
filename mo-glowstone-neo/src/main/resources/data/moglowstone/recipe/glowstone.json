@@ -6,8 +6,8 @@
 		"GGG"
     ],
     "key": {
-		"G": {"tag": "c:glowstone"},
-		"D": {"tag": "c:dyes/yellow"}
+		"G": "#c:glowstone",
+		"D": "#c:dyes/yellow"
     },
     "result": {
         "id": "minecraft:glowstone",

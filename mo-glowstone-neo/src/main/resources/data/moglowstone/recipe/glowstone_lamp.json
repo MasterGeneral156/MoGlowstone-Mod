@@ -6,8 +6,8 @@
 		" D "
     ],
     "key": {
-		"D": { "tag": "c:dusts/glowstone" },
-		"G": { "tag": "c:glowstone" }
+		"D": "#c:dusts/glowstone",
+		"G": "#c:glowstone"
     },
     "result": {
         "id": "moglowstone:lamp_glowstone_block",

@@ -5,8 +5,8 @@
         "S"
     ],
     "key": {
-		"F": { "item": "moglowstone:glowstone_coal" },
-        "S": { "tag": "c:rods/wooden" }
+		"F": "moglowstone:glowstone_coal",
+        "S": "#c:rods/wooden"
     },
     "result": {
         "id": "minecraft:torch",

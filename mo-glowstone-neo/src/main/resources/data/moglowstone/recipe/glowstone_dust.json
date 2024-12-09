@@ -6,8 +6,8 @@
 		"TTT"
     ],
     "key": {
-        "R": { "tag": "c:dusts/redstone" },
-        "T": { "item": "minecraft:torch" }
+        "R": "#c:dusts/redstone",
+        "T": "minecraft:torch"
     },
     "result": {
         "id": "minecraft:glowstone_dust"
