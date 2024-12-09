@@ -44,14 +44,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class MoGlowstone {
 	
 	public static MoGlowstone instance;
-	static final Logger LOGGER = LogManager.getLogger();
+	static final Logger LOGGER = LogManager.getLogger(MoGlowstone.MODID);
 
 	public static final String MODID = "moglowstone";
 
-	public MoGlowstone() {
+	public MoGlowstone(FMLJavaModLoadingContext context) {
 		instance = this;
         // Register the setup method for modloading
-        IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modbus = context.getModEventBus();
         modbus.addListener(this::setup);
 
         // Register ourselves for server, registry and other game events we are interested in

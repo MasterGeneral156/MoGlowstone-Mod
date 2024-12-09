@@ -31,23 +31,23 @@ import net.minecraft.world.level.material.MapColor;
 
 public class ModBlocks 
 {
-	public static GSBlock black_glowstone_block = new GSBlock(MapColor.COLOR_BLACK);
-	public static GSBlock blue_glowstone_block = new GSBlock(MapColor.COLOR_BLUE);
-	public static GSBlock brick_glowstone_block = new GSBlock(MapColor.SAND);
-	public static GSBlock brown_glowstone_block = new GSBlock(MapColor.COLOR_BROWN);
-	public static GSBlock cyan_glowstone_block = new GSBlock( MapColor.COLOR_CYAN);
-	public static GSBlock gray_glowstone_block = new GSBlock(MapColor.COLOR_GRAY);
-	public static GSBlock green_glowstone_block = new GSBlock(MapColor.COLOR_GREEN);
-	public static GSBlock lamp_glowstone_block = new GSBlock(MapColor.COLOR_YELLOW);
-	public static GSBlock light_blue_glowstone_block = new GSBlock(MapColor.COLOR_LIGHT_BLUE);
-	public static GSBlock light_gray_glowstone_block = new GSBlock(MapColor.COLOR_LIGHT_GRAY);
-	public static GSBlock lime_glowstone_block = new GSBlock(MapColor.COLOR_LIGHT_GREEN);
-	public static GSBlock magenta_glowstone_block = new GSBlock(MapColor.COLOR_MAGENTA);
-	public static GSBlock orange_glowstone_block = new GSBlock(MapColor.COLOR_ORANGE);
-	public static GSBlock pink_glowstone_block = new GSBlock(MapColor.COLOR_PINK);
-	public static GSBlock purple_glowstone_block = new GSBlock(MapColor.COLOR_PURPLE);
-	public static GSBlock red_glowstone_block = new GSBlock(MapColor.COLOR_RED);
-	public static GSBlock white_glowstone_block = new GSBlock(MapColor.SNOW);
+	public static GSBlock black_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("black_glowstone_block"), MapColor.COLOR_BLACK);
+	public static GSBlock blue_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("blue_glowstone_block"), MapColor.COLOR_BLUE);
+	public static GSBlock brick_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("brick_glowstone_block"), MapColor.SAND);
+	public static GSBlock brown_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("brown_glowstone_block"), MapColor.COLOR_BROWN);
+	public static GSBlock cyan_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("cyan_glowstone_block"), MapColor.COLOR_CYAN);
+	public static GSBlock gray_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("gray_glowstone_block"), MapColor.COLOR_GRAY);
+	public static GSBlock green_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("green_glowstone_block"), MapColor.COLOR_GREEN);
+	public static GSBlock lamp_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("lamp_glowstone_block"), MapColor.COLOR_YELLOW);
+	public static GSBlock light_blue_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("light_blue_glowstone_block"), MapColor.COLOR_LIGHT_BLUE);
+	public static GSBlock light_gray_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("light_gray_glowstone_block"), MapColor.COLOR_LIGHT_GRAY);
+	public static GSBlock lime_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("lime_glowstone_block"), MapColor.COLOR_LIGHT_GREEN);
+	public static GSBlock magenta_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("magenta_glowstone_block"), MapColor.COLOR_MAGENTA);
+	public static GSBlock orange_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("orange_glowstone_block"), MapColor.COLOR_ORANGE);
+	public static GSBlock pink_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("pink_glowstone_block"), MapColor.COLOR_PINK);
+	public static GSBlock purple_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("purple_glowstone_block"), MapColor.COLOR_PURPLE);
+	public static GSBlock red_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("red_glowstone_block"), MapColor.COLOR_RED);
+	public static GSBlock white_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("white_glowstone_block"), MapColor.SNOW);
 
-	public static GSOre glowstone_ore = new GSOre();
+	public static GSOre glowstone_ore = new GSOre(BlockRegistry.BLOCKS.key("glowstone_ore"));
 }

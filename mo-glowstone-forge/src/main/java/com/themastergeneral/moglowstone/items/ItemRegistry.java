@@ -36,7 +36,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistry {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoGlowstone.MODID);
-	
+
 	//Base items
 	public static final RegistryObject<Item> glowstone_coal = ITEMS.register("glowstone_coal", () -> ModItems.glowstone_coal);
 	

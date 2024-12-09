@@ -33,25 +33,25 @@ import com.themastergeneral.moglowstone.blocks.ModBlocks;
 import net.minecraft.world.item.Item;
 
 public class ModItems {
-	public static CTDFuelItem glowstone_coal = new CTDFuelItem(new Item.Properties(), 3200);
+	public static CTDFuelItem glowstone_coal = new CTDFuelItem(ItemRegistry.ITEMS.key("glowstone_coal"), new Item.Properties().setId(ItemRegistry.ITEMS.key("glowstone_coal")), 3200);
 	
 	//Mod blocks
-	public static ModItemBlocks black_glowstone_block = new ModItemBlocks(ModBlocks.black_glowstone_block);
-	public static ModItemBlocks blue_glowstone_block = new ModItemBlocks(ModBlocks.blue_glowstone_block);
-	public static ModItemBlocks brick_glowstone_block = new ModItemBlocks(ModBlocks.brick_glowstone_block);
-	public static ModItemBlocks brown_glowstone_block = new ModItemBlocks(ModBlocks.brown_glowstone_block);
-	public static ModItemBlocks cyan_glowstone_block = new ModItemBlocks(ModBlocks.cyan_glowstone_block);
-	public static ModItemBlocks gray_glowstone_block = new ModItemBlocks(ModBlocks.gray_glowstone_block);
-	public static ModItemBlocks green_glowstone_block = new ModItemBlocks(ModBlocks.green_glowstone_block);
-	public static ModItemBlocks lamp_glowstone_block = new ModItemBlocks(ModBlocks.lamp_glowstone_block);
-	public static ModItemBlocks light_blue_glowstone_block = new ModItemBlocks(ModBlocks.light_blue_glowstone_block);
-	public static ModItemBlocks light_gray_glowstone_block = new ModItemBlocks(ModBlocks.light_gray_glowstone_block);
-	public static ModItemBlocks lime_glowstone_block = new ModItemBlocks(ModBlocks.lime_glowstone_block);
-	public static ModItemBlocks magenta_glowstone_block = new ModItemBlocks(ModBlocks.magenta_glowstone_block);
-	public static ModItemBlocks orange_glowstone_block = new ModItemBlocks(ModBlocks.orange_glowstone_block);
-	public static ModItemBlocks pink_glowstone_block = new ModItemBlocks(ModBlocks.pink_glowstone_block);
-	public static ModItemBlocks purple_glowstone_block = new ModItemBlocks(ModBlocks.purple_glowstone_block);
-	public static ModItemBlocks red_glowstone_block = new ModItemBlocks(ModBlocks.red_glowstone_block);
-	public static ModItemBlocks white_glowstone_block = new ModItemBlocks(ModBlocks.white_glowstone_block);
-	public static ModItemBlocks glowstone_ore = new ModItemBlocks(ModBlocks.glowstone_ore);
+	public static ModItemBlocks black_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("black_glowstone_block"),ModBlocks.black_glowstone_block);
+	public static ModItemBlocks blue_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("blue_glowstone_block"),ModBlocks.blue_glowstone_block);
+	public static ModItemBlocks brick_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("brick_glowstone_block"),ModBlocks.brick_glowstone_block);
+	public static ModItemBlocks brown_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("brown_glowstone_block"),ModBlocks.brown_glowstone_block);
+	public static ModItemBlocks cyan_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("cyan_glowstone_block"),ModBlocks.cyan_glowstone_block);
+	public static ModItemBlocks gray_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("gray_glowstone_block"),ModBlocks.gray_glowstone_block);
+	public static ModItemBlocks green_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("green_glowstone_block"),ModBlocks.green_glowstone_block);
+	public static ModItemBlocks lamp_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("lamp_glowstone_block"),ModBlocks.lamp_glowstone_block);
+	public static ModItemBlocks light_blue_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("light_blue_glowstone_block"),ModBlocks.light_blue_glowstone_block);
+	public static ModItemBlocks light_gray_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("light_gray_glowstone_block"),ModBlocks.light_gray_glowstone_block);
+	public static ModItemBlocks lime_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("lime_glowstone_block"),ModBlocks.lime_glowstone_block);
+	public static ModItemBlocks magenta_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("magenta_glowstone_block"),ModBlocks.magenta_glowstone_block);
+	public static ModItemBlocks orange_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("orange_glowstone_block"),ModBlocks.orange_glowstone_block);
+	public static ModItemBlocks pink_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("pink_glowstone_block"),ModBlocks.pink_glowstone_block);
+	public static ModItemBlocks purple_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("purple_glowstone_block"),ModBlocks.purple_glowstone_block);
+	public static ModItemBlocks red_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("red_glowstone_block"),ModBlocks.red_glowstone_block);
+	public static ModItemBlocks white_glowstone_block = new ModItemBlocks(ItemRegistry.ITEMS.key("white_glowstone_block"),ModBlocks.white_glowstone_block);
+	public static ModItemBlocks glowstone_ore = new ModItemBlocks(ItemRegistry.ITEMS.key("glowstone_ore"),ModBlocks.glowstone_ore);
 }

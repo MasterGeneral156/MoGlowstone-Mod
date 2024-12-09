@@ -29,14 +29,15 @@ package com.themastergeneral.moglowstone.blocks;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
 
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
 
 public class GSOre extends CTDBlock {
-	public GSOre() 
+	public GSOre(ResourceKey<Block> key)
 	{
-		super(Block.Properties.of()
+		super(key, Block.Properties.of()
 				.sound(SoundType.STONE)
 				.mapColor(MapColor.STONE)
 				.lightLevel((p_50755_) -> {

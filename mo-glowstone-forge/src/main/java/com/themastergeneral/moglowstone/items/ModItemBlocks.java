@@ -28,14 +28,15 @@
 //Temp class. Will merge into CTD Core.
 package com.themastergeneral.moglowstone.items;
 
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class ModItemBlocks extends BlockItem
 {
-    public ModItemBlocks(Block blockIn)
+    public ModItemBlocks(ResourceKey<Item> key, Block blockIn)
     {
-        super(blockIn, new Item.Properties());
+        super(blockIn, new Item.Properties().setId(key));
     }
 }
