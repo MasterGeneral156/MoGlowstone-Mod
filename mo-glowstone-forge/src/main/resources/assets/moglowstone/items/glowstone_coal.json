@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "moglowstone:block/glowstone_coal"
+    "model": "moglowstone:item/glowstone_coal"
   }
 }
