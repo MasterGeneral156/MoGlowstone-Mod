@@ -110,13 +110,8 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
 	maven {
-		name = "MasterGeneral156 LAN"
-		url = "http://192.168.1.30/maven/"
-		allowInsecureProtocol = true
-	}
-	maven {
 		name = "MasterGeneral156"
-		url = "https://chivalryengine.com/maven/"
+		url = "https://maven.chivalryengine.com"
 	}
 }
 
