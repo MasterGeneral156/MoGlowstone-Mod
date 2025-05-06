@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.20
+	Project:	Mo' Glowstone 1.21
 	File:		com.themastergeneral.moglowstone.MoGlowstone
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2024 MasterGeneral156
+				Copyright (c) 2025 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -29,11 +29,13 @@ package com.themastergeneral.moglowstone;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
+import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 import com.themastergeneral.moglowstone.blocks.BlockRegistry;
@@ -47,18 +49,22 @@ public class MoGlowstone {
 
 	public static final String MODID = "moglowstone";
 
-	public MoGlowstone(IEventBus modEventBus) {
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MoGlowstone.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MoGlowstone.MODID);
+
+	public MoGlowstone(IEventBus modEventBus, ModContainer modContainer) {
 		instance = this;
         // Register the setup method for modloading
         modEventBus.addListener(this::setup);
         
         BlockRegistry.BLOCKS.register(modEventBus);
         ItemRegistry.ITEMS.register(modEventBus);
+
         TabRegistry.CREATIVE_MODE_TABS.register(modEventBus);
     }
 	
 	private void setup(final FMLCommonSetupEvent event)
     {
-		LOGGER.info("Mo' Glowstone for Minecraft NeoForge " + Minecraft.getInstance().getLaunchedVersion() + " is launching.");
+		LOGGER.info("Mo' Glowstone for Minecraft NeoForge " + ModUtils.getMCVersion() + " is launching.");
     }
 }

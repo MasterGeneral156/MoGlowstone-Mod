@@ -1,11 +1,11 @@
 /*
-	Project:	Mo' Glowstone 1.20
+	Project:	Mo' Glowstone 1.21
 	File:		com.themastergeneral.moglowstone.items.ItemRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2023 MasterGeneral156
+				Copyright (c) 2025 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -31,36 +31,38 @@ import java.util.function.Supplier;
 
 import com.themastergeneral.moglowstone.MoGlowstone;
 
+import com.themastergeneral.moglowstone.blocks.BlockRegistry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.DeferredRegister.Items;
 
 public class ItemRegistry {
-	public static final Items ITEMS = DeferredRegister.createItems(MoGlowstone.MODID);
-	
-	//Base items
-	public static final Supplier<Item> glowstone_coal = ITEMS.register("glowstone_coal", () -> ModItems.glowstone_coal);
-	
-	//Block items
-	public static final Supplier<BlockItem> black_glowstone_block = ITEMS.register("black_glowstone_block", () -> ModItems.black_glowstone_block);
-	public static final Supplier<BlockItem> blue_glowstone_block = ITEMS.register("blue_glowstone_block", () -> ModItems.blue_glowstone_block);
-	public static final Supplier<BlockItem> brick_glowstone_block = ITEMS.register("brick_glowstone_block", () -> ModItems.brick_glowstone_block);
-	public static final Supplier<BlockItem> brown_glowstone_block = ITEMS.register("brown_glowstone_block", () -> ModItems.brown_glowstone_block);
-	public static final Supplier<BlockItem> cyan_glowstone_block = ITEMS.register("cyan_glowstone_block", () -> ModItems.cyan_glowstone_block);
-	public static final Supplier<BlockItem> gray_glowstone_block = ITEMS.register("gray_glowstone_block", () -> ModItems.gray_glowstone_block);
-	public static final Supplier<BlockItem> green_glowstone_block = ITEMS.register("green_glowstone_block", () -> ModItems.green_glowstone_block);
-	public static final Supplier<BlockItem> lamp_glowstone_block = ITEMS.register("lamp_glowstone_block", () -> ModItems.lamp_glowstone_block);
-	public static final Supplier<BlockItem> light_blue_glowstone_block = ITEMS.register("light_blue_glowstone_block", () -> ModItems.light_blue_glowstone_block);
-	public static final Supplier<BlockItem> light_gray_glowstone_block = ITEMS.register("light_gray_glowstone_block", () -> ModItems.light_gray_glowstone_block);
-	public static final Supplier<BlockItem> lime_glowstone_block = ITEMS.register("lime_glowstone_block", () -> ModItems.lime_glowstone_block);
-	public static final Supplier<BlockItem> magenta_glowstone_block = ITEMS.register("magenta_glowstone_block", () -> ModItems.magenta_glowstone_block);
-	public static final Supplier<BlockItem> orange_glowstone_block = ITEMS.register("orange_glowstone_block", () -> ModItems.orange_glowstone_block);
-	public static final Supplier<BlockItem> pink_glowstone_block = ITEMS.register("pink_glowstone_block", () -> ModItems.pink_glowstone_block);
-	public static final Supplier<BlockItem> purple_glowstone_block = ITEMS.register("purple_glowstone_block", () -> ModItems.purple_glowstone_block);
-	public static final Supplier<BlockItem> red_glowstone_block = ITEMS.register("red_glowstone_block", () -> ModItems.red_glowstone_block);
-	public static final Supplier<BlockItem> white_glowstone_block = ITEMS.register("white_glowstone_block", () -> ModItems.white_glowstone_block);
-	
-	//Ore
-	public static final Supplier<BlockItem> glowstone_ore = ITEMS.register("glowstone_ore", () -> ModItems.glowstone_ore);
+	public static final DeferredRegister.Items ITEMS = MoGlowstone.ITEMS;
+
+	// Base item: Glowstone Coal with custom burn time
+	public static final DeferredItem<Item> GLOWSTONE_COAL = ITEMS.registerSimpleItem("glowstone_coal", new Item.Properties());
+
+	// Block items registration
+	public static final DeferredItem<BlockItem> BLACK_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("black_glowstone_block", BlockRegistry.BLACK_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> BLUE_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("blue_glowstone_block", BlockRegistry.BLUE_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> BRICK_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("brick_glowstone_block", BlockRegistry.BRICK_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> BROWN_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("brown_glowstone_block", BlockRegistry.BROWN_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> CYAN_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("cyan_glowstone_block", BlockRegistry.CYAN_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> GRAY_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("gray_glowstone_block", BlockRegistry.GRAY_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> GREEN_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("green_glowstone_block", BlockRegistry.GREEN_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> LAMP_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("lamp_glowstone_block", BlockRegistry.LAMP_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> LIGHT_BLUE_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("light_blue_glowstone_block", BlockRegistry.LIGHT_BLUE_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> LIGHT_GRAY_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("light_gray_glowstone_block", BlockRegistry.LIGHT_GRAY_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> LIME_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("lime_glowstone_block", BlockRegistry.LIME_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> MAGENTA_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("magenta_glowstone_block", BlockRegistry.MAGENTA_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> ORANGE_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("orange_glowstone_block", BlockRegistry.ORANGE_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> PINK_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("pink_glowstone_block", BlockRegistry.PINK_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> PURPLE_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("purple_glowstone_block", BlockRegistry.PURPLE_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> RED_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("red_glowstone_block", BlockRegistry.RED_GLOWSTONE_BLOCK);
+	public static final DeferredItem<BlockItem> WHITE_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("white_glowstone_block", BlockRegistry.WHITE_GLOWSTONE_BLOCK);
+
+	// Glowstone Ore block item
+	public static final Supplier<BlockItem> GLOWSTONE_ORE = ITEMS.registerSimpleBlockItem("glowstone_ore", BlockRegistry.GLOWSTONE_ORE);
 }
+

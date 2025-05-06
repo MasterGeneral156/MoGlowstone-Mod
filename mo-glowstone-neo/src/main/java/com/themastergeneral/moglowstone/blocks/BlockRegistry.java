@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 1.20
+	Project:	Mo' Glowstone 1.21
 	File:		com.themastergeneral.moglowstone.blocks.BlockRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -32,30 +32,140 @@ import java.util.function.Supplier;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class BlockRegistry {
-	//Registry category.
-	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MoGlowstone.MODID);
-	
-	//Blocks
-	public static final Supplier<GSBlock> black_glowstone_block = BLOCKS.register("black_glowstone_block", () -> ModBlocks.black_glowstone_block);
-	public static final Supplier<GSBlock> blue_glowstone_block = BLOCKS.register("blue_glowstone_block", () -> ModBlocks.blue_glowstone_block);
-	public static final Supplier<GSBlock> brick_glowstone_block = BLOCKS.register("brick_glowstone_block", () -> ModBlocks.brick_glowstone_block);
-	public static final Supplier<GSBlock> brown_glowstone_block = BLOCKS.register("brown_glowstone_block", () -> ModBlocks.brown_glowstone_block);
-	public static final Supplier<GSBlock> cyan_glowstone_block = BLOCKS.register("cyan_glowstone_block", () -> ModBlocks.cyan_glowstone_block);
-	public static final Supplier<GSBlock> gray_glowstone_block = BLOCKS.register("gray_glowstone_block", () -> ModBlocks.gray_glowstone_block);
-	public static final Supplier<GSBlock> green_glowstone_block = BLOCKS.register("green_glowstone_block", () -> ModBlocks.green_glowstone_block);
-	public static final Supplier<GSBlock> lamp_glowstone_block = BLOCKS.register("lamp_glowstone_block", () -> ModBlocks.lamp_glowstone_block);
-	public static final Supplier<GSBlock> light_blue_glowstone_block = BLOCKS.register("light_blue_glowstone_block", () -> ModBlocks.light_blue_glowstone_block);
-	public static final Supplier<GSBlock> light_gray_glowstone_block = BLOCKS.register("light_gray_glowstone_block", () -> ModBlocks.light_gray_glowstone_block);
-	public static final Supplier<GSBlock> lime_glowstone_block = BLOCKS.register("lime_glowstone_block", () -> ModBlocks.lime_glowstone_block);
-	public static final Supplier<GSBlock> magenta_glowstone_block = BLOCKS.register("magenta_glowstone_block", () -> ModBlocks.magenta_glowstone_block);
-	public static final Supplier<GSBlock> orange_glowstone_block = BLOCKS.register("orange_glowstone_block", () -> ModBlocks.orange_glowstone_block);
-	public static final Supplier<GSBlock> pink_glowstone_block = BLOCKS.register("pink_glowstone_block", () -> ModBlocks.pink_glowstone_block);
-	public static final Supplier<GSBlock> purple_glowstone_block = BLOCKS.register("purple_glowstone_block", () -> ModBlocks.purple_glowstone_block);
-	public static final Supplier<GSBlock> red_glowstone_block = BLOCKS.register("red_glowstone_block", () -> ModBlocks.red_glowstone_block);
-	public static final Supplier<GSBlock> white_glowstone_block = BLOCKS.register("white_glowstone_block", () -> ModBlocks.white_glowstone_block);
-	
-	public static final Supplier<GSOre> glowstone_ore = BLOCKS.register("glowstone_ore", () -> ModBlocks.glowstone_ore);
+	// Registry category.
+	public static final DeferredRegister.Blocks BLOCKS = MoGlowstone.BLOCKS;
+
+	// Glowstone Blocks with light level 15
+	public static final DeferredBlock<Block> BLACK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"black_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_BLACK)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> BLUE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"blue_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_BLUE)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> BRICK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"brick_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_RED)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> BROWN_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"brown_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_BROWN)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> CYAN_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"cyan_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_CYAN)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> GRAY_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"gray_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_GRAY)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> GREEN_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"green_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_GREEN)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> LAMP_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"lamp_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_YELLOW)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> LIGHT_BLUE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"light_blue_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_LIGHT_BLUE)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> LIGHT_GRAY_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"light_gray_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_LIGHT_GRAY)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> LIME_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"lime_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_LIGHT_GREEN)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> MAGENTA_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"magenta_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_MAGENTA)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> ORANGE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"orange_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_ORANGE)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> PINK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"pink_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_PINK)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> PURPLE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"purple_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_PURPLE)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> RED_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"red_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.COLOR_RED)
+					.lightLevel(state -> 15)
+	);
+
+	public static final DeferredBlock<Block> WHITE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+			"white_glowstone_block",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.TERRACOTTA_WHITE)
+					.lightLevel(state -> 15)
+	);
+
+	// Glowstone Ore without light emission
+	public static final DeferredBlock<Block> GLOWSTONE_ORE = BLOCKS.registerSimpleBlock(
+			"glowstone_ore",
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.STONE)
+	);
 }
+
