@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
 	License:	MIT License
 
-				Copyright (c) 2024 MasterGeneral156
+				Copyright (c) 2025 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -34,8 +34,6 @@ import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.moglowstone.blocks.BlockRegistry;
 import com.themastergeneral.moglowstone.items.ItemRegistry;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -51,15 +49,13 @@ public class MoGlowstone {
 	public MoGlowstone(FMLJavaModLoadingContext context) {
 		instance = this;
         // Register the setup method for modloading
-        IEventBus modbus = context.getModEventBus();
-        modbus.addListener(this::setup);
+        var modBusGroup = context.getModBusGroup();
 
-        // Register ourselves for server, registry and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
+        FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::setup);
         
-        ItemRegistry.ITEMS.register(modbus);
-        BlockRegistry.BLOCKS.register(modbus);
-        TabRegistry.CREATIVE_MODE_TABS.register(modbus);
+        ItemRegistry.ITEMS.register(modBusGroup);
+        BlockRegistry.BLOCKS.register(modBusGroup);
+        TabRegistry.CREATIVE_MODE_TABS.register(modBusGroup);
     }
 	
 	private void setup(final FMLCommonSetupEvent event)

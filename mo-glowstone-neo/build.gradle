@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.86'
+    id 'net.neoforged.moddev' version '2.0.99'
     id 'idea'
 }
 
@@ -18,14 +18,14 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    mavenLocal()
+    // Add here additional repositories if required by some of the dependencies below.
 }
 
 base {
 	archivesName = "${mod_build}-${minecraft_version}"
 }
 
-// Mojang ships Java 21 to end users starting in 1.20.5, so mods should target Java 21.
+// Mojang ships Java 21 to end users in 1.21.6, so mods should target Java 21.
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
@@ -119,7 +119,7 @@ repositories {
 }
 
 dependencies {
-	implementation("com.themastergeneral:ctd-core:${project.property('ctd_core_ver')}")
+	implementation("mastergeneral156:ctd-core:${project.property('ctd_core_ver')}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -129,14 +129,13 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
-            neo_version_range      : neo_version_range,
-            loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
             mod_authors            : mod_authors,
-            mod_description        : mod_description
+            mod_description        : mod_description,
+			ctd_core_ver_range     : ctd_core_ver_range
     ]
     inputs.properties replaceProperties
     expand replaceProperties

@@ -2,3 +2,4 @@
 ./gradlew idea
 ./gradlew idea
 ./gradlew idea
+PAUSE
