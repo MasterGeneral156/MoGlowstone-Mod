@@ -114,12 +114,12 @@ configurations {
 repositories {
 	maven {
 		name = "MasterGeneral156"
-		url = "https://maven.chivalryengine.com/"
+		url = "https://chivalryengine.com/mcmodsrepo/"
 	}
 }
 
 dependencies {
-	implementation("mastergeneral156:ctd-core:${project.property('ctd_core_ver')}")
+	implementation("com.themastergeneral.ctdcore:ctd-core-neo:${project.property('ctd_core_ver')}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -152,12 +152,13 @@ neoForge.ideSyncTask generateModMetadata
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
-            from components.java
+            artifact jar
         }
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/repo"
+            name = 'LocalMods'
+            url = file('D:/mcmodsrepo') // Your local Maven repo folder
         }
     }
 }
