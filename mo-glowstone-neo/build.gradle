@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.99'
+    id 'net.neoforged.moddev' version '2.0.112'
     id 'idea'
 }
 
@@ -114,7 +114,8 @@ configurations {
 repositories {
 	maven {
 		name = "MasterGeneral156"
-		url = "https://chivalryengine.com/mcmodsrepo/"
+		url = "http://206.130.120.126/mcmodsrepo/"
+		allowInsecureProtocol = true
 	}
 }
 
@@ -158,7 +159,7 @@ publishing {
     repositories {
         maven {
             name = 'LocalMods'
-            url = file('D:/mcmodsrepo') // Your local Maven repo folder
+            url = uri("${project.rootDir}/mcmodsrepo") // Your local Maven repo folder
         }
     }
 }
