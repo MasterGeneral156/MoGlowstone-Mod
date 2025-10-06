@@ -109,7 +109,8 @@ repositories {
     mavenCentral()
 	maven {
 		name = "MasterGeneral156"
-		url = "https://chivalryengine.com/mcmodsrepo/"
+		url = "http://206.130.120.126/mcmodsrepo/"
+		allowInsecureProtocol = true
 	}
     maven {
         name = 'Forge'
@@ -146,7 +147,7 @@ dependencies {
     // to improve performance in production environments. This line is required to enable said compile-time validation
     // in your development environment, helping you catch issues early.
     annotationProcessor 'net.minecraftforge:eventbus-validator:7.0-beta.10'
-	
+
 	implementation("com.themastergeneral.ctdcore:ctd-core-forge:${project.property('ctd_core_ver')}")
 }
 
@@ -194,7 +195,7 @@ publishing {
     repositories {
         maven {
             name = 'LocalMods'
-            url = file('D:/mcmodsrepo') // Your local Maven repo folder
+            url = uri("${project.rootDir}/mcmodsrepo") // Your local Maven repo folder
         }
     }
 }
