@@ -108,7 +108,12 @@ repositories {
     // Put repositories for dependencies here
     mavenCentral()
 	maven {
-		name = "MasterGeneral156"
+		name = "MasterGeneral156 - LAN"
+		url = "http://192.168.1.30/mcmodsrepo/"
+		allowInsecureProtocol = true
+	}
+	maven {
+		name = "MasterGeneral156 - Public"
 		url = "http://206.130.120.126/mcmodsrepo/"
 		allowInsecureProtocol = true
 	}
