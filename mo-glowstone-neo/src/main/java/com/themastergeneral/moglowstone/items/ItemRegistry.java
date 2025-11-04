@@ -29,6 +29,8 @@ package com.themastergeneral.moglowstone.items;
 
 import java.util.function.Supplier;
 
+import com.themastergeneral.ctdcore.item.CTDFuelItem;
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
 import com.themastergeneral.moglowstone.blocks.BlockRegistry;
@@ -41,7 +43,10 @@ public class ItemRegistry {
 	public static final DeferredRegister.Items ITEMS = MoGlowstone.ITEMS;
 
 	// Base item: Glowstone Coal with custom burn time
-	public static final DeferredItem<Item> GLOWSTONE_COAL = ITEMS.registerSimpleItem("glowstone_coal", new Item.Properties());
+    public static DeferredItem<Item> GLOWSTONE_COAL = ITEMS.registerItem(
+            "glowstone_coal",
+            properties -> new CTDFuelItem(properties, 3200)
+    );
 
 	// Block items registration
 	public static final DeferredItem<BlockItem> BLACK_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("black_glowstone_block", BlockRegistry.BLACK_GLOWSTONE_BLOCK);
