@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C",
+        "F",
+        "S"
+    ],
+    "key": {
+        "C": "#c:nuggets/copper",
+		"F": "moglowstone:glowstone_coal",
+        "S": "#c:rods/wooden"
+    },
+    "result": {
+        "id": "minecraft:copper_torch",
+		"count": 8
+    }
+}
