@@ -7,7 +7,7 @@
     "key": {
 		"F": "moglowstone:glowstone_coal" ,
         "B": "minecraft:blaze_powder" ,
-		"G": "#c:gunpowder" 
+		"G": "#c:gunpowders"
     },
     "result": {
         "id": "minecraft:fire_charge",
