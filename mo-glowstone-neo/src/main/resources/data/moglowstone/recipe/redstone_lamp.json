@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " R ",
+        "RGR",
+		" R "
+    ],
+    "key": {
+		"G": "#c:glowstone",
+		"R": "#c:dusts/redstone"
+    },
+    "result": {
+        "id": "minecraft:redstone_lamp",
+		"count": 1
+    }
+}
