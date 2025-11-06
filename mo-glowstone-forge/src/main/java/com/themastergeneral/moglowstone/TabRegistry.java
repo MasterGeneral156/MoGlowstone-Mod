@@ -69,5 +69,6 @@ public class TabRegistry {
     			ev.accept(ItemRegistry.purple_glowstone_block.get());
     			ev.accept(ItemRegistry.red_glowstone_block.get());
     			ev.accept(ItemRegistry.white_glowstone_block.get());
+                ev.accept(ItemRegistry.yellow_glowstone_block.get());
             }).build());
 }

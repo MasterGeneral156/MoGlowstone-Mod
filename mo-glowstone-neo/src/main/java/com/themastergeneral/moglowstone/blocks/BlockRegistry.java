@@ -27,8 +27,6 @@
 */
 package com.themastergeneral.moglowstone.blocks;
 
-import java.util.function.Supplier;
-
 import com.themastergeneral.moglowstone.MoGlowstone;
 
 import net.minecraft.world.level.block.Block;
@@ -41,7 +39,6 @@ public class BlockRegistry {
 	// Registry category.
 	public static final DeferredRegister.Blocks BLOCKS = MoGlowstone.BLOCKS;
 
-	// Glowstone Blocks with light level 15
 	public static final DeferredBlock<Block> BLACK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
 			"black_glowstone_block",
 			BlockBehaviour.Properties.of()
@@ -161,7 +158,13 @@ public class BlockRegistry {
 					.lightLevel(state -> 15)
 	);
 
-	// Glowstone Ore without light emission
+    public static final DeferredBlock<Block> YELLOW_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
+            "yellow_glowstone_block",
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .lightLevel(state -> 15)
+    );
+
 	public static final DeferredBlock<Block> GLOWSTONE_ORE = BLOCKS.registerSimpleBlock(
 			"glowstone_ore",
 			BlockBehaviour.Properties.of()

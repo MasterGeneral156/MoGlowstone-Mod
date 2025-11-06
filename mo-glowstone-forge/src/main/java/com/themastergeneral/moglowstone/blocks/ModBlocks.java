@@ -48,6 +48,8 @@ public class ModBlocks
 	public static GSBlock purple_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("purple_glowstone_block"), MapColor.COLOR_PURPLE);
 	public static GSBlock red_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("red_glowstone_block"), MapColor.COLOR_RED);
 	public static GSBlock white_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("white_glowstone_block"), MapColor.SNOW);
+    public static GSBlock yellow_glowstone_block = new GSBlock(BlockRegistry.BLOCKS.key("yellow_glowstone_block"), MapColor.COLOR_YELLOW);
+
 
 	public static GSOre glowstone_ore = new GSOre(BlockRegistry.BLOCKS.key("glowstone_ore"));
 }
