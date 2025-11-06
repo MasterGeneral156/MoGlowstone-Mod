@@ -7,7 +7,7 @@
     ],
     "key": {
 		"G": "#c:glowstone",
-		"D": "#c:dyes/yellow"
+		"D": "#c:glass_blocks"
     },
     "result": {
         "id": "minecraft:glowstone",
