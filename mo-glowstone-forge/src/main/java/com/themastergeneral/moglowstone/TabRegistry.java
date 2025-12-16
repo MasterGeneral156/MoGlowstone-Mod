@@ -49,7 +49,7 @@ public class TabRegistry {
             .icon(() -> new ItemStack(ItemRegistry.red_glowstone_block.get()))
             .title(Component.translatable("itemGroup.moglowstone"))
             .displayItems((parameters, ev) -> {
-                ev.accept(ItemRegistry.red_glowstone_block.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                ev.accept(ItemRegistry.red_glowstone_block.get());
                 ev.accept(ItemRegistry.glowstone_coal.get());
     			ev.accept(ItemRegistry.black_glowstone_block.get());
     			ev.accept(ItemRegistry.brown_glowstone_block.get());
