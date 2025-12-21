@@ -113,13 +113,12 @@ configurations {
 
 repositories {
 	maven {
-		name = "MasterGeneral156 - LAN"
-		url = "http://192.168.1.30/mcmodsrepo/"
-		allowInsecureProtocol = true
+		name = "MasterGeneral156 - Public"
+		url = "https://694272r.chickenkiller.com/mcmodsrepo/"
 	}
 	maven {
-		name = "MasterGeneral156 - Public"
-		url = "http://206.130.120.126/mcmodsrepo/"
+		name = "MasterGeneral156 - LAN"
+		url = "http://192.168.1.30/mcmodsrepo/"
 		allowInsecureProtocol = true
 	}
 }
