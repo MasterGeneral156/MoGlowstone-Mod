@@ -56,6 +56,7 @@ public class BlockRegistry {
 	public static final Supplier<GSBlock> purple_glowstone_block = BLOCKS.register("purple_glowstone_block", () -> ModBlocks.purple_glowstone_block);
 	public static final Supplier<GSBlock> red_glowstone_block = BLOCKS.register("red_glowstone_block", () -> ModBlocks.red_glowstone_block);
 	public static final Supplier<GSBlock> white_glowstone_block = BLOCKS.register("white_glowstone_block", () -> ModBlocks.white_glowstone_block);
+	public static final Supplier<GSBlock> yellow_glowstone_block = BLOCKS.register("yellow_glowstone_block", () -> ModBlocks.yellow_glowstone_block);
 	
 	public static final Supplier<GSOre> glowstone_ore = BLOCKS.register("glowstone_ore", () -> ModBlocks.glowstone_ore);
 }

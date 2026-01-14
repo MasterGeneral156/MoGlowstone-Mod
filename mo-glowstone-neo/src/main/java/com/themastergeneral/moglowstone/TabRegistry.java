@@ -66,5 +66,6 @@ public class TabRegistry {
     			ev.accept(ModBlocks.pink_glowstone_block);
     			ev.accept(ModBlocks.purple_glowstone_block);
     			ev.accept(ModBlocks.white_glowstone_block);
+				ev.accept(ModBlocks.yellow_glowstone_block);
             }).build());
 }

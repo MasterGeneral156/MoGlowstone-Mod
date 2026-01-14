@@ -53,5 +53,6 @@ public class ModItems {
 	public static ModItemBlocks purple_glowstone_block = new ModItemBlocks(ModBlocks.purple_glowstone_block);
 	public static ModItemBlocks red_glowstone_block = new ModItemBlocks(ModBlocks.red_glowstone_block);
 	public static ModItemBlocks white_glowstone_block = new ModItemBlocks(ModBlocks.white_glowstone_block);
+	public static ModItemBlocks yellow_glowstone_block = new ModItemBlocks(ModBlocks.yellow_glowstone_block);
 	public static ModItemBlocks glowstone_ore = new ModItemBlocks(ModBlocks.glowstone_ore);
 }

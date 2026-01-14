@@ -28,6 +28,7 @@
 package com.themastergeneral.moglowstone;
 
 import com.themastergeneral.moglowstone.blocks.ModBlocks;
+import com.themastergeneral.moglowstone.items.ItemRegistry;
 import com.themastergeneral.moglowstone.items.ModItems;
 
 import net.minecraft.core.registries.Registries;
@@ -43,28 +44,29 @@ public class TabRegistry {
 	
 	public static final RegistryObject<CreativeModeTab> MOGLOWSTONE_TAB = CREATIVE_MODE_TABS.register("moglowstone_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ModItems.red_glowstone_block.getDefaultInstance())
+            .icon(() -> ItemRegistry.red_glowstone_block.get().getDefaultInstance())
             .title(Component.translatable("itemGroup.moglowstone"))
             .displayItems((parameters, ev) -> {
-                ev.accept(ModItems.red_glowstone_block); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-                ev.accept(ModItems.glowstone_coal);
-    			ev.accept(ModBlocks.black_glowstone_block);
-    			ev.accept(ModBlocks.brown_glowstone_block);
-    			ev.accept(ModBlocks.blue_glowstone_block);
-    			ev.accept(ModBlocks.brick_glowstone_block);
-    			ev.accept(ModBlocks.cyan_glowstone_block);
-    			ev.accept(ModBlocks.glowstone_ore);
-    			ev.accept(ModBlocks.gray_glowstone_block);
-    			ev.accept(ModBlocks.green_glowstone_block);
-    			ev.accept(ModBlocks.lamp_glowstone_block);
-    			ev.accept(ModBlocks.light_gray_glowstone_block);
-    			ev.accept(ModBlocks.light_blue_glowstone_block);
-    			ev.accept(ModBlocks.lime_glowstone_block);
-    			ev.accept(ModBlocks.magenta_glowstone_block);
-    			ev.accept(ModBlocks.orange_glowstone_block);
-    			ev.accept(ModBlocks.pink_glowstone_block);
-    			ev.accept(ModBlocks.purple_glowstone_block);
-    			ev.accept(ModBlocks.red_glowstone_block);
-    			ev.accept(ModBlocks.white_glowstone_block);
+                ev.accept(ItemRegistry.red_glowstone_block.get().getDefaultInstance()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                ev.accept(ItemRegistry.glowstone_coal.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.black_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.brown_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.blue_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.brick_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.cyan_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.glowstone_ore.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.gray_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.green_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.lamp_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.light_gray_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.light_blue_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.lime_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.magenta_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.orange_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.pink_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.purple_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.red_glowstone_block.get().getDefaultInstance());
+    			ev.accept(ItemRegistry.white_glowstone_block.get().getDefaultInstance());
+				ev.accept(ItemRegistry.yellow_glowstone_block.get().getDefaultInstance());
             }).build());
 }

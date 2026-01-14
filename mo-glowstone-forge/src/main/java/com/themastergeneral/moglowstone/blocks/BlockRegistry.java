@@ -56,6 +56,7 @@ public class BlockRegistry {
 	public static final RegistryObject<Block> purple_glowstone_block = BLOCKS.register("purple_glowstone_block", () -> ModBlocks.purple_glowstone_block);
 	public static final RegistryObject<Block> red_glowstone_block = BLOCKS.register("red_glowstone_block", () -> ModBlocks.red_glowstone_block);
 	public static final RegistryObject<Block> white_glowstone_block = BLOCKS.register("white_glowstone_block", () -> ModBlocks.white_glowstone_block);
+	public static final RegistryObject<Block> yellow_glowstone_block = BLOCKS.register("yellow_glowstone_block", () -> ModBlocks.yellow_glowstone_block);
 	
 	public static final RegistryObject<Block> glowstone_ore = BLOCKS.register("glowstone_ore", () -> ModBlocks.glowstone_ore);
 }

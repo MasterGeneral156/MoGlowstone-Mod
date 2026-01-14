@@ -48,6 +48,7 @@ public class ModBlocks
 	public static GSBlock purple_glowstone_block = new GSBlock(MapColor.COLOR_PURPLE);
 	public static GSBlock red_glowstone_block = new GSBlock(MapColor.COLOR_RED);
 	public static GSBlock white_glowstone_block = new GSBlock(MapColor.SNOW);
+	public static GSBlock yellow_glowstone_block = new GSBlock(MapColor.COLOR_YELLOW);
 
 	public static GSOre glowstone_ore = new GSOre();
 }
