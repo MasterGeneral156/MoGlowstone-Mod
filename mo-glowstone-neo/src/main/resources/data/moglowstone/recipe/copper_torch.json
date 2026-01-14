@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C",
+        "F",
+		"S"
+    ],
+    "key": {
+		"C": {"tag": "c:nuggets/copper"},
+		"F": {"item": "moglowstone:glowstone_coal"},
+		"S": {"tag": "c:rods/wodden"}
+    },
+    "result": {
+        "id": "minecraft:glowstone",
+		"count": 8
+    }
+}
