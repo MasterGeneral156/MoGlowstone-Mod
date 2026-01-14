@@ -24,3 +24,5 @@ logs/*
 
 # Files from Forge MDK
 forge*changelog.txt
+/mo-glowstone-neo/mcmodsrepo
+/mo-glowstone-forge/mcmodsrepo
