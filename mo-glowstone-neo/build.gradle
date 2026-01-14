@@ -1,7 +1,8 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '1.0.17'
+    id 'net.neoforged.moddev' version '2.0.139'
+    id 'idea'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -17,14 +18,14 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    mavenLocal()
+    // Add here additional repositories if required by some of the dependencies below.
 }
 
 base {
 	archivesName = "${mod_build}-${minecraft_version}"
 }
 
-// Mojang ships Java 21 to end users starting in 1.20.5, so mods should target Java 21.
+// Mojang ships Java 21 to end users in 1.21.1, so mods should target Java 21.
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
@@ -92,8 +93,7 @@ neoForge {
     mods {
         // define mod <-> source bindings
         // these are used to tell the game which sources are for which mod
-        // mostly optional in a single mod project
-        // but multi mod projects should define one per mod
+        // multi mod projects should define one per mod
         "${mod_id}" {
             sourceSet(sourceSets.main)
         }
@@ -113,32 +113,27 @@ configurations {
 
 repositories {
 	maven {
-		name = "MasterGeneral156 LAN"
-		url = "http://192.168.1.30/maven/"
-		allowInsecureProtocol = true
+		name = "MasterGeneral156 - Public"
+		url = "https://694272r.chickenkiller.com/mcmodsrepo/"
 	}
 	maven {
-		name = "MasterGeneral156"
-		url = "https://chivalryengine.com/maven/"
+		name = "MasterGeneral156 - LAN"
+		url = "http://192.168.1.30/mcmodsrepo/"
+		allowInsecureProtocol = true
 	}
-        allowInsecureProtocol = true
-    }
-        url = "https://chivalryengine.com/maven/"
-    }
 }
 
 dependencies {
-    implementation "net.neoforged:neoforge:${neo_version}"
-	implementation ("com.themastergeneral:ctd-core:${project.property('ctd_core_ver')}")
+	implementation ("com.themastergeneral.ctdcore:ctd-core-neo:${project.property('ctd_core_ver')}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
-            neo_version_range      : neo_version_range,
             loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
