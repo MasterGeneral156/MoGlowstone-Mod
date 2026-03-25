@@ -7,7 +7,7 @@ version="${mod_version}" #mandatory
 displayName="${mod_name}" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/Mo-Glowstone.json" #optional
 displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-glowstone" #optional
-logoFile="logo.png" #optional
+logoFile="mo-glowstone.png" #optional
 authors="${mod_authors}" #optional
 description='''${mod_description}'''
 
