@@ -1,5 +1,5 @@
 /*
-	Project:	Mo' Glowstone 26.1
+	Project:	Mo' Glowstone 26.2
 	File:		com.themastergeneral.moglowstone.blocks.BlockRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
@@ -27,8 +27,11 @@
 */
 package com.themastergeneral.moglowstone.blocks;
 
+import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.moglowstone.MoGlowstone;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -39,136 +42,82 @@ public class BlockRegistry {
 	// Registry category.
 	public static final DeferredRegister.Blocks BLOCKS = MoGlowstone.BLOCKS;
 
-	public static final DeferredBlock<Block> BLACK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"black_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_BLACK)
-					.lightLevel(state -> 15)
-	);
 
-	public static final DeferredBlock<Block> BLUE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"blue_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_BLUE)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> BRICK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"brick_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_RED)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> BROWN_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"brown_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_BROWN)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> CYAN_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"cyan_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_CYAN)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> GRAY_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"gray_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_GRAY)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> GREEN_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"green_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_GREEN)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> LAMP_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"lamp_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_YELLOW)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> LIGHT_BLUE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"light_blue_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_LIGHT_BLUE)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> LIGHT_GRAY_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"light_gray_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_LIGHT_GRAY)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> LIME_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"lime_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_LIGHT_GREEN)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> MAGENTA_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"magenta_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_MAGENTA)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> ORANGE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"orange_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_ORANGE)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> PINK_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"pink_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_PINK)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> PURPLE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"purple_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_PURPLE)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> RED_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"red_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.COLOR_RED)
-					.lightLevel(state -> 15)
-	);
-
-	public static final DeferredBlock<Block> WHITE_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-			"white_glowstone_block",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.TERRACOTTA_WHITE)
-					.lightLevel(state -> 15)
-	);
-
-    public static final DeferredBlock<Block> YELLOW_GLOWSTONE_BLOCK = BLOCKS.registerSimpleBlock(
-            "yellow_glowstone_block",
-            BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_YELLOW)
-                    .lightLevel(state -> 15)
-    );
-
-	public static final DeferredBlock<Block> GLOWSTONE_ORE = BLOCKS.registerSimpleBlock(
-			"glowstone_ore",
-			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.STONE)
-	);
+	public static final DeferredBlock<Block> BLACK_GLOWSTONE_BLOCK = BLOCKS.register("black_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_BLACK)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> BLUE_GLOWSTONE_BLOCK = BLOCKS.register("blue_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_BLUE)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> BRICK_GLOWSTONE_BLOCK = BLOCKS.register("brick_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_YELLOW)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> BROWN_GLOWSTONE_BLOCK = BLOCKS.register("brown_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_BROWN)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> CYAN_GLOWSTONE_BLOCK = BLOCKS.register("cyan_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_CYAN)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> GRAY_GLOWSTONE_BLOCK = BLOCKS.register("gray_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_GRAY)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> GREEN_GLOWSTONE_BLOCK = BLOCKS.register("green_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_GREEN)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> LAMP_GLOWSTONE_BLOCK = BLOCKS.register("lamp_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_YELLOW)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> LIGHT_BLUE_GLOWSTONE_BLOCK = BLOCKS.register("light_blue_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_LIGHT_BLUE)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> LIGHT_GRAY_GLOWSTONE_BLOCK = BLOCKS.register("light_gray_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_LIGHT_GRAY)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> LIME_GLOWSTONE_BLOCK = BLOCKS.register("lime_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_LIGHT_GREEN)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> MAGENTA_GLOWSTONE_BLOCK = BLOCKS.register("magenta_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_MAGENTA)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> ORANGE_GLOWSTONE_BLOCK = BLOCKS.register("orange_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_ORANGE)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> PINK_GLOWSTONE_BLOCK = BLOCKS.register("pink_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_PINK)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> PURPLE_GLOWSTONE_BLOCK = BLOCKS.register("purple_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_PURPLE)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> RED_GLOWSTONE_BLOCK = BLOCKS.register("red_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_RED)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> WHITE_GLOWSTONE_BLOCK = BLOCKS.register("white_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.TERRACOTTA_WHITE)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> YELLOW_GLOWSTONE_BLOCK = BLOCKS.register("yellow_glowstone_block", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_YELLOW)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> GLOWSTONE_ORE = BLOCKS.register("glowstone_ore", registryName -> new CTDBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.setId(ResourceKey.create(Registries.BLOCK, registryName))
+			.lightLevel(state -> 7)));
 }
 
