@@ -1,5 +1,5 @@
-/*
-	Project:	Mo' Glowstone 26.2
+/**
+	Project:	Mo' Glowstone 26.3
 	File:		com.themastergeneral.moglowstone.TabRegistry
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/MoGlowstone-Mod
