@@ -68,6 +68,6 @@ public class ItemRegistry {
     public static final DeferredItem<BlockItem> YELLOW_GLOWSTONE_BLOCK = ITEMS.registerSimpleBlockItem("yellow_glowstone_block", BlockRegistry.YELLOW_GLOWSTONE_BLOCK);
 
 	// Glowstone Ore block item
-	public static final Supplier<BlockItem> GLOWSTONE_ORE = ITEMS.registerSimpleBlockItem("glowstone_ore", BlockRegistry.GLOWSTONE_ORE);
+	public static final DeferredItem<BlockItem> GLOWSTONE_ORE = ITEMS.registerSimpleBlockItem("glowstone_ore", BlockRegistry.GLOWSTONE_ORE);
 }
 
