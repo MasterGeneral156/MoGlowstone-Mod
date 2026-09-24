@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "moglowstone:block/white_glowstone_block"
-    }
-}

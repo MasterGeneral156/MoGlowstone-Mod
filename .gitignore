@@ -20,9 +20,5 @@ build
 # other
 eclipse
 run
-logs/*
-
-# Files from Forge MDK
-forge*changelog.txt
-/mo-glowstone-forge/mcmodsrepo
-/mo-glowstone-neo/mcmodsrepo
+runs
+*.log
