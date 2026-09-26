@@ -35,6 +35,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
@@ -56,6 +57,7 @@ public class MoGlowstone {
 		instance = this;
         // Register the setup method for modloading
         modEventBus.addListener(this::setup);
+        modEventBus.addListener(this::fillTab);
         
         BlockRegistry.BLOCKS.register(modEventBus);
         ItemRegistry.ITEMS.register(modEventBus);
@@ -66,5 +68,32 @@ public class MoGlowstone {
 	private void setup(final FMLCommonSetupEvent event)
     {
 		LOGGER.info("Mo' Glowstone for Minecraft NeoForge " + ModUtils.getMCVersion() + " is launching.");
+    }
+
+    private void fillTab(BuildCreativeModeTabContentsEvent ev)
+    {
+        if (ev.getTabKey() == TabRegistry.MOGLOWSTONE_TAB.getKey())
+        {
+            ev.accept(ItemRegistry.BLACK_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.BLUE_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.BROWN_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.CYAN_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.GRAY_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.GREEN_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.LIGHT_BLUE_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.LIGHT_GRAY_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.LIME_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.MAGENTA_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.ORANGE_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.PINK_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.PURPLE_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.RED_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.WHITE_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.YELLOW_GLOWSTONE_BLOCK);
+
+            ev.accept(ItemRegistry.LAMP_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.BRICK_GLOWSTONE_BLOCK);
+            ev.accept(ItemRegistry.GLOWSTONE_COAL);
+        }
     }
 }

@@ -45,17 +45,5 @@ public class TabRegistry {
 					.title(Component.translatable("itemGroup.moglowstone"))
 					.icon(() -> new ItemStack(ItemRegistry.RED_GLOWSTONE_BLOCK.get()))
 					.withTabsBefore(CreativeModeTabs.COMBAT)
-					.displayItems((parameters, output) -> {
-						// Add all registered items
-						ItemRegistry.ITEMS.getEntries().forEach(item -> output.accept(item.get()));
-
-						// Add all registered block items
-						BlockRegistry.BLOCKS.getEntries().forEach(block -> {
-							BlockItem blockItem = (BlockItem) Item.BY_BLOCK.get(block.get());
-							if (blockItem != null) {
-								output.accept(blockItem);
-							}
-						});
-					})
 					.build());
 }
