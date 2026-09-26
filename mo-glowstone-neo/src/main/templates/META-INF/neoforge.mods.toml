@@ -11,13 +11,6 @@ iconFile="mo-glowstone.png" #optional
 authors="${mod_authors}" #optional
 description='''${mod_description}'''
 
-[[dependencies.${mod_id}]] #optional
-    modId="neoforge" #mandatory
-    type="required" #mandatory
-    versionRange="[${neo_version},)" #mandatory
-    ordering="NONE"
-    side="BOTH"
-
 [[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
